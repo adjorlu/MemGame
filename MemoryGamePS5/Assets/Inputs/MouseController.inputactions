@@ -1,0 +1,74 @@
+{
+    "name": "MouseController",
+    "maps": [
+        {
+            "name": "MouseMovement",
+            "id": "9f896dc6-6015-4806-b0f8-aea25978fa98",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "27b7080a-127a-4585-80d1-867fb4143890",
+                    "expectedControlType": "Stick",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "ButtonRegular",
+                    "type": "Button",
+                    "id": "325956f6-cece-43a0-b892-1cc42808ad61",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ButtonReleased",
+                    "type": "Button",
+                    "id": "3c873866-b956-45f1-a5fb-f34526affb3f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=1)",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "48943b1a-0d01-4fbf-a275-77fa0bb0c748",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b36e59f4-7011-4aa9-9274-de2521483e6b",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonRegular",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "25cdc9aa-5f2b-4144-b95c-6723722da4ad",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ButtonReleased",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

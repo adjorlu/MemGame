@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2022-12-07T10:12:25.233+01:00
+  initializedAtString: 2022-12-07T10:12:22.205+01:00
+  log:
+  - commitID: 3cf50daaad49a10ef039ebb7838d83cf2572b213
+    mergeA: 
+    mergeB: 
+    authorName: Ali Adjorlu
+    authorEmail: adjorlu@gmail.com
+    commitEmail: adjorlu@gmail.com
+    commitName: Ali Adjorlu
+    summary: Initial commit
+    description: 
+    timeString: 2022-12-05T12:43:22.000+01:00
+    commitTimeString: 2022-12-05T12:43:22.000+01:00
+    changes:
+    - path: .gitattributes
+      fullPath: C:\Users\adjor\OneDrive - Aalborg Universitet\Billeder\unityMemory\code\ch05\ch05\.gitattributes
+      projectPath: .gitattributes
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: .gitignore
+      fullPath: C:\Users\adjor\OneDrive - Aalborg Universitet\Billeder\unityMemory\code\ch05\ch05\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\.gitignore
+      fullPath: C:\Users\adjor\OneDrive - Aalborg Universitet\Billeder\unityMemory\code\ch05\ch05\Assets\.gitignore
+      projectPath: Assets\.gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
