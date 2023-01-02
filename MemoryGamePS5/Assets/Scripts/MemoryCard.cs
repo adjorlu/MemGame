@@ -34,7 +34,7 @@ public class MemoryCard : MonoBehaviour {
 		
 	}
 
-	public void setAudio(int id, AudioClip lyd)
+	public void SetAudio(int id, AudioClip lyd)
     {
 		_id = id;
 		GetComponent<AudioSource>().clip = lyd; 

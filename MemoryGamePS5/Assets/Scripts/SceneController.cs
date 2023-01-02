@@ -35,7 +35,6 @@ public class SceneController : MonoBehaviour {
 		Vector3 startPos = originalCard.transform.position;
 
 		// create shuffled list of cards
-		
 		numbers = ShuffleArray(numbers);
 
 		// place cards in a grid
@@ -54,7 +53,7 @@ public class SceneController : MonoBehaviour {
 				int index = j * gridCols + i;
 				int id = numbers[index];
 				card.SetCard(id, images[id]);
-				card.setAudio(id, sounds[id]);
+				card.SetAudio(id, sounds[id]);
 
 				float posX = (offsetX * i) + startPos.x;
 				float posY = -(offsetY * j) + startPos.y;
@@ -86,8 +85,8 @@ public class SceneController : MonoBehaviour {
 	
 	private IEnumerator CheckMatch() {
 
-		// increment score if the cards match
-		if (firstRevealed.Id == secondRevealed.Id) {
+		// increment score if the cards match and it's not the same (not same position)
+		if (firstRevealed.Id == secondRevealed.Id && firstRevealed.transform.position != secondRevealed.transform.position) {
 			score++;
 			scoreLabel.text = $"Score: {score}";
 
