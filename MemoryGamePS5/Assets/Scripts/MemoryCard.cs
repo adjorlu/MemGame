@@ -21,7 +21,7 @@ public class MemoryCard : MonoBehaviour {
     {
 		if (imTouched == true && mouse.GetComponent<mouseController>().xPressed == true)
         {
-			pressed();
+			Pressed();
 		}
 
 
@@ -42,25 +42,31 @@ public class MemoryCard : MonoBehaviour {
 
     private void OnMouseDown()
     {
-		cardBack.SetActive(false);
-		controller.CardRevealed(this);
-		GetComponent<AudioSource>().Play();
-	}
+        controller.CardRevealed(this);
+        GetComponent<AudioSource>().Play();
+    }
 
 
-    private void pressed()
-    {
-		cardBack.SetActive(false);
+    private void Pressed()
+    {	
 		controller.CardRevealed(this);
-		GetComponent<AudioSource>().Play();
-		imTouched = false;
+
+		// Do we need this?
+        GetComponent<AudioSource>().Play();
+
+        imTouched = false;
     }
 
 	public void Unreveal() {
 		cardBack.SetActive(true);
 	}
 
-    private void OnCollisionEnter2D(Collision2D collision)
+	public void Reveal()
+	{
+		cardBack.SetActive(false);
+	}
+
+	private void OnCollisionEnter2D(Collision2D collision)
     {
 		imHovered.SetActive(true);
 		imTouched = true;

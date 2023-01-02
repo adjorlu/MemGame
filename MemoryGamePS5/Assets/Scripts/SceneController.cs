@@ -90,6 +90,11 @@ public class SceneController : MonoBehaviour {
 		if (firstRevealed.Id == secondRevealed.Id) {
 			score++;
 			scoreLabel.text = $"Score: {score}";
+
+			// show the instrument 
+			firstRevealed.Reveal();
+			secondRevealed.Reveal();
+
 			if(score == 4)
             {
 				yield return new WaitForSeconds(2.0f);
