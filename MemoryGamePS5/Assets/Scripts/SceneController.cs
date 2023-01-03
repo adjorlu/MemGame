@@ -11,7 +11,7 @@ public class SceneController : MonoBehaviour {
 	public int gridCols = 4;
 	public float offsetX = 2f;
 	public float offsetY = 2.5f;
-	public int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3};
+	public int[] numbers = {0, 0, 1, 1, 2, 2, 3, 3};
 
 	[SerializeField] MemoryCard originalCard;
 	[SerializeField] Sprite[] images;
@@ -22,6 +22,7 @@ public class SceneController : MonoBehaviour {
 	private MemoryCard secondRevealed;
 	private int score = 0;
 	private int currentScene;
+	private List<int> matchId = new List<int>();
 
 	public bool canReveal {
 		get {return secondRevealed == null;}
@@ -85,8 +86,19 @@ public class SceneController : MonoBehaviour {
 	
 	private IEnumerator CheckMatch() {
 
-		// increment score if the cards match and it's not the same (not same position)
-		if (firstRevealed.Id == secondRevealed.Id && firstRevealed.transform.position != secondRevealed.transform.position) {
+		// increment score if:
+		// - the cards match
+		// - the selected cards are not the same (not same position)
+		// - the couple selected have not been selected before
+		if (firstRevealed.Id == secondRevealed.Id && 
+			firstRevealed.transform.position != secondRevealed.transform.position &&
+			!matchId.Contains(firstRevealed.Id)) 
+		{
+
+			// add the found match pair
+			matchId.Add(firstRevealed.Id);
+
+			// increment score
 			score++;
 			scoreLabel.text = $"Score: {score}";
 
@@ -94,10 +106,13 @@ public class SceneController : MonoBehaviour {
 			firstRevealed.Reveal();
 			secondRevealed.Reveal();
 
-			if(score == 4)
+
+
+
+			if (score == 4)
             {
 				yield return new WaitForSeconds(2.0f);
-				changeScene();
+				ChangeScene();
 			}
 		}
 
@@ -105,8 +120,11 @@ public class SceneController : MonoBehaviour {
 		else {
 			yield return new WaitForSeconds(.5f);
 
-			firstRevealed.Unreveal();
-			secondRevealed.Unreveal();
+			if (!matchId.Contains(firstRevealed.Id))
+            {
+				firstRevealed.Unreveal();
+				secondRevealed.Unreveal();
+			}
 		}
 		
 		firstRevealed = null;
@@ -117,7 +135,7 @@ public class SceneController : MonoBehaviour {
 		SceneManager.LoadScene("Scene");
 	}
 
-    private void changeScene()
+    private void ChangeScene()
     {
 		SceneManager.LoadScene(currentScene + 1);
     }
