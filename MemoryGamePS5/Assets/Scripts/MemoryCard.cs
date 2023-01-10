@@ -46,7 +46,7 @@ public class MemoryCard : MonoBehaviour {
         GetComponent<AudioSource>().Play();
     }
 
-
+	// Controller PS5 interaction
     private void Pressed()
     {	
 		controller.CardRevealed(this);
@@ -68,7 +68,7 @@ public class MemoryCard : MonoBehaviour {
 
 	private void OnCollisionEnter2D(Collision2D collision)
     {
-		imHovered.SetActive(true);
+		
 		imTouched = true;
 		//Debug.Log(imTouched);
 
