@@ -5,7 +5,8 @@ using UnityEngine;
 public class MemoryCard : MonoBehaviour {
 	[SerializeField] GameObject cardBack;
 	[SerializeField] GameObject imHovered;
-	[SerializeField] GameObject mouse; 
+    [SerializeField] GameObject iAmPressed;
+    [SerializeField] GameObject mouse; 
 	[SerializeField] SceneController controller;
 
 	private bool imPressed = false;
@@ -50,8 +51,8 @@ public class MemoryCard : MonoBehaviour {
     private void Pressed()
     {	
 		controller.CardRevealed(this);
-
-		// Do we need this?
+        iAmPressed.SetActive(true);
+        // Do we need this?
         GetComponent<AudioSource>().Play();
 
         imTouched = false;
@@ -59,7 +60,13 @@ public class MemoryCard : MonoBehaviour {
 
 	public void Unreveal() {
 		cardBack.SetActive(true);
-	}
+        if (iAmPressed.activeSelf)
+        {
+            iAmPressed.SetActive(false);
+         
+        }
+        //iAmPressed.SetActive(false);
+    }
 
 	public void Reveal()
 	{
