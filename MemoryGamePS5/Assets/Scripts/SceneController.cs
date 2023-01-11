@@ -12,6 +12,7 @@ public class SceneController : MonoBehaviour {
 	public float offsetX = 2f;
 	public float offsetY = 2.5f;
 	public int[] numbers = {0, 0, 1, 1, 2, 2, 3, 3};
+	public string[] events = { "Drums", "Sax", "Piano", "Xylophone" };
 
 	[SerializeField] MemoryCard originalCard;
 	[SerializeField] Sprite[] images;
@@ -54,7 +55,7 @@ public class SceneController : MonoBehaviour {
 				int index = j * gridCols + i;
 				int id = numbers[index];
 				card.SetCard(id, images[id]);
-				card.SetAudio(id, sounds[id]);
+				card.SetAudio(id, events);
 
 				float posX = (offsetX * i) + startPos.x;
 				float posY = -(offsetY * j) + startPos.y;

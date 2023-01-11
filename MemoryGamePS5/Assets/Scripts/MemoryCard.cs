@@ -9,8 +9,9 @@ public class MemoryCard : MonoBehaviour {
 	[SerializeField] SceneController controller;
 
 	private bool imPressed = false;
-	private bool imTouched = false; 
+	private bool imTouched = false;
 
+	private string soundInstrument;
 
 	private int _id;
 	public int Id {
@@ -23,38 +24,35 @@ public class MemoryCard : MonoBehaviour {
         {
 			Pressed();
 		}
-
-
-
 	}
 
     public void SetCard(int id, Sprite image) {
 		_id = id;
-		GetComponent<SpriteRenderer>().sprite = image;
-		
-	}
+        GetComponent<SpriteRenderer>().sprite = image;
+    }
 
-	public void SetAudio(int id, AudioClip lyd)
+    public void SetAudio(int id, string[] listOfEvents)
     {
 		_id = id;
-		GetComponent<AudioSource>().clip = lyd; 
-    }
+		soundInstrument = "event:/Instruments/" + listOfEvents[id];
+
+	}
 
     private void OnMouseDown()
     {
         controller.CardRevealed(this);
-        GetComponent<AudioSource>().Play();
+
+		FMODUnity.RuntimeManager.PlayOneShot(soundInstrument);
     }
 
 	// Controller PS5 interaction
-    private void Pressed()
+    private void Pressed( )
     {	
 		controller.CardRevealed(this);
 
-		// Do we need this?
-        GetComponent<AudioSource>().Play();
+		FMODUnity.RuntimeManager.PlayOneShot(soundInstrument);
 
-        imTouched = false;
+		imTouched = false;
     }
 
 	public void Unreveal() {
@@ -71,7 +69,6 @@ public class MemoryCard : MonoBehaviour {
 		
 		imTouched = true;
 		//Debug.Log(imTouched);
-
 	}
 
  
@@ -80,7 +77,6 @@ public class MemoryCard : MonoBehaviour {
 		imHovered.SetActive(false);
 		imTouched = false;
 		//Debug.Log(imTouched);
-		GetComponent<AudioSource>().Stop();
 	}
 
 
