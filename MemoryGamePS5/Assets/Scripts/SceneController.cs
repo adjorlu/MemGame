@@ -61,6 +61,12 @@ public class SceneController : MonoBehaviour {
 				card.transform.position = new Vector3(posX, posY, startPos.z);
 			}
 		}
+
+
+		//if (Application.isPlaying)
+		//{
+		//	AudioSourceOutputDeviceDemo.UpdateOutputDevicesList();
+		//}
 	}
 
 	// everyday im Knuth shuffling 

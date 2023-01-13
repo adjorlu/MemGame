@@ -104,6 +104,7 @@ public class AudioSourceOutputDeviceDemo : MonoBehaviour
         // use e.g. this.audioStream for log level and error logging
         this.availableOutputs = FMOD_SystemW.AvailableOutputs(this.audioStream.logLevel, this.gameObject.name, this.audioStream.OnError);
 
+    
         //string msg = "Available outputs:" + System.Environment.NewLine;
         //for (int i = 0; i < this.availableOutputs.Count; ++i)
         //    msg += this.availableOutputs[i].id + " : " + this.availableOutputs[i].name + System.Environment.NewLine;

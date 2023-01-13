@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 7843829}
   - component: {fileID: 7843830}
   - component: {fileID: 7843831}
+  - component: {fileID: 7843832}
   m_Layer: 0
   m_Name: Memory Card
   m_TagString: Untagged
@@ -352,6 +353,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7843832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7843826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a8cd24d80530a409c2504f287722f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logLevel: 0
+  outputDriverID: 1
+  runtimeOutputDriverID: 0
+  muteAfterRouting: 1
+  inputLatency: 25
+  latencyBlock: 0
+  latencyTotal: 0
+  latencyAverage: 0
+  OnRoutingStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnRoutingStopped:
+    m_PersistentCalls:
+      m_Calls: []
+  OnError:
+    m_PersistentCalls:
+      m_Calls: []
+  ready: 0
+  fmodVersion: 
 --- !u!1 &754616969
 GameObject:
   m_ObjectHideFlags: 0
