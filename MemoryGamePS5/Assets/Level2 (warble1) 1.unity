@@ -98,8 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: c8d0c44f5fec14734971aec4389b6045,
-    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: c8d0c44f5fec14734971aec4389b6045, type: 2}
 --- !u!196 &5
 NavMeshSettings:
   serializedVersion: 2
@@ -253,6 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardBack: {fileID: 754616969}
   imHovered: {fileID: 859566899}
+  iAmPressed: {fileID: 0}
   mouse: {fileID: 1196710880}
   controller: {fileID: 1536978025}
 --- !u!82 &7843831
@@ -508,8 +508,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
-    type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.9528302, g: 0.25618547, b: 0.25618547, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -517,7 +516,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &912676466
@@ -784,8 +783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: db026c60099d3f5479f6d70c9d5eca33,
-    type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: db026c60099d3f5479f6d70c9d5eca33, type: 3}
   m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -904,6 +902,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 312ceebd821104d929a1d8be19fffc65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gridRows: 2
+  gridCols: 4
+  offsetX: 2
+  offsetY: 2.5
+  numbers: 0000000000000000010000000100000002000000020000000300000003000000
   originalCard: {fileID: 7843830}
   images:
   - {fileID: 21300000, guid: e34b88a09d0850d4b93d1ff55635334d, type: 3}
@@ -911,10 +914,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e34b88a09d0850d4b93d1ff55635334d, type: 3}
   - {fileID: 21300000, guid: e34b88a09d0850d4b93d1ff55635334d, type: 3}
   sounds:
-  - {fileID: 8300000, guid: 7d4b50e352e56bd4b86b5b577adeaf84, type: 3}
-  - {fileID: 8300000, guid: ef8d6af53224c754092c1f6af2bf22ad, type: 3}
-  - {fileID: 8300000, guid: 1b1f6824645b35f46ad1ddd2592d0193, type: 3}
-  - {fileID: 8300000, guid: e24b4eb9fe6523045a4648201fad995f, type: 3}
+  - {fileID: 8300000, guid: 09c9019e9c8a05f40a2e946c29360fe6, type: 3}
+  - {fileID: 8300000, guid: f7a6a37802822f64a9be7568544685b0, type: 3}
+  - {fileID: 8300000, guid: 19696f54dcdc3ee419712f201087c99c, type: 3}
+  - {fileID: 8300000, guid: 5bc0ef732f90171408090b320e045a83, type: 3}
   scoreLabel: {fileID: 1835005658}
 --- !u!1 &1835005657
 GameObject:
@@ -1161,8 +1164,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b,
-    type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.12549022, g: 0.19728617, b: 0.98039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1170,7 +1172,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1955191235
