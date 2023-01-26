@@ -15,7 +15,7 @@ C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56148
+55006
 Successfully changed project path to: C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
 C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 78.33 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 76.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -63,37 +63,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56472
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56564
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004298 seconds.
+Registered in 0.004694 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 78.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 84.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.688 seconds
+- Completed reload, in  0.737 seconds
 Domain Reload Profiling:
-	ReloadAssembly (689ms)
-		BeginReloadAssembly (79ms)
+	ReloadAssembly (738ms)
+		BeginReloadAssembly (88ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (489ms)
-			LoadAssemblies (77ms)
+		EndReloadAssembly (512ms)
+			LoadAssemblies (86ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (108ms)
+			SetupTypeCache (113ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (294ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (308ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (79ms)
+				RefreshPlugins (85ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (156ms)
+				ProcessInitializeOnLoadAttributes (163ms)
 				ProcessInitializeOnLoadMethodAttributes (51ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -101,38 +101,102 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007246 seconds.
+Registered in 0.006730 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000002503C288C20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BCBED20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C288C20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C288C20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C28F630 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C4BF640 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D3E0030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D3E0030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C4BF640 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BD14B70 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C46A080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BFF6020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C4BF640 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503CF52010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BC54700 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BC91910 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C46A080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C46A080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503B99A030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C798C30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C46A080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D6F0070 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C46A080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C46A080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D574050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C46A080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D574050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503B99A030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503B9F0260 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C46A080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C4D8680 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C46A080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 77.56 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 80.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.210 seconds
+- Completed reload, in  1.234 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1211ms)
-		BeginReloadAssembly (117ms)
+	ReloadAssembly (1235ms)
+		BeginReloadAssembly (113ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (967ms)
-			LoadAssemblies (82ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (991ms)
+			LoadAssemblies (80ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (252ms)
+			SetupTypeCache (253ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (522ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (538ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (78ms)
-				BeforeProcessingInitializeOnLoad (82ms)
-				ProcessInitializeOnLoadAttributes (317ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				RefreshPlugins (80ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (329ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
@@ -144,8 +208,8 @@ Refreshing native plugins compatible for Editor in 0.65 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3620 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 27 unused Assets / (56.1 KB). Loaded Objects now: 4081.
-Memory consumption went from 127.2 MB to 127.1 MB.
-Total: 3.185800 ms (FindLiveObjects: 0.268300 ms CreateObjectMapping: 0.165000 ms MarkObjects: 2.604600 ms  DeleteObjects: 0.146700 ms)
+Memory consumption went from 127.3 MB to 127.3 MB.
+Total: 2.930800 ms (FindLiveObjects: 0.248400 ms CreateObjectMapping: 0.133900 ms MarkObjects: 2.457400 ms  DeleteObjects: 0.089900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,121 +224,734 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 17262.340997 seconds.
-  path: Assets/sounds/warble
-  artifactKey: Guid(22299b446c98b9d408e31c73387e8fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble using Guid(22299b446c98b9d408e31c73387e8fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '422967ad75014984f4ffa3edc9ea50ec') in 0.015579 seconds 
+  Time since last request: 108060.123961 seconds.
+  path: Assets/Sprites/UI/FingerPointer.png
+  artifactKey: Guid(34656688d9382ac44806178028384386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/FingerPointer.png using Guid(34656688d9382ac44806178028384386) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e71167ee3a9a8568be4f122df7e28fb') in 0.143588 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 58.090623 seconds.
-  path: Assets/sounds/warble/w1Quad.wav
-  artifactKey: Guid(09c9019e9c8a05f40a2e946c29360fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble/w1Quad.wav using Guid(09c9019e9c8a05f40a2e946c29360fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1423aa60c01b3cd58a11921b4b8e146e') in 0.138035 seconds 
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/instruments/Icons/CardPiano.png
+  artifactKey: Guid(02b920c7e5cd71d429aa06d9f7bfa400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardPiano.png using Guid(02b920c7e5cd71d429aa06d9f7bfa400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69747496da731e819b79508733e0381a') in 0.053120 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/sounds/warble/w9Quad.wav
-  artifactKey: Guid(89e3d49fde065f1499c3bd739be4f58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble/w9Quad.wav using Guid(89e3d49fde065f1499c3bd739be4f58c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '450c86140187ad8dea2fe13dc28c2130') in 0.015575 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/sounds/warble/w5Quad.wav
-  artifactKey: Guid(861dc594f128f9444a90b640ba855e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble/w5Quad.wav using Guid(861dc594f128f9444a90b640ba855e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8c283594ed28b388b28bd850532c645') in 0.024541 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/sounds/warble/w2Quad.wav
-  artifactKey: Guid(f7a6a37802822f64a9be7568544685b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble/w2Quad.wav using Guid(f7a6a37802822f64a9be7568544685b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9e7ccf2d90b7e150aeead8dd6c47f7') in 0.018957 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/sounds/warble/w10Quad.wav
-  artifactKey: Guid(19a4cab0b1e97b945ae44e0305c94a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble/w10Quad.wav using Guid(19a4cab0b1e97b945ae44e0305c94a6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18023cd4a49d67897655fe25bb680d6') in 0.016315 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/sounds/warble/w3Quad.wav
-  artifactKey: Guid(19696f54dcdc3ee419712f201087c99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble/w3Quad.wav using Guid(19696f54dcdc3ee419712f201087c99c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f1470cab15ec8a1e58f63eb66c9e091') in 0.016829 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/sounds/warble/w6Quad.wav
-  artifactKey: Guid(a33e1e3ee6cc9d04f8a9d2d294c82e45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble/w6Quad.wav using Guid(a33e1e3ee6cc9d04f8a9d2d294c82e45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be8b14940015f64968984bdb2f95dba') in 0.020632 seconds 
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/UI/BackgroundDark.png
+  artifactKey: Guid(0b8ffa7e4975fde4a87d88b3932369c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/BackgroundDark.png using Guid(0b8ffa7e4975fde4a87d88b3932369c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e678b796fa63cd82aa8683928d4791f8') in 0.298713 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000037 seconds.
-  path: Assets/sounds/warble/w7Quad.wav
-  artifactKey: Guid(6f7b88cfaa89152428a17d07143bad77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble/w7Quad.wav using Guid(6f7b88cfaa89152428a17d07143bad77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f9186cdd3242a13b32799354c3dc92') in 0.018998 seconds 
+  path: Assets/Sprites/instruments/Icons/CardTuba.png
+  artifactKey: Guid(e6a1853e2a5bbcf469217a7e750d1ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardTuba.png using Guid(e6a1853e2a5bbcf469217a7e750d1ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e46c323809ab58baae0c0bb4c87668') in 0.023066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/instruments/Icons/CardCymbals.png
+  artifactKey: Guid(1ad679362d1258342ba0cdde800ce92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardCymbals.png using Guid(1ad679362d1258342ba0cdde800ce92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '968ee1e1347f21ea1c557045890c1a4b') in 0.022379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/instruments/Icons/CardSaxsophone.png
+  artifactKey: Guid(ba6fd349e3569fc4090e99043bba303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardSaxsophone.png using Guid(ba6fd349e3569fc4090e99043bba303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e0e9d9c61dc84231910e691c2c3137') in 0.054128 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000027 seconds.
-  path: Assets/sounds/warble/w11Quad.wav
-  artifactKey: Guid(2f7e0bdf8aed945499bdbcaf58c7258a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble/w11Quad.wav using Guid(2f7e0bdf8aed945499bdbcaf58c7258a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cfc8fc63e599c35bb92bfb4c6342530') in 0.023660 seconds 
+  path: Assets/Sprites/instruments/Icons/CardElectricGTR.png
+  artifactKey: Guid(22404c5ac4ca02440bbf4665254afd95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardElectricGTR.png using Guid(22404c5ac4ca02440bbf4665254afd95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac9238c397746401a2e04ba06d0d1705') in 0.026446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Sprites/instruments/Icons/CardTrombone.png
+  artifactKey: Guid(67561ba3be002b04185e73d382efdf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardTrombone.png using Guid(67561ba3be002b04185e73d382efdf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9eeaa5a20fb6637065ba30433c1479') in 0.022606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/instruments/Icons/CardClarinet.png
+  artifactKey: Guid(7c6c058e2784b7b45a4720c483eb7289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardClarinet.png using Guid(7c6c058e2784b7b45a4720c483eb7289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f984c8e91856b6b165cf2cae7a6ad29') in 0.026574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/instruments/Icons/CardDrum.png
+  artifactKey: Guid(f8c80c7e7971b324388d465576420575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardDrum.png using Guid(f8c80c7e7971b324388d465576420575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71bcbeb83673340b810802837d3e1839') in 0.055865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/instruments/Icons/CardBass.png
+  artifactKey: Guid(624b86d1f29d0e2499150d0bbb49973f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardBass.png using Guid(624b86d1f29d0e2499150d0bbb49973f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ba8a39a4ad5c236165f36fd1467d69') in 0.022740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/instruments/Icons/CardViolin.png
+  artifactKey: Guid(8e87ff7f8dbb1ea4f8dd43045f60266e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardViolin.png using Guid(8e87ff7f8dbb1ea4f8dd43045f60266e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f126039c3f5e6ee5fcf194386a4d57') in 0.023066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/instruments/Icons/CardHarp.png
+  artifactKey: Guid(b105e04ee76e029458371dee492878ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardHarp.png using Guid(b105e04ee76e029458371dee492878ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38e48d8cb2bcb920eb06f24ed0d0d02') in 0.028670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/instruments/Icons/CardTrumpet.png
+  artifactKey: Guid(d4ddb9fa49b297c47a0d9ebabe01e91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardTrumpet.png using Guid(d4ddb9fa49b297c47a0d9ebabe01e91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcd7574f268663d05117179ded4b3680') in 0.027273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/instruments/Icons/CardConga.png
+  artifactKey: Guid(44b08f84f26e75b4190640ac771a28cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardConga.png using Guid(44b08f84f26e75b4190640ac771a28cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e47cd2e455d89877d1139a02a3334990') in 0.019836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/instruments/Icons/CardFlute.png
+  artifactKey: Guid(f6c4abe29df8fbf43b0e6fdbf576f918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardFlute.png using Guid(f6c4abe29df8fbf43b0e6fdbf576f918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d96bf8d50308b80f333f7cde9e084d6') in 0.019064 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/instruments/Icons
+  artifactKey: Guid(c472f829e159fb440812b3a1d645ae00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons using Guid(c472f829e159fb440812b3a1d645ae00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd62e43d00f604c03ad1c25127c2fa36') in 0.007151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Sprites/UI/Background.png
+  artifactKey: Guid(48cd70647fc79bc46b4c80892c9c9bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/Background.png using Guid(48cd70647fc79bc46b4c80892c9c9bbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d0f8e802ddb356f3dd0f1e46af8363a') in 0.244961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Sprites/instruments/Icons/CardXylophone.png
+  artifactKey: Guid(e349faa52b58ca5489546528e581a902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardXylophone.png using Guid(e349faa52b58ca5489546528e581a902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b97e91c78cd8dcd7aedcdeafba739ebc') in 0.052085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/instruments/Icons/CardCover.png
+  artifactKey: Guid(2d83fa599241d0e4fb520344c3a172b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardCover.png using Guid(2d83fa599241d0e4fb520344c3a172b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '751f15de61f10594c40df425e8919c34') in 0.061438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/instruments/Icons/CardGuitar.png
+  artifactKey: Guid(7a3fcd380ac72a44099c7d6253f212b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardGuitar.png using Guid(7a3fcd380ac72a44099c7d6253f212b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3421ddf68b819217116e88c58cdf14f2') in 0.023758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.779412 seconds.
+  path: Assets/Sprites/instruments/Icons/CardBass.png
+  artifactKey: Guid(624b86d1f29d0e2499150d0bbb49973f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardBass.png using Guid(624b86d1f29d0e2499150d0bbb49973f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab1e10eb2ae5ceef7507131071038e64') in 0.020368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Sprites/instruments/Icons/CardPiano.png
+  artifactKey: Guid(02b920c7e5cd71d429aa06d9f7bfa400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardPiano.png using Guid(02b920c7e5cd71d429aa06d9f7bfa400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '017d346fbb371a9a816bd972fce6184b') in 0.019571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/instruments/Icons/CardTuba.png
+  artifactKey: Guid(e6a1853e2a5bbcf469217a7e750d1ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardTuba.png using Guid(e6a1853e2a5bbcf469217a7e750d1ed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4eb5395b85b417e05a1d7ee82753cce') in 0.019289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Sprites/instruments/Icons/CardCymbals.png
+  artifactKey: Guid(1ad679362d1258342ba0cdde800ce92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardCymbals.png using Guid(1ad679362d1258342ba0cdde800ce92e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aae49a4467f8fdadf3e884afe0aa754') in 0.019862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/instruments/Icons/CardSaxsophone.png
+  artifactKey: Guid(ba6fd349e3569fc4090e99043bba303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardSaxsophone.png using Guid(ba6fd349e3569fc4090e99043bba303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc577cbfe6a807447a181d1d72aea90') in 0.018043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/instruments/Icons/CardElectricGTR.png
+  artifactKey: Guid(22404c5ac4ca02440bbf4665254afd95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardElectricGTR.png using Guid(22404c5ac4ca02440bbf4665254afd95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f366e10f2ecd3f5db9c32e6b940a5dff') in 0.021448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sprites/instruments/Icons/CardTrombone.png
+  artifactKey: Guid(67561ba3be002b04185e73d382efdf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardTrombone.png using Guid(67561ba3be002b04185e73d382efdf94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bc990ab68263b3c9d92ed932c12da46') in 0.015638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/instruments/Icons/CardClarinet.png
+  artifactKey: Guid(7c6c058e2784b7b45a4720c483eb7289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardClarinet.png using Guid(7c6c058e2784b7b45a4720c483eb7289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a827a061add97ac0ec12b7d32fed890') in 0.015619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/instruments/Icons/CardDrum.png
+  artifactKey: Guid(f8c80c7e7971b324388d465576420575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardDrum.png using Guid(f8c80c7e7971b324388d465576420575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb564d863948cf235bf46a8b7865306a') in 0.013213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/instruments/Icons/CardViolin.png
+  artifactKey: Guid(8e87ff7f8dbb1ea4f8dd43045f60266e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardViolin.png using Guid(8e87ff7f8dbb1ea4f8dd43045f60266e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab5c381dd641d0898c74ba8600abf1d') in 0.012195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Sprites/instruments/Icons/CardHarp.png
+  artifactKey: Guid(b105e04ee76e029458371dee492878ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardHarp.png using Guid(b105e04ee76e029458371dee492878ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aede85376cbf8e6e6221ade7958003e') in 0.018790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sprites/instruments/Icons/CardTrumpet.png
+  artifactKey: Guid(d4ddb9fa49b297c47a0d9ebabe01e91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardTrumpet.png using Guid(d4ddb9fa49b297c47a0d9ebabe01e91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd20cb5736a54780e4a14fa4145ed48f7') in 0.017897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprites/instruments/Icons/CardConga.png
+  artifactKey: Guid(44b08f84f26e75b4190640ac771a28cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardConga.png using Guid(44b08f84f26e75b4190640ac771a28cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ece25659a7d135fc1b354b518e9b8b7') in 0.019270 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000033 seconds.
-  path: Assets/sounds/warble/w8Quad.wav
-  artifactKey: Guid(084ecc18b92302c49922d537aac36a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble/w8Quad.wav using Guid(084ecc18b92302c49922d537aac36a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2e432160f8b95cd351cb222b2956fc') in 0.014517 seconds 
+  path: Assets/Sprites/instruments/Icons/CardFlute.png
+  artifactKey: Guid(f6c4abe29df8fbf43b0e6fdbf576f918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardFlute.png using Guid(f6c4abe29df8fbf43b0e6fdbf576f918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '123d962e326469fdfb75ff2ec06c039e') in 0.011527 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/sounds/warble/w4Quad.wav
-  artifactKey: Guid(5bc0ef732f90171408090b320e045a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/sounds/warble/w4Quad.wav using Guid(5bc0ef732f90171408090b320e045a83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7ebdb0017fc8bbecf78f63e2ad15b72') in 0.015593 seconds 
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/instruments/Icons/CardXylophone.png
+  artifactKey: Guid(e349faa52b58ca5489546528e581a902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardXylophone.png using Guid(e349faa52b58ca5489546528e581a902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6ba97c24f643ec8e4dddf9ffa7e16c') in 0.014594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/instruments/Icons/CardCover.png
+  artifactKey: Guid(2d83fa599241d0e4fb520344c3a172b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardCover.png using Guid(2d83fa599241d0e4fb520344c3a172b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e67c9bff9cae79336419c770f0b852e') in 0.021698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Sprites/instruments/Icons/CardGuitar.png
+  artifactKey: Guid(7a3fcd380ac72a44099c7d6253f212b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardGuitar.png using Guid(7a3fcd380ac72a44099c7d6253f212b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e095b3de4a32d63db99e8794646b629') in 0.012281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.499733 seconds.
+  path: Assets/Sprites/instruments/Icons/CardCover.png
+  artifactKey: Guid(2d83fa599241d0e4fb520344c3a172b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardCover.png using Guid(2d83fa599241d0e4fb520344c3a172b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c769183790471ecd371e9baaa3ad9b16') in 0.028884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Sprites/instruments/Icons/CardPiano.png
+  artifactKey: Guid(02b920c7e5cd71d429aa06d9f7bfa400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardPiano.png using Guid(02b920c7e5cd71d429aa06d9f7bfa400) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d871b86fdf93b7549c5aba16dd6d849') in 0.023729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/instruments/Icons/CardSaxsophone.png
+  artifactKey: Guid(ba6fd349e3569fc4090e99043bba303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardSaxsophone.png using Guid(ba6fd349e3569fc4090e99043bba303b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32eef6227e38ddcefa613814120a7fd4') in 0.023452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Sprites/instruments/Icons/CardDrum.png
+  artifactKey: Guid(f8c80c7e7971b324388d465576420575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardDrum.png using Guid(f8c80c7e7971b324388d465576420575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e8f37326d9366583112fbde44435ace') in 0.021055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/instruments/Icons/CardXylophone.png
+  artifactKey: Guid(e349faa52b58ca5489546528e581a902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/instruments/Icons/CardXylophone.png using Guid(e349faa52b58ca5489546528e581a902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe5bff76366930bffa87e133f7c2570') in 0.023961 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005542 seconds.
+Registered in 0.008898 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-000002503AA6F460 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DB95010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503AA6F460 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F72D020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503AA6F460 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A95C740 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F755050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250418A0F50 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D930060 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DBAA3E0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250418D0360 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F813050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025041258250 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250401D2010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A3A6E00 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250417E8A80 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250408C8230 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250408C8230 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C6C0020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A3A6E00 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250408C8230 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DBAA3E0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250408C8230 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250408C8230 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250408C8230 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250408C8230 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250408C8230 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503B99A030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BA62020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250408C8230 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A3A6E00 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250408C8230 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.499 seconds
+- Completed reload, in  1.966 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1500ms)
-		BeginReloadAssembly (136ms)
+	ReloadAssembly (1967ms)
+		BeginReloadAssembly (312ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (1382ms)
+			LoadAssemblies (239ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (429ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (638ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (462ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3601 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4097.
+Memory consumption went from 130.2 MB to 130.2 MB.
+Total: 4.080600 ms (FindLiveObjects: 0.308700 ms CreateObjectMapping: 0.189100 ms MarkObjects: 3.548700 ms  DeleteObjects: 0.031900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006323 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002503D44F020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DB95010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F0AF230 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025042086010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C4D8330 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025041FDE010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DE7F370 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250419382F0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A3A6E00 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250400CAA90 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D44F020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025041988320 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A3A6E00 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F372040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A3A6E00 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025041AB9010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D44F020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DBAA220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002504029FF10 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A3A6E00 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DBAA220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250400CAA90 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D44F020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D44F020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DBAA220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DBAA220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DBAA220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F692010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D35A010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DBAA220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F3FE030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DBAA220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.447 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1448ms)
+		BeginReloadAssembly (134ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1200ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (270ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (646ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (469ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3601 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4100.
+Memory consumption went from 130.2 MB to 130.2 MB.
+Total: 3.895500 ms (FindLiveObjects: 0.330900 ms CreateObjectMapping: 0.192100 ms MarkObjects: 3.341700 ms  DeleteObjects: 0.028600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005552 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002503A682FD0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D644010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250405E0030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025042086010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A860F90 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A95C740 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DE7F370 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BFA69F0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F1F6030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A682FD0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A682FD0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BFA69F0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F1F6030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F372040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F9B5020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D3E0030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A682FD0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A682FD0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A6B5F60 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F9B5020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A682FD0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A682FD0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C065E20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C065E20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C065E20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C065E20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C065E20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C484020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BA62020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BFCF200 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F26A030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BFCF200 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.441 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1442ms)
+		BeginReloadAssembly (141ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (1254ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1177ms)
+			LoadAssemblies (95ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (379ms)
+			SetupTypeCache (305ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (608ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (596ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (21ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (91ms)
-				ProcessInitializeOnLoadAttributes (436ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
-				AfterProcessingInitializeOnLoad (13ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (420ms)
+				ProcessInitializeOnLoadMethodAttributes (57ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.13 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3601 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4094.
-Memory consumption went from 130.0 MB to 130.0 MB.
-Total: 3.507700 ms (FindLiveObjects: 0.268200 ms CreateObjectMapping: 0.207900 ms MarkObjects: 2.996400 ms  DeleteObjects: 0.033200 ms)
+Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4103.
+Memory consumption went from 130.2 MB to 130.2 MB.
+Total: 3.538200 ms (FindLiveObjects: 0.258700 ms CreateObjectMapping: 0.154900 ms MarkObjects: 3.090600 ms  DeleteObjects: 0.032100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010188 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000025040BF6150 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DE5F020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D13D030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025042086010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A860F90 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A95C740 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000250413C3030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D412010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F5F0A50 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A682FD0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DDFD030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D412010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F5F0A50 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F372040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F5F0A50 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503B872010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DDFD030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DDFD030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503A6B5F60 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503F5F0A50 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DDFD030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D453030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DDFD030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DDFD030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D453030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503DDFD030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D453030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C484020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503BA62020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C46A080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503D13D030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002503C46A080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.434 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1435ms)
+		BeginReloadAssembly (144ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1169ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (275ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (628ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (459ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3601 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (24.8 KB). Loaded Objects now: 4106.
+Memory consumption went from 130.2 MB to 130.2 MB.
+Total: 4.162300 ms (FindLiveObjects: 0.342500 ms CreateObjectMapping: 0.316000 ms MarkObjects: 3.472500 ms  DeleteObjects: 0.029700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
