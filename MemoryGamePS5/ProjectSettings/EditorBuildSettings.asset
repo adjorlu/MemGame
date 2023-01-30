@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Level1 (Instruments).unity
-    guid: 1e075ecbb76264197957c4f3d6384d16
+    path: Assets/Scenes/Level1 (Instruments).unity
+    guid: a5b9aedc2dbac4a4398b8cd2f7314b60
   - enabled: 1
-    path: Assets/Level2 (warble1) 1.unity
-    guid: e2c01522f00e571498cca851990bc2de
+    path: Assets/Scenes/Level2 (Instruments).unity
+    guid: 2db547179018ed545933c94e53a8b9a6
   - enabled: 1
-    path: Assets/Level3 (warble2).unity
-    guid: 3c8faa0b700683e4f8c7eecda1089005
+    path: Assets/Scenes/Level3 (Instruments).unity
+    guid: ed633921f34f41d4792ac2b190d62b78
   m_configObjects: {}
