@@ -9,7 +9,6 @@ public class MemoryCard : MonoBehaviour {
     [SerializeField] GameObject mouse; 
 	[SerializeField] SceneController controller;
 
-	private bool imPressed = false;
 	private bool imTouched = false; 
 
 
