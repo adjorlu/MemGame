@@ -15,7 +15,7 @@ C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57686
+58833
 Successfully changed project path to: C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
 C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 76.19 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 80.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -63,153 +63,133 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004543 seconds.
+Registered in 0.004696 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 84.61 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 81.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.731 seconds
+- Completed reload, in  0.693 seconds
 Domain Reload Profiling:
-	ReloadAssembly (731ms)
-		BeginReloadAssembly (84ms)
+	ReloadAssembly (693ms)
+		BeginReloadAssembly (82ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (524ms)
-			LoadAssemblies (81ms)
+		EndReloadAssembly (492ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (122ms)
+			SetupTypeCache (108ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (304ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (292ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (85ms)
+				RefreshPlugins (81ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (161ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
+				ProcessInitializeOnLoadAttributes (154ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007724 seconds.
+Registered in 0.006740 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001D149703650 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file data-0000015B392B53E0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14940A450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
+Symbol file data-0000015B392B53E0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149843C30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-0000015B392B53E0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1484FD840 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-0000015B392CA9F0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1484FD840 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
+Symbol file data-0000015B392CA9F0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14988FB00 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-0000015B392CA9F0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D146D2C410 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
+Symbol file data-0000015B387F7010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14988FB00 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-0000015B3907E010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1498A4F10 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
+Symbol file data-0000015B38F1A630 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14984A640 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
+Symbol file data-0000015B390AD420 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14984A640 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file data-0000015B390AD420 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14867D430 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
+Symbol file data-0000015B39450010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1488F4C20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file data-0000015B39450010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148114010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
+Symbol file data-0000015B39523020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148614500 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
+Symbol file data-0000015B395A7480 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148A34220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file data-0000015B39462C20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14943CE80 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
+Symbol file data-0000015B39462C20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14984A640 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
+Symbol file data-0000015B38AD4D40 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1468DE790 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
+Symbol file data-0000015B39F21A10 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148614500 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
+Symbol file data-0000015B38AD4D40 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14984A640 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
+Symbol file data-0000015B3947B010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14984A640 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14943CE80 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14943CE80 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14943CE80 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14943CE80 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14943CE80 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1468DE790 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1487B2030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14943CE80 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1469EE450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14943CE80 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
+Symbol file data-0000015B39485A70 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 81.92 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 82.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.258 seconds
+- Completed reload, in  1.323 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1259ms)
-		BeginReloadAssembly (123ms)
+	ReloadAssembly (1324ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (1008ms)
-			LoadAssemblies (86ms)
+		EndReloadAssembly (1077ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (267ms)
+			SetupTypeCache (268ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (545ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (598ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (85ms)
-				ProcessInitializeOnLoadAttributes (340ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (381ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
 Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3620 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (56.1 KB). Loaded Objects now: 4081.
-Memory consumption went from 127.3 MB to 127.3 MB.
-Total: 3.109700 ms (FindLiveObjects: 0.265700 ms CreateObjectMapping: 0.141400 ms MarkObjects: 2.619200 ms  DeleteObjects: 0.082400 ms)
+Unloading 3621 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (56.1 KB). Loaded Objects now: 4083.
+Memory consumption went from 127.4 MB to 127.4 MB.
+Total: 3.124600 ms (FindLiveObjects: 0.262400 ms CreateObjectMapping: 0.138800 ms MarkObjects: 2.621000 ms  DeleteObjects: 0.101000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -224,890 +204,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 77877.636501 seconds.
-  path: Assets/Sprites/instruments/Icons/CardSelection.png
-  artifactKey: Guid(cbbee595b6f35774e969eca23a3b76f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/instruments/Icons/CardSelection.png using Guid(cbbee595b6f35774e969eca23a3b76f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca000fbc447f9f885575497df27d6656') in 0.078883 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.962377 seconds.
-  path: Assets/Sprites/instruments/Icons/CardSelection.png
-  artifactKey: Guid(cbbee595b6f35774e969eca23a3b76f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/instruments/Icons/CardSelection.png using Guid(cbbee595b6f35774e969eca23a3b76f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e620050a197a6a2d1e1af1ae31044a') in 0.025680 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.597734 seconds.
-  path: Assets/Sprites/instruments/Icons/CardSelection.png
-  artifactKey: Guid(cbbee595b6f35774e969eca23a3b76f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/instruments/Icons/CardSelection.png using Guid(cbbee595b6f35774e969eca23a3b76f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16950f764fc19f977f8a737017f086dc') in 0.105056 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007457 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001D14943C840 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149AE9020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149707C30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14A0056F0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D147EB7620 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148568040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14A909020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14AFA6010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148568040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27D0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27D0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149FB8010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148568040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149721020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148571470 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D7860B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27D0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27D0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14A96B030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D7860B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27D0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148B67030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27D0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27D0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148B67030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27D0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148B67030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1485CE010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D7860B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27D0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148095EF0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27D0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.180 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4181ms)
-		BeginReloadAssembly (163ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (3908ms)
-			LoadAssemblies (114ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (812ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (197ms)
-			SetupLoadedEditorAssemblies (2342ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (57ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (4ms)
-				BeforeProcessingInitializeOnLoad (287ms)
-				ProcessInitializeOnLoadAttributes (1742ms)
-				ProcessInitializeOnLoadMethodAttributes (161ms)
-				AfterProcessingInitializeOnLoad (86ms)
-				EditorAssembliesLoaded (2ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 8.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3601 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 4091.
-Memory consumption went from 130.1 MB to 130.1 MB.
-Total: 8.306000 ms (FindLiveObjects: 0.675600 ms CreateObjectMapping: 0.428800 ms MarkObjects: 7.112600 ms  DeleteObjects: 0.084100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006260 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001D14DC0CAE0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D7860B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DC0CAE0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14A0056F0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DBBBD60 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14B781020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1496BD020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14A393010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DEE9B20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D7A0AC0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D4DB220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCF2440 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1482E0440 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14B612030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148B5B010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C757B00 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D4DB220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D7A0AC0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C859F10 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148B5B010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D7A0AC0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14825B020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D4DB220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D4DB220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14825B020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D4DB220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14825B020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1485CE010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148ADA7B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D4DB220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DEF1B30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D4DB220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.41 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.510 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4513ms)
-		BeginReloadAssembly (172ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (4164ms)
-			LoadAssemblies (130ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1043ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (204ms)
-			SetupLoadedEditorAssemblies (2304ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (69ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (284ms)
-				ProcessInitializeOnLoadAttributes (1568ms)
-				ProcessInitializeOnLoadMethodAttributes (269ms)
-				AfterProcessingInitializeOnLoad (109ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (29ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 7.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3601 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 4094.
-Memory consumption went from 130.1 MB to 130.1 MB.
-Total: 9.352900 ms (FindLiveObjects: 0.524400 ms CreateObjectMapping: 0.444000 ms MarkObjects: 8.280900 ms  DeleteObjects: 0.098900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008933 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001D14DE28EA0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D316020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DE28EA0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E015050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E287040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E397020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C859F10 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1467D8840 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1498BF040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D7A0AC0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E287040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCF2440 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1498BF040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14B612030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148ADA7B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1493F0080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E287040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E287040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C780F30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148ADA7B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E287040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD6050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E287040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E287040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD6050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27C0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD6050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1485CE010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D6D6030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148AE27C0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E287040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E287040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.187 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4189ms)
-		BeginReloadAssembly (168ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (3858ms)
-			LoadAssemblies (126ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1025ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (229ms)
-			SetupLoadedEditorAssemblies (1966ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (67ms)
-				SetLoadedEditorAssemblies (3ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (264ms)
-				ProcessInitializeOnLoadAttributes (1397ms)
-				ProcessInitializeOnLoadMethodAttributes (173ms)
-				AfterProcessingInitializeOnLoad (58ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (39ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3601 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 4097.
-Memory consumption went from 130.1 MB to 130.1 MB.
-Total: 3.882100 ms (FindLiveObjects: 0.372100 ms CreateObjectMapping: 0.402500 ms MarkObjects: 3.041800 ms  DeleteObjects: 0.063200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007227 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001D14E1CB020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D7860B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D8B2F90 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E015050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149C8F020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1496BD020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1467D8840 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCCC020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D7A0AC0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E1CB020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCF2440 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCCC020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14B612030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D8631B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1493F0080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD5450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD5450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C780F30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D8631B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD5450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D7A0AC0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD5450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD5450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD5450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD5450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD5450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14AB57010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1498BF040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD5450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D146E94F50 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCD5450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.462 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4466ms)
-		BeginReloadAssembly (172ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (4111ms)
-			LoadAssemblies (130ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1323ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (188ms)
-			SetupLoadedEditorAssemblies (1987ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (62ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (273ms)
-				ProcessInitializeOnLoadAttributes (1447ms)
-				ProcessInitializeOnLoadMethodAttributes (151ms)
-				AfterProcessingInitializeOnLoad (47ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 10.52 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3601 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4100.
-Memory consumption went from 130.2 MB to 130.1 MB.
-Total: 10.059600 ms (FindLiveObjects: 0.940200 ms CreateObjectMapping: 0.850300 ms MarkObjects: 8.230300 ms  DeleteObjects: 0.033000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006001 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001D149F6B010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149AE9020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DC0BB40 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14A996680 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149C8F020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D958020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1467D8840 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCCC020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D18F4E1010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CCCC020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14B612030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D146930020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1493F0080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C780F30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D146930020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D85D1A0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D85D1A0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D85D1A0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C668020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D83D180 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149707020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 3.05 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  6.003 seconds
-Domain Reload Profiling:
-	ReloadAssembly (6007ms)
-		BeginReloadAssembly (162ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (5589ms)
-			LoadAssemblies (184ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1532ms)
-			ReleaseScriptCaches (6ms)
-			RebuildScriptCaches (275ms)
-			SetupLoadedEditorAssemblies (2769ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (74ms)
-				SetLoadedEditorAssemblies (5ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (397ms)
-				ProcessInitializeOnLoadAttributes (1995ms)
-				ProcessInitializeOnLoadMethodAttributes (214ms)
-				AfterProcessingInitializeOnLoad (78ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (51ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 14.94 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3601 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 4103.
-Memory consumption went from 130.2 MB to 130.1 MB.
-Total: 16.243400 ms (FindLiveObjects: 2.048700 ms CreateObjectMapping: 1.296600 ms MarkObjects: 12.778100 ms  DeleteObjects: 0.116000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 290.020214 seconds.
-  path: Assets/Scenes/Level1 (Instruments).unity
-  artifactKey: Guid(a5b9aedc2dbac4a4398b8cd2f7314b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level1 (Instruments).unity using Guid(a5b9aedc2dbac4a4398b8cd2f7314b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f91553828dcb46b56400a2ff9fabda') in 0.013012 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.469371 seconds.
-  path: Assets/Scenes/Level2 (Instruments).unity
-  artifactKey: Guid(2db547179018ed545933c94e53a8b9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level2 (Instruments).unity using Guid(2db547179018ed545933c94e53a8b9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb902d9474bfdc04924a72adde860fb3') in 0.009333 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.498459 seconds.
-  path: Assets/Scenes/Level3 (Instruments).unity
-  artifactKey: Guid(ed633921f34f41d4792ac2b190d62b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level3 (Instruments).unity using Guid(ed633921f34f41d4792ac2b190d62b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31e31bcf92befbc8f491cee3221b39e') in 0.009342 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006567 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001D14DC0BB40 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14A107010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DC0BB40 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14A0056F0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D18EE900A0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1496BD020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1467D8840 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D4DB220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14A983050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D4DB220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14B612030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1498BF040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14AC17020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C780F30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1498BF040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DE1CEA0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DE1CEA0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DE1CEA0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C668020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1498BF040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149D5F050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DE56E60 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DE56E60 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.075 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4078ms)
-		BeginReloadAssembly (163ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (49ms)
-		EndReloadAssembly (3771ms)
-			LoadAssemblies (125ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (961ms)
-			ReleaseScriptCaches (8ms)
-			RebuildScriptCaches (255ms)
-			SetupLoadedEditorAssemblies (1944ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (62ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (261ms)
-				ProcessInitializeOnLoadAttributes (1424ms)
-				ProcessInitializeOnLoadMethodAttributes (141ms)
-				AfterProcessingInitializeOnLoad (51ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (38ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 13.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3601 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 4106.
-Memory consumption went from 130.2 MB to 130.2 MB.
-Total: 9.581900 ms (FindLiveObjects: 1.465700 ms CreateObjectMapping: 1.293200 ms MarkObjects: 6.785200 ms  DeleteObjects: 0.032200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 154.860809 seconds.
-  path: Assets/Scenes/Level2 (Instruments).unity
-  artifactKey: Guid(2db547179018ed545933c94e53a8b9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level2 (Instruments).unity using Guid(2db547179018ed545933c94e53a8b9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4fcb5105fc1a8f5d128e30cdb69f92e') in 0.010106 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007528 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001CF5EC55140 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CD02450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DC0BB40 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C9E6030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B1CDD0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Telemetry.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DFD9010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1484C7030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1467D8840 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D146B99060 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14CBA0020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Networking.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14A983050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D148570050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14B612030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C840030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14AC17020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D18F542F50 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14C840030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Configuration.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DE1CEA0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Registration.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DE1CEA0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Scheduler.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14DE1CEA0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Environments.Internal.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14E05B020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D1498BF040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Threading.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D14D8B2F90 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001D149B03A30 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Services.Core.Device.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  4.354 seconds
-Domain Reload Profiling:
-	ReloadAssembly (4356ms)
-		BeginReloadAssembly (182ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (3961ms)
-			LoadAssemblies (159ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1087ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (177ms)
-			SetupLoadedEditorAssemblies (2041ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (68ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (280ms)
-				ProcessInitializeOnLoadAttributes (1459ms)
-				ProcessInitializeOnLoadMethodAttributes (172ms)
-				AfterProcessingInitializeOnLoad (55ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (37ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 12.46 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3601 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4109.
-Memory consumption went from 130.2 MB to 130.2 MB.
-Total: 9.896200 ms (FindLiveObjects: 0.766600 ms CreateObjectMapping: 1.004100 ms MarkObjects: 8.053000 ms  DeleteObjects: 0.067200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 13440.811549 seconds.
+  path: Assets/Sounds/Main.mixer
+  artifactKey: Guid(3756d05abfc08b4478d3e76ef4a55153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Main.mixer using Guid(3756d05abfc08b4478d3e76ef4a55153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998a9f024a892bb4302051a028ef834c') in 0.037673 seconds 
