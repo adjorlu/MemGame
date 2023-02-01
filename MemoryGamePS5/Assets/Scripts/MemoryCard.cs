@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using AudioStream;
 
 public class MemoryCard : MonoBehaviour {
 	[SerializeField] GameObject cardBack;
@@ -9,9 +10,12 @@ public class MemoryCard : MonoBehaviour {
     [SerializeField] GameObject mouse; 
 	[SerializeField] SceneController controller;
 
-	private bool imPressed = false;
-	private bool imTouched = false; 
+	private bool imTouched = false;
 
+	private List<FMOD_SystemW.OUTPUT_DEVICE> availableOutputs = new List<FMOD_SystemW.OUTPUT_DEVICE>();
+	public AudioSourceOutputDevice outputDevice;
+
+	public AudioSource computerAudio;
 
 	private int _id;
 	public int Id {
@@ -29,7 +33,44 @@ public class MemoryCard : MonoBehaviour {
 
 	}
 
-    public void SetCard(int id, Sprite image) {
+	IEnumerator SetOutputChannel(List<FMOD_SystemW.OUTPUT_DEVICE> availableOutputs, int selectedOutput, int selectedOutputChannel1, int selectedOutputChannel2, int selectedOutputChannel3, int selectedOutputChannel4, AudioSourceOutputDevice audioSourceOutput, float outputLevel)
+	{
+		while(!audioSourceOutput.ready)
+			yield return null;
+
+		// not y ready
+		//if (availableOutputs.Count <= selectedOutput)
+		//	return;
+		print(availableOutputs.Count);
+
+		this.availableOutputs = FMOD_SystemW.AvailableOutputs(audioSourceOutput.logLevel, audioSourceOutput.gameObject.name, audioSourceOutput.OnError);
+
+		// in case of MONO input we have matrix with outpuchannels rows and 1 column:
+		//var outchannels = availableOutputs[selectedOutput].channels;
+		var outchannels = 4;
+		var inchannels = 1; // MONO source
+
+		var mixMatrix = new float[outchannels * inchannels];
+		System.Array.Clear(mixMatrix, 0, mixMatrix.Length);
+
+		// we'll set level just on requested output channel:
+		mixMatrix[selectedOutputChannel1] = outputLevel;
+		mixMatrix[selectedOutputChannel2] = outputLevel;
+		mixMatrix[selectedOutputChannel3] = outputLevel;
+		mixMatrix[selectedOutputChannel4] = outputLevel;
+
+
+		audioSourceOutput.SetUnitySound_MixMatrix(mixMatrix, outchannels, inchannels);
+	}
+
+
+    private void Start()
+    {
+		StartCoroutine(SetOutputChannel(availableOutputs, 0, 0, 1, 2, 3, outputDevice, 1.0f));
+	}
+
+
+	public void SetCard(int id, Sprite image) {
 		_id = id;
 		GetComponent<SpriteRenderer>().sprite = image;
 		
@@ -38,14 +79,16 @@ public class MemoryCard : MonoBehaviour {
 	public void SetAudio(int id, AudioClip lyd)
     {
 		_id = id;
-		GetComponent<AudioSource>().clip = lyd; 
+		GetComponent<AudioSource>().clip = lyd;
+		computerAudio.clip = lyd;
     }
 
     private void OnMouseDown()
     {
         controller.CardRevealed(this);
         GetComponent<AudioSource>().Play();
-    }
+		computerAudio.Play();
+	}
 
 
     private void Pressed()
@@ -54,8 +97,9 @@ public class MemoryCard : MonoBehaviour {
         iAmPressed.SetActive(true);
         // Do we need this?
         GetComponent<AudioSource>().Play();
+		computerAudio.Play();
 
-        imTouched = false;
+		imTouched = false;
     }
 
 	public void Unreveal() {
@@ -88,7 +132,10 @@ public class MemoryCard : MonoBehaviour {
 		imTouched = false;
 		//Debug.Log(imTouched);
 		GetComponent<AudioSource>().Stop();
+		computerAudio.Stop();
 	}
+
+
 
 
 }
