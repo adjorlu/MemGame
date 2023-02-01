@@ -38,15 +38,11 @@ public class MemoryCard : MonoBehaviour {
 		while(!audioSourceOutput.ready)
 			yield return null;
 
-		// not y ready
-		//if (availableOutputs.Count <= selectedOutput)
-		//	return;
 		print(availableOutputs.Count);
 
 		this.availableOutputs = FMOD_SystemW.AvailableOutputs(audioSourceOutput.logLevel, audioSourceOutput.gameObject.name, audioSourceOutput.OnError);
 
 		// in case of MONO input we have matrix with outpuchannels rows and 1 column:
-		//var outchannels = availableOutputs[selectedOutput].channels;
 		var outchannels = 4;
 		var inchannels = 1; // MONO source
 
