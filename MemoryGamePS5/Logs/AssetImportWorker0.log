@@ -15,7 +15,7 @@ C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64550
+60145
 Successfully changed project path to: C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
 C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,8 +47,8 @@ C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 99.30 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 89.07 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 1.62 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5/Assets
@@ -63,37 +63,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56884
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006921 seconds.
+Registered in 0.004965 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 101.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 80.65 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.822 seconds
+- Completed reload, in  0.712 seconds
 Domain Reload Profiling:
-	ReloadAssembly (823ms)
-		BeginReloadAssembly (112ms)
+	ReloadAssembly (712ms)
+		BeginReloadAssembly (77ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (563ms)
-			LoadAssemblies (108ms)
+		EndReloadAssembly (507ms)
+			LoadAssemblies (74ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (121ms)
+			SetupTypeCache (115ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (347ms)
+			SetupLoadedEditorAssemblies (298ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (102ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (183ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (155ms)
 				ProcessInitializeOnLoadMethodAttributes (52ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -101,208 +101,937 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006572 seconds.
+Registered in 0.008765 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001CD392F7930 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3AB11080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3932E140 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3B0C4400 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3B0C4400 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD39343750 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3ACDD010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BE06010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BBF5A50 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BE35420 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3AD3BE20 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BE35420 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BBF5A50 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3B1F1020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD39343750 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3AF27010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BE3DC40 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BEE2010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3AF64220 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BEE2010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3AF81300 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3AF8BD60 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
+Symbol file data-000002122F007F80 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Assembly-CSharp.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 77.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 77.37 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.845 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3846ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (3596ms)
+			LoadAssemblies (2465ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (484ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (544ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (78ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (317ms)
+				ProcessInitializeOnLoadMethodAttributes (59ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 3750 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (56.1 KB). Loaded Objects now: 4193.
+Memory consumption went from 133.7 MB to 133.6 MB.
+Total: 3.205800 ms (FindLiveObjects: 0.266300 ms CreateObjectMapping: 0.142500 ms MarkObjects: 2.704600 ms  DeleteObjects: 0.091300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 101812.776919 seconds.
+  path: Assets/AudioStream/!!README1ST!! INITIAL IMPORT ERRORS.txt
+  artifactKey: Guid(50a553f14d58bdc4bbbf53b81e5182c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AudioStream/!!README1ST!! INITIAL IMPORT ERRORS.txt using Guid(50a553f14d58bdc4bbbf53b81e5182c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bb6ab5e0b1395e586cada86a451390e') in 0.039152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/AudioStream/_Docs
+  artifactKey: Guid(2994043624870694a94386e33580dae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AudioStream/_Docs using Guid(2994043624870694a94386e33580dae7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8659c6a0d148f04d70d1c43c8d6bf55c') in 0.006377 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.053338 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.21 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.438 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3439ms)
+		BeginReloadAssembly (328ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (2725ms)
+			LoadAssemblies (275ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (1167ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (166ms)
+			SetupLoadedEditorAssemblies (933ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (696ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 28.89 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 3863 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.7 KB). Loaded Objects now: 4266.
+Memory consumption went from 136.9 MB to 136.9 MB.
+Total: 6.574700 ms (FindLiveObjects: 0.422900 ms CreateObjectMapping: 0.346500 ms MarkObjects: 5.691900 ms  DeleteObjects: 0.111300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.125980 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.49 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.632 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2633ms)
+		BeginReloadAssembly (305ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (2127ms)
+			LoadAssemblies (189ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (665ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (116ms)
+			SetupLoadedEditorAssemblies (966ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (46ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (163ms)
+				ProcessInitializeOnLoadAttributes (649ms)
+				ProcessInitializeOnLoadMethodAttributes (81ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 21.75 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.24 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.8 KB). Loaded Objects now: 4269.
+Memory consumption went from 136.8 MB to 136.8 MB.
+Total: 3.658900 ms (FindLiveObjects: 0.297600 ms CreateObjectMapping: 0.178900 ms MarkObjects: 3.122600 ms  DeleteObjects: 0.058300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 290.904075 seconds.
+  path: Assets/AudioStream/Scripts/AudioStream.asmdef
+  artifactKey: Guid(3e69a9532afe5dc46881a27c5e3d7056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AudioStream/Scripts/AudioStream.asmdef using Guid(3e69a9532afe5dc46881a27c5e3d7056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ba92f3c93249f6b8fd32bb57c187d5f') in 0.020378 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.089246 seconds.
+  path: Assets/Scripts/MainMenu.cs
+  artifactKey: Guid(c7376212cac969646baf0a97ca8755d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MainMenu.cs using Guid(c7376212cac969646baf0a97ca8755d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2661ba5701ca759aca05002c3bdfc8') in 0.010617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.328761 seconds.
+  path: Assets/Scripts/MemoryCard.cs
+  artifactKey: Guid(ba6f2fa4ceffd4cc8b60c2d07efc5e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MemoryCard.cs using Guid(ba6f2fa4ceffd4cc8b60c2d07efc5e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140601c3fa37b6a1be128bcf35d7b171') in 0.008924 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015301 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.368 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1369ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1038ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (346ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (444ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (321ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 11.58 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.7 KB). Loaded Objects now: 4272.
+Memory consumption went from 136.8 MB to 136.8 MB.
+Total: 3.670200 ms (FindLiveObjects: 0.316500 ms CreateObjectMapping: 0.206400 ms MarkObjects: 3.066200 ms  DeleteObjects: 0.079900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 27.961585 seconds.
+  path: Assets/Scripts/MemoryCard.cs
+  artifactKey: Guid(ba6f2fa4ceffd4cc8b60c2d07efc5e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MemoryCard.cs using Guid(ba6f2fa4ceffd4cc8b60c2d07efc5e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62f899ffa60d64f9955784c8ba9d078c') in 0.011813 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016473 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.42 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.856 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1857ms)
+		BeginReloadAssembly (232ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (58ms)
+		EndReloadAssembly (1375ms)
+			LoadAssemblies (166ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (429ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (621ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (416ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 14.73 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.8 KB). Loaded Objects now: 4275.
+Memory consumption went from 136.8 MB to 136.8 MB.
+Total: 3.326200 ms (FindLiveObjects: 0.246400 ms CreateObjectMapping: 0.156300 ms MarkObjects: 2.850300 ms  DeleteObjects: 0.071700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 42.028718 seconds.
+  path: Assets/Scripts/MemoryCard.cs
+  artifactKey: Guid(ba6f2fa4ceffd4cc8b60c2d07efc5e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MemoryCard.cs using Guid(ba6f2fa4ceffd4cc8b60c2d07efc5e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cdcb69a61c655b31a38a410495235f8') in 0.010611 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.027806 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.49 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.014 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2015ms)
+		BeginReloadAssembly (319ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (1335ms)
+			LoadAssemblies (230ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (503ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (495ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (335ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 15.76 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.8 KB). Loaded Objects now: 4278.
+Memory consumption went from 136.9 MB to 136.8 MB.
+Total: 3.403800 ms (FindLiveObjects: 0.270900 ms CreateObjectMapping: 0.177100 ms MarkObjects: 2.896800 ms  DeleteObjects: 0.057200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11.523353 seconds.
+  path: Assets/Scripts/MemoryCard.cs
+  artifactKey: Guid(ba6f2fa4ceffd4cc8b60c2d07efc5e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MemoryCard.cs using Guid(ba6f2fa4ceffd4cc8b60c2d07efc5e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b50f76a95413a7d11ff5b3bbd949108') in 0.017019 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014328 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.03 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.995 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1996ms)
+		BeginReloadAssembly (284ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1141ms)
+			LoadAssemblies (210ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (349ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (529ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (374ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 13.68 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.7 KB). Loaded Objects now: 4281.
+Memory consumption went from 136.9 MB to 136.8 MB.
+Total: 3.634200 ms (FindLiveObjects: 0.267000 ms CreateObjectMapping: 0.164700 ms MarkObjects: 3.154900 ms  DeleteObjects: 0.046500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 23.099370 seconds.
+  path: Assets/Scripts/MemoryCard.cs
+  artifactKey: Guid(ba6f2fa4ceffd4cc8b60c2d07efc5e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MemoryCard.cs using Guid(ba6f2fa4ceffd4cc8b60c2d07efc5e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf38f68b5e76e74ea736b7ddd169f854') in 0.012223 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013944 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.369 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1370ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1084ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (361ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (505ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (374ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 13.16 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.8 KB). Loaded Objects now: 4284.
+Memory consumption went from 136.9 MB to 136.8 MB.
+Total: 3.210800 ms (FindLiveObjects: 0.258100 ms CreateObjectMapping: 0.276500 ms MarkObjects: 2.623900 ms  DeleteObjects: 0.051000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.017679 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.171 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1172ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (925ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (295ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (424ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (290ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 12.17 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.8 KB). Loaded Objects now: 4287.
+Memory consumption went from 136.9 MB to 136.8 MB.
+Total: 3.079100 ms (FindLiveObjects: 0.302300 ms CreateObjectMapping: 0.211800 ms MarkObjects: 2.516100 ms  DeleteObjects: 0.047000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016672 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
 Mono: successfully reloaded assembly
 - Completed reload, in  1.266 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1267ms)
-		BeginReloadAssembly (157ms)
+		BeginReloadAssembly (161ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (978ms)
+			LoadAssemblies (101ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (328ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (458ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (315ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 16.35 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.8 KB). Loaded Objects now: 4290.
+Memory consumption went from 136.9 MB to 136.9 MB.
+Total: 4.081500 ms (FindLiveObjects: 0.329600 ms CreateObjectMapping: 0.270500 ms MarkObjects: 3.406900 ms  DeleteObjects: 0.072200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.018996 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.81 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.176 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1176ms)
+		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (978ms)
-			LoadAssemblies (86ms)
+		EndReloadAssembly (924ms)
+			LoadAssemblies (89ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (265ms)
+			SetupTypeCache (260ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (512ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (451ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (78ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (314ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (313ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3622 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (56.2 KB). Loaded Objects now: 4084.
-Memory consumption went from 127.4 MB to 127.4 MB.
-Total: 4.596000 ms (FindLiveObjects: 0.290300 ms CreateObjectMapping: 0.172300 ms MarkObjects: 4.015100 ms  DeleteObjects: 0.117400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 85642.996545 seconds.
-  path: Assets/Scenes/Level1 (Instruments).unity
-  artifactKey: Guid(a5b9aedc2dbac4a4398b8cd2f7314b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Level1 (Instruments).unity using Guid(a5b9aedc2dbac4a4398b8cd2f7314b60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc946e76fc1df6ece3445a37a445be73') in 0.015874 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 23.520845 seconds.
-  path: Assets/Scenes/Menu.unity
-  artifactKey: Guid(d77732680a35f754f8f9ce9dcad6bac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu.unity using Guid(d77732680a35f754f8f9ce9dcad6bac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fbfd3f6fdb585222b38982d61704514') in 0.009708 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011759 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001CD3D9AC030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F2C0020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3C7C9020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FBA8B40 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3C835060 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A561070 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F037010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BD25020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D9C1640 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FE615B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D3ED040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A85A010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D9C1640 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3B1F1020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD392AB030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3C2C1DF0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D794030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D7DE9B0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FE7B240 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FA0C020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A956E00 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A882820 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.025 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3027ms)
-		BeginReloadAssembly (259ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (67ms)
-		EndReloadAssembly (2470ms)
-			LoadAssemblies (211ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (748ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (140ms)
-			SetupLoadedEditorAssemblies (1145ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (46ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (164ms)
-				ProcessInitializeOnLoadAttributes (814ms)
-				ProcessInitializeOnLoadMethodAttributes (91ms)
-				AfterProcessingInitializeOnLoad (27ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 7.86 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3603 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4087.
-Memory consumption went from 125.9 MB to 125.9 MB.
-Total: 6.765300 ms (FindLiveObjects: 0.595400 ms CreateObjectMapping: 0.397200 ms MarkObjects: 5.715100 ms  DeleteObjects: 0.054900 ms)
+Refreshing native plugins compatible for Editor in 26.92 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.7 KB). Loaded Objects now: 4293.
+Memory consumption went from 136.9 MB to 136.9 MB.
+Total: 4.440400 ms (FindLiveObjects: 0.626600 ms CreateObjectMapping: 0.396100 ms MarkObjects: 3.359900 ms  DeleteObjects: 0.055700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -318,294 +1047,74 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.013069 seconds.
+Registered in 0.013229 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001CD3D3C5020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD39351030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3DEA8E70 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F839010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BF47A40 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D053030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BEE2010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BC19020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D118420 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D0D1020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A587330 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BC19020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D118420 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD38F5EE60 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FD03010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BD25020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FDC9140 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3B9B0080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3AAF1040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FA0C020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BC41830 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F2C0020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.39 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  3.000 seconds
-Domain Reload Profiling:
-	ReloadAssembly (3001ms)
-		BeginReloadAssembly (223ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (62ms)
-		EndReloadAssembly (2536ms)
-			LoadAssemblies (186ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (729ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (141ms)
-			SetupLoadedEditorAssemblies (1225ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (40ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (168ms)
-				ProcessInitializeOnLoadAttributes (889ms)
-				ProcessInitializeOnLoadMethodAttributes (98ms)
-				AfterProcessingInitializeOnLoad (23ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 6.72 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3603 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4090.
-Memory consumption went from 125.9 MB to 125.9 MB.
-Total: 5.267900 ms (FindLiveObjects: 0.442100 ms CreateObjectMapping: 0.361700 ms MarkObjects: 4.422300 ms  DeleteObjects: 0.039500 ms)
+Refreshing native plugins compatible for Editor in 1.19 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008801 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001CD3FEB3010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD4044C030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F4B3040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F7CB020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BF47A40 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D053030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD38DC6010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3C182010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F7CB020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D0D1020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D545020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A482430 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F7CB020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3DBA2030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F0C5450 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BD25020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D477030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FD1CC90 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FD03010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3919D050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A4AAC40 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3917B030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
 Mono: successfully reloaded assembly
-- Completed reload, in  1.809 seconds
+- Completed reload, in  1.107 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1810ms)
+	ReloadAssembly (1108ms)
 		BeginReloadAssembly (144ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (1555ms)
-			LoadAssemblies (92ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (286ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (988ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (26ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (114ms)
-				ProcessInitializeOnLoadAttributes (738ms)
-				ProcessInitializeOnLoadMethodAttributes (95ms)
-				AfterProcessingInitializeOnLoad (12ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (23ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3603 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4093.
-Memory consumption went from 125.9 MB to 125.9 MB.
-Total: 2.768000 ms (FindLiveObjects: 0.245200 ms CreateObjectMapping: 0.147300 ms MarkObjects: 2.340000 ms  DeleteObjects: 0.034400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006627 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file data-000001CD3D103010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A2E0090 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3DEA8E70 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3C6AC360 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D457020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F6CB030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD405D8040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BC19020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3C6AC360 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D0D1020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A95B030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BC19020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3C6AC360 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3DBA2030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3DD8AB60 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BD25020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FD1C750 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3DDA4B90 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD39351030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3919D050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D253030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D253030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.750 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1752ms)
-		BeginReloadAssembly (134ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1488ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (860ms)
+			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (262ms)
+			SetupTypeCache (273ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (969ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (397ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (27ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (125ms)
-				ProcessInitializeOnLoadAttributes (701ms)
-				ProcessInitializeOnLoadMethodAttributes (84ms)
-				AfterProcessingInitializeOnLoad (29ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (269ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 7.73 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3603 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.7 KB). Loaded Objects now: 4096.
-Memory consumption went from 125.9 MB to 125.9 MB.
-Total: 7.164700 ms (FindLiveObjects: 0.569800 ms CreateObjectMapping: 0.294700 ms MarkObjects: 6.262800 ms  DeleteObjects: 0.034700 ms)
+Refreshing native plugins compatible for Editor in 19.13 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.8 KB). Loaded Objects now: 4296.
+Memory consumption went from 136.9 MB to 136.9 MB.
+Total: 3.356000 ms (FindLiveObjects: 0.249900 ms CreateObjectMapping: 0.176700 ms MarkObjects: 2.881100 ms  DeleteObjects: 0.046700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -619,100 +1128,76 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 441.855306 seconds.
-  path: Assets/Scenes/Menu.unity
-  artifactKey: Guid(d77732680a35f754f8f9ce9dcad6bac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu.unity using Guid(d77732680a35f754f8f9ce9dcad6bac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d667cd99f6358e310303710cc8411ac') in 0.012303 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008595 seconds.
+Registered in 0.014653 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001CD3D3F5050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D253030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3DEA8E70 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD4042E020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3EF60010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D053030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BEE2010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BC19020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD4042E020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D9AC030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F1DE020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BC19020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD4042E020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD38F5E650 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD4042E020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3DDA4B90 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD40BDB050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BD25020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FD15C50 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3FA0C020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A587330 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D253030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 1.98 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
 Mono: successfully reloaded assembly
-- Completed reload, in  2.399 seconds
+- Completed reload, in  1.588 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2402ms)
-		BeginReloadAssembly (156ms)
+	ReloadAssembly (1588ms)
+		BeginReloadAssembly (173ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (2112ms)
-			LoadAssemblies (95ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (1293ms)
+			LoadAssemblies (130ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (326ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (146ms)
-			SetupLoadedEditorAssemblies (1273ms)
+			SetupTypeCache (443ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (604ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (36ms)
+				InitializePlatformSupportModulesInManaged (20ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (201ms)
-				ProcessInitializeOnLoadAttributes (900ms)
-				ProcessInitializeOnLoadMethodAttributes (101ms)
-				AfterProcessingInitializeOnLoad (31ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (417ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (26ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 6.48 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3603 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4099.
-Memory consumption went from 125.9 MB to 125.9 MB.
-Total: 4.819300 ms (FindLiveObjects: 0.402000 ms CreateObjectMapping: 0.547500 ms MarkObjects: 3.831100 ms  DeleteObjects: 0.036200 ms)
+Refreshing native plugins compatible for Editor in 12.18 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.8 KB). Loaded Objects now: 4299.
+Memory consumption went from 136.9 MB to 136.9 MB.
+Total: 3.119800 ms (FindLiveObjects: 0.242200 ms CreateObjectMapping: 0.130300 ms MarkObjects: 2.697800 ms  DeleteObjects: 0.048500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -726,106 +1211,76 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 204.528775 seconds.
-  path: Assets/Scenes/Menu.unity
-  artifactKey: Guid(d77732680a35f754f8f9ce9dcad6bac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu.unity using Guid(d77732680a35f754f8f9ce9dcad6bac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a8559c59f0f80186916e0618b4a0b75') in 0.010186 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.834141 seconds.
-  path: Assets/Scenes/Menu.unity
-  artifactKey: Guid(d77732680a35f754f8f9ce9dcad6bac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Menu.unity using Guid(d77732680a35f754f8f9ce9dcad6bac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fcb933a37c6304095dbef9c9a4dec23') in 0.003412 seconds 
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005610 seconds.
+Registered in 0.011616 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-000001CD3D0D1020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BF4FA50 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3DEA8E70 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3C6AC360 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3EF60010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3D053030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BEE2010 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BC19020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3C6AC360 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD38885FF0 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3F1DE020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BC19020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3C6AC360 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3DBA2030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.InputSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3EEC8060 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3BD25020 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A3F8030 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3DDE5E60 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3A4C2540 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3919D050 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD39183040 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-000001CD3AB11080 doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\ScriptAssemblies\Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\franc\Documents\UnityProjects\MemGame\MemoryGamePS5\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 1.40 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.21 ms.
+Found 0 SO assets of AudioStreamSupport.RuntimeBuildInformation in Resources named AudioStreamRuntimeBuildInformation, expected 1. Please press Play to enter play mode to fix it.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogWarningFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:37)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 37)
+
+Package ships by default with one named AudioStreamRuntimeBuildInformation created in 'Support\Resources' for all messaging in demo scene to work
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+AudioStreamSupport.RuntimeBuildInformation:get_Instance () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:38)
+AudioStreamSupport.RuntimeBuildInformation:UpdateRuntimeInformation () (at Assets/AudioStream/Support/RuntimeBuildInformation.cs:82)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/AudioStream/Support/RuntimeBuildInformation.cs Line: 38)
+
 Mono: successfully reloaded assembly
-- Completed reload, in  1.775 seconds
+- Completed reload, in  1.129 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1776ms)
-		BeginReloadAssembly (138ms)
+	ReloadAssembly (1130ms)
+		BeginReloadAssembly (139ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (1507ms)
-			LoadAssemblies (89ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (887ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (265ms)
+			SetupTypeCache (272ms)
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (985ms)
+			SetupLoadedEditorAssemblies (408ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (25ms)
-				SetLoadedEditorAssemblies (2ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (117ms)
-				ProcessInitializeOnLoadAttributes (732ms)
-				ProcessInitializeOnLoadMethodAttributes (82ms)
-				AfterProcessingInitializeOnLoad (26ms)
-				EditorAssembliesLoaded (1ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (281ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (18ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3603 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (24.6 KB). Loaded Objects now: 4102.
-Memory consumption went from 125.9 MB to 125.9 MB.
-Total: 6.906700 ms (FindLiveObjects: 0.287200 ms CreateObjectMapping: 0.436800 ms MarkObjects: 6.140000 ms  DeleteObjects: 0.040400 ms)
+Refreshing native plugins compatible for Editor in 26.16 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Unloading 3859 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 97 unused Assets / (27.8 KB). Loaded Objects now: 4302.
+Memory consumption went from 136.9 MB to 136.9 MB.
+Total: 3.973700 ms (FindLiveObjects: 0.293000 ms CreateObjectMapping: 0.199400 ms MarkObjects: 3.391900 ms  DeleteObjects: 0.087400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
