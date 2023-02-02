@@ -100,7 +100,7 @@ public class SceneController : MonoBehaviour {
 
 			// increment score
 			score++;
-			scoreLabel.text = $"Score: {score}";
+			scoreLabel.text = $"SCORE: {score}";
 
 			// show the instrument 
 			firstRevealed.Reveal();
