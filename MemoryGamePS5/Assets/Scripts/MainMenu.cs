@@ -3,19 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] private AudioMixer myAudioMixer;
+    public Slider soundLevelSlider;
+    public Slider hapticLevelSlider;
 
     private void Start()
     {
-        myAudioMixer.SetFloat("MasterVolume", -6);
+        soundLevelSlider.value = PlayerPrefs.GetFloat("soundLevel");
+        hapticLevelSlider.value = PlayerPrefs.GetFloat("hapticLevel");
     }
 
-    public void SetVolume(float sliderValue)
+    public void SetSoundLevel(float sliderValue)
     {
-        myAudioMixer.SetFloat("MasterVolume", Mathf.Log10(sliderValue) * 20);
+        PlayerPrefs.SetFloat("soundLevel", soundLevelSlider.value);
+    }
+      public void SetHapticLevel(float sliderValue)
+    {
+        PlayerPrefs.SetFloat("hapticLevel", hapticLevelSlider.value);
     }
 
     public void PlayGame ()

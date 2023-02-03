@@ -58,9 +58,30 @@ public class MemoryCard : MonoBehaviour {
 
 	private void Start()
 	{
-		StartCoroutine(SetOutputChannel(availableOutputs, 0, 0, 1, 2, 3, outputDevice, 1.0f));
+		StartCoroutine(SetOutputChannel(availableOutputs, 0, 0, 1, 2, 3, outputDevice, PlayerPrefs.GetFloat("hapticLevel")));
+
+		computerAudio.volume = PlayerPrefs.GetFloat("soundLevel");
+
+		List<string> outputNamesDevices = GetAudioDeviceNames();
+
+		foreach (string idx in outputNamesDevices)
+        {
+			print($"Device: {idx}");
+		}
+
 	}
 
+	public List<string> GetAudioDeviceNames()
+	{
+		this.availableOutputs = FMOD_SystemW.AvailableOutputs(this.outputDevice.logLevel, this.outputDevice.gameObject.name, this.outputDevice.OnError);
+
+		List<string> outputNames = new List<string>();
+
+		for (int i = 0; i < this.availableOutputs.Count; ++i)
+			outputNames.Add(this.availableOutputs[i].id + " : " + this.availableOutputs[i].name);
+
+		return outputNames;
+	}
 
 	public void SetCard(int id, Sprite image) {
 		_id = id;
@@ -79,6 +100,7 @@ public class MemoryCard : MonoBehaviour {
     {
         controller.CardRevealed(this);
         GetComponent<AudioSource>().Play();
+		computerAudio.volume = PlayerPrefs.GetFloat("soundLevel");
 		computerAudio.Play();
     }
 
@@ -87,8 +109,9 @@ public class MemoryCard : MonoBehaviour {
     {	
 		controller.CardRevealed(this);
         iAmPressed.SetActive(true);
-        // Do we need this?
-        GetComponent<AudioSource>().Play();
+		// Do we need this?
+		computerAudio.volume = PlayerPrefs.GetFloat("soundLevel");
+		GetComponent<AudioSource>().Play();
 		computerAudio.Play();
 
         imTouched = false;
