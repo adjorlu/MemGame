@@ -23,7 +23,16 @@ public class MemoryCard : MonoBehaviour {
 		get {return _id;}
 	}
 
-    private void Update()
+
+	private void Start()
+	{
+		StartCoroutine(SetOutputChannel(availableOutputs, 0, 0, 1, 2, 3, outputDevice, PlayerPrefs.GetFloat("hapticLevel")));
+
+		computerAudio.volume = PlayerPrefs.GetFloat("soundLevel");
+
+	}
+
+	private void Update()
     {
 		if (imTouched == true && mouse.GetComponent<mouseController>().xPressed == true)
         {
@@ -43,6 +52,7 @@ public class MemoryCard : MonoBehaviour {
 		var outchannels = 4;
 		var inchannels = 1; // MONO source
 
+
 		var mixMatrix = new float[outchannels * inchannels];
 		System.Array.Clear(mixMatrix, 0, mixMatrix.Length);
 
@@ -56,13 +66,7 @@ public class MemoryCard : MonoBehaviour {
 		audioSourceOutput.SetUnitySound_MixMatrix(mixMatrix, outchannels, inchannels);
 	}
 
-	private void Start()
-	{
-		StartCoroutine(SetOutputChannel(availableOutputs, 0, 0, 1, 2, 3, outputDevice, PlayerPrefs.GetFloat("hapticLevel")));
 
-		computerAudio.volume = PlayerPrefs.GetFloat("soundLevel");
-
-	}
 
 
 	public void SetCard(int id, Sprite image) {
@@ -121,7 +125,6 @@ public class MemoryCard : MonoBehaviour {
 
 	}
 
- 
     private void OnCollisionExit2D(Collision2D collision)
     {
 		imHovered.SetActive(false);

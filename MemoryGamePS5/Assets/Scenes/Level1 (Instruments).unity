@@ -839,6 +839,7 @@ GameObject:
   - component: {fileID: 1647237406}
   - component: {fileID: 1647237408}
   - component: {fileID: 1647237407}
+  - component: {fileID: 1647237409}
   m_Layer: 0
   m_Name: AudioPC
   m_TagString: Untagged
@@ -877,7 +878,7 @@ MonoBehaviour:
   outputDriverID: 2
   runtimeOutputDriverID: 0
   muteAfterRouting: 1
-  inputLatency: 35
+  inputLatency: 25
   latencyBlock: 0
   latencyTotal: 0
   latencyAverage: 0
@@ -988,6 +989,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1647237409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647237405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b4c19f850a2b6b48a375e66736b22e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outputDevice: {fileID: 1647237407}
 --- !u!1 &1744130885
 GameObject:
   m_ObjectHideFlags: 0

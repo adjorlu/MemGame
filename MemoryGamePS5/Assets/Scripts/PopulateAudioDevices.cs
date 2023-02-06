@@ -12,8 +12,6 @@ public class PopulateAudioDevices : MonoBehaviour
 
     [SerializeField] private TMP_Dropdown selectAudioDeviceDropdown;
 
-
-
     void Start()
     {
         List<string> outputNamesDevices = GetAudioDeviceNames();
