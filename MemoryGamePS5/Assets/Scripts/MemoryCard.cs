@@ -62,26 +62,8 @@ public class MemoryCard : MonoBehaviour {
 
 		computerAudio.volume = PlayerPrefs.GetFloat("soundLevel");
 
-		List<string> outputNamesDevices = GetAudioDeviceNames();
-
-		foreach (string idx in outputNamesDevices)
-        {
-			print($"Device: {idx}");
-		}
-
 	}
 
-	public List<string> GetAudioDeviceNames()
-	{
-		this.availableOutputs = FMOD_SystemW.AvailableOutputs(this.outputDevice.logLevel, this.outputDevice.gameObject.name, this.outputDevice.OnError);
-
-		List<string> outputNames = new List<string>();
-
-		for (int i = 0; i < this.availableOutputs.Count; ++i)
-			outputNames.Add(this.availableOutputs[i].id + " : " + this.availableOutputs[i].name);
-
-		return outputNames;
-	}
 
 	public void SetCard(int id, Sprite image) {
 		_id = id;

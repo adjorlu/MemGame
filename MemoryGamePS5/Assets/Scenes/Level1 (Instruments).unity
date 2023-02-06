@@ -874,10 +874,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logLevel: 0
-  outputDriverID: 1
+  outputDriverID: 2
   runtimeOutputDriverID: 0
   muteAfterRouting: 1
-  inputLatency: 25
+  inputLatency: 35
   latencyBlock: 0
   latencyTotal: 0
   latencyAverage: 0
