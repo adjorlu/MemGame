@@ -18,14 +18,18 @@ public class PopulateAudioDevices : MonoBehaviour
 
         selectAudioDeviceDropdown.ClearOptions();
 
+        // Populate the dropdown menu with the available audio devices
         foreach (string deviceName in outputNamesDevices)
         {
             print($"Device: {deviceName}");
             selectAudioDeviceDropdown.options.Add(new TMP_Dropdown.OptionData() { text = deviceName });
         }
+
+        // Update the dropdown with the saved audiodevice
+        selectAudioDeviceDropdown.value = ((int)PlayerPrefs.GetFloat("audioDeviceIndex"));
     }
 
-    private List<string> GetAudioDeviceNames()
+    public List<string> GetAudioDeviceNames()
     {
         this.availableOutputs = FMOD_SystemW.AvailableOutputs(this.outputDevice.logLevel, this.outputDevice.gameObject.name, this.outputDevice.OnError);
 

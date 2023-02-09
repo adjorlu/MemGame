@@ -10,7 +10,13 @@ EditorBuildSettings:
     guid: d77732680a35f754f8f9ce9dcad6bac7
   - enabled: 1
     path: Assets/Scenes/Level1 (Instruments).unity
+    guid: de488ccbcf6922640aeaae28f4b1221b
+  - enabled: 1
+    path: 
     guid: a5b9aedc2dbac4a4398b8cd2f7314b60
+  - enabled: 1
+    path: 
+    guid: 8b883d5fce6d2714c8bea8be47832350
   - enabled: 1
     path: Assets/AudioStream/Demo/_MainScene/AudioStreamMainScene.unity
     guid: 043a2a49f308b7544b968fceb0c4a7ee

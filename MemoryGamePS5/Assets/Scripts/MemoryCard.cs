@@ -18,7 +18,10 @@ public class MemoryCard : MonoBehaviour {
 	// Extra audio source for additional audio device
 	public AudioSource computerAudio;
 
-	private int _id;
+	private float prevSoundLevel = 0f;
+	private float prevHapticsLevel = 0f;
+
+    private int _id;
 	public int Id {
 		get {return _id;}
 	}
@@ -26,9 +29,11 @@ public class MemoryCard : MonoBehaviour {
 
 	private void Start()
 	{
-		StartCoroutine(SetOutputChannel(availableOutputs, 0, 0, 1, 2, 3, outputDevice, PlayerPrefs.GetFloat("hapticLevel")));
+		prevSoundLevel = PlayerPrefs.GetFloat("soundLevel");
+		prevHapticsLevel = PlayerPrefs.GetFloat("hapticLevel");
 
-		computerAudio.volume = PlayerPrefs.GetFloat("soundLevel");
+		StartCoroutine(SetOutputChannel(availableOutputs, 0, 0, 1, 2, 3, outputDevice, prevHapticsLevel));
+		computerAudio.volume = prevSoundLevel;
 
 	}
 
@@ -39,7 +44,22 @@ public class MemoryCard : MonoBehaviour {
 			Pressed();
 		}
 
-	}
+
+		// Update sound and haptic levels when changed in menu
+		if (prevSoundLevel != PlayerPrefs.GetFloat("soundLevel"))
+		{
+            computerAudio.volume = PlayerPrefs.GetFloat("soundLevel");
+			prevSoundLevel = PlayerPrefs.GetFloat("soundLevel");
+        }
+
+		if (prevHapticsLevel != PlayerPrefs.GetFloat("hapticLevel"))
+		{
+            StartCoroutine(SetOutputChannel(availableOutputs, 0, 0, 1, 2, 3, outputDevice, PlayerPrefs.GetFloat("hapticLevel")));
+			prevHapticsLevel = PlayerPrefs.GetFloat("hapticLevel");
+        }
+
+
+    }
 
 	IEnumerator SetOutputChannel(List<FMOD_SystemW.OUTPUT_DEVICE> availableOutputs, int selectedOutput, int selectedOutputChannel1, int selectedOutputChannel2, int selectedOutputChannel3, int selectedOutputChannel4, AudioSourceOutputDevice audioSourceOutput, float outputLevel)
 	{
@@ -67,8 +87,6 @@ public class MemoryCard : MonoBehaviour {
 	}
 
 
-
-
 	public void SetCard(int id, Sprite image) {
 		_id = id;
 		GetComponent<SpriteRenderer>().sprite = image;
@@ -85,22 +103,25 @@ public class MemoryCard : MonoBehaviour {
     private void OnMouseDown()
     {
         controller.CardRevealed(this);
+
         GetComponent<AudioSource>().Play();
-		computerAudio.volume = PlayerPrefs.GetFloat("soundLevel");
 		computerAudio.Play();
     }
 
 
-    private void Pressed()
-    {	
-		controller.CardRevealed(this);
-        iAmPressed.SetActive(true);
-		// Do we need this?
-		computerAudio.volume = PlayerPrefs.GetFloat("soundLevel");
-		GetComponent<AudioSource>().Play();
-		computerAudio.Play();
+	private void Pressed()
+	{
+		if (!PauseMenu.GameIsPaused)
+		{
+			controller.CardRevealed(this);
+			iAmPressed.SetActive(true);
 
-        imTouched = false;
+			GetComponent<AudioSource>().Play();
+			computerAudio.Play();
+
+			imTouched = false;
+		}
+
     }
 
 	public void Unreveal() {
@@ -119,19 +140,23 @@ public class MemoryCard : MonoBehaviour {
 
 	private void OnCollisionEnter2D(Collision2D collision)
     {
-		imHovered.SetActive(true);
-		imTouched = true;
-		//Debug.Log(imTouched);
-
+		if (!PauseMenu.GameIsPaused)
+		{
+			imHovered.SetActive(true);
+			imTouched = true;
+		}
 	}
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-		imHovered.SetActive(false);
-		imTouched = false;
-		//Debug.Log(imTouched);
-		GetComponent<AudioSource>().Stop();
-		computerAudio.Stop();
+		if (!PauseMenu.GameIsPaused)
+		{
+			imHovered.SetActive(false);
+			imTouched = false;
+
+			GetComponent<AudioSource>().Stop();
+			computerAudio.Stop();
+		}
 	}
 
 

@@ -102,14 +102,14 @@ public class SceneController : MonoBehaviour {
 			score++;
 			scoreLabel.text = $"SCORE: {score}";
 
+			print($"SCORE: {score}");
+
 			// show the instrument 
 			firstRevealed.Reveal();
 			secondRevealed.Reveal();
 
-
-
-
-			if (score == 4)
+		
+			if (score == (gridCols*gridRows)/2)
             {
 				yield return new WaitForSeconds(2.0f);
 				ChangeScene();
