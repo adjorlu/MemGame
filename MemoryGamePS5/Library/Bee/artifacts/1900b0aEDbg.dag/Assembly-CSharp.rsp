@@ -397,6 +397,8 @@
 "Assets/AudioStream/Demo/_Support/AudioStreamDemoSupport.cs"
 "Assets/AudioStream/Demo/_Support/SimpleTransformMover.cs"
 "Assets/AudioStream/Demo/_Support/SmoothMouseLook.cs"
+"Assets/Scripts/Button.cs"
+"Assets/Scripts/ButtonController.cs"
 "Assets/Scripts/GetSelectedAudioDevice.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/MemoryCard.cs"

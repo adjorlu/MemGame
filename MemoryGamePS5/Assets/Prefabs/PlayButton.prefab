@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8214634871725679399}
   - component: {fileID: 8214634871725679398}
   - component: {fileID: 8214634871725679397}
+  - component: {fileID: -1792424068952733713}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -161,6 +162,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 380, y: 176}
   m_EdgeRadius: 0
+--- !u!114 &-1792424068952733713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8214634871725679392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399cdc54672ef34478d6fc28de49fee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouse: {fileID: 0}
+  hovered: 0
+  pressed: 0
 --- !u!1 &8214634872845267413
 GameObject:
   m_ObjectHideFlags: 0
