@@ -12,7 +12,8 @@ public class Button : MonoBehaviour
 
     public bool hovered = false;
     public bool pressed = false;
-    
+
+
     void OnCollisionStay2D(Collision2D targetObj)
     {
         if (targetObj.gameObject.tag == "selector")
@@ -35,6 +36,5 @@ public class Button : MonoBehaviour
     {
         hovered = false;
         pressed = false;
-
     }
 }
