@@ -16,6 +16,10 @@ public class MainMenuController : MonoBehaviour
 
     private void Start()
     {
+
+        mainMenu.SetActive(true);
+        optionsMenu.SetActive(false);
+
         if (mainMenu != null)
         {
             playButtonMainMenu = GameObject.Find("PlayButton").GetComponent<Button>();
@@ -23,10 +27,6 @@ public class MainMenuController : MonoBehaviour
             quitButtonMainMenu = GameObject.Find("QuitButton").GetComponent<Button>();
         }
 
-        if (optionsMenu!= null)
-        {
-            
-        }
             
     }
 

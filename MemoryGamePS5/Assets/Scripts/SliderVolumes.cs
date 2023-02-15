@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class SliderVolumes : MonoBehaviour
 {
     public Slider soundLevelSlider;
     public Slider hapticLevelSlider;
+
 
     private void Start()
     {
@@ -23,5 +25,4 @@ public class SliderVolumes : MonoBehaviour
     {
         PlayerPrefs.SetFloat("hapticLevel", hapticLevelSlider.value);
     }
-
 }

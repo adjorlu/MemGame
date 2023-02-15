@@ -404,7 +404,7 @@
 "Assets/Scripts/MemoryCard.cs"
 "Assets/Scripts/MixerController.cs"
 "Assets/Scripts/mouseController.cs"
-"Assets/Scripts/PauseMenu.cs"
+"Assets/Scripts/PauseMenuController.cs"
 "Assets/Scripts/PopulateAudioDevices.cs"
 "Assets/Scripts/SaveSelectedAudioDevice.cs"
 "Assets/Scripts/SceneController.cs"

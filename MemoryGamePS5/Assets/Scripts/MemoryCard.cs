@@ -111,7 +111,7 @@ public class MemoryCard : MonoBehaviour {
 
 	private void Pressed()
 	{
-		if (!PauseMenu.GameIsPaused)
+		if (!PauseMenuController.GameIsPaused)
 		{
 			controller.CardRevealed(this);
 			iAmPressed.SetActive(true);
@@ -140,7 +140,7 @@ public class MemoryCard : MonoBehaviour {
 
 	private void OnCollisionEnter2D(Collision2D collision)
     {
-		if (!PauseMenu.GameIsPaused)
+		if (!PauseMenuController.GameIsPaused)
 		{
 			imHovered.SetActive(true);
 			imTouched = true;
@@ -149,7 +149,7 @@ public class MemoryCard : MonoBehaviour {
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-		if (!PauseMenu.GameIsPaused)
+		if (!PauseMenuController.GameIsPaused)
 		{
 			imHovered.SetActive(false);
 			imTouched = false;
