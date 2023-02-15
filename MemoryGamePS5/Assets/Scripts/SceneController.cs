@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.IO;
 
 
 
@@ -24,7 +25,11 @@ public class SceneController : MonoBehaviour {
 	private int currentScene;
 	private List<int> matchId = new List<int>();
 
-	public bool canReveal {
+    private DataCollector dataCollector;
+    private string path = "";
+    private string persistentPath = "";
+
+    public bool canReveal {
 		get {return secondRevealed == null;}
 	}
 
@@ -61,6 +66,8 @@ public class SceneController : MonoBehaviour {
 				card.transform.position = new Vector3(posX, posY, startPos.z);
 			}
 		}
+
+		SetPaths();
 	}
 
 	// everyday im Knuth shuffling 
@@ -137,6 +144,39 @@ public class SceneController : MonoBehaviour {
 
     private void ChangeScene()
     {
+		CollectInfo();
 		SceneManager.LoadScene(currentScene + 1);
+    }
+
+	private void CollectInfo()
+	{
+		var allCards = FindObjectsOfType<MemoryCard>();
+
+		
+
+		foreach (var card in allCards)
+		{
+			dataCollector = new DataCollector(sounds[card.Id].name.ToString(), card.numClicks, currentScene);
+			SaveData();
+		}
+
+	}
+
+    private void SetPaths()
+    {
+		path = Application.dataPath + Path.AltDirectorySeparatorChar + "SaveData.json";
+        persistentPath = Application.persistentDataPath + Path.AltDirectorySeparatorChar + "SaveData.json";
+    }
+
+    public void SaveData()
+    {
+       	string savePath = path;
+
+        print("Saving data at " + savePath);
+        string json = JsonUtility.ToJson(dataCollector, true);
+        print(json);
+
+        using StreamWriter writer = new StreamWriter(savePath);
+        writer.Write(json);
     }
 }

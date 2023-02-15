@@ -260,6 +260,7 @@ MonoBehaviour:
   controller: {fileID: 1536978025}
   outputDevice: {fileID: 7843832}
   computerAudio: {fileID: 1647237408}
+  numClicks: 0
 --- !u!82 &7843831
 AudioSource:
   m_ObjectHideFlags: 0

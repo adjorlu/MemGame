@@ -12,6 +12,7 @@ public class MemoryCard : MonoBehaviour {
 
 	private bool imTouched = false;
 
+
 	private List<FMOD_SystemW.OUTPUT_DEVICE> availableOutputs = new List<FMOD_SystemW.OUTPUT_DEVICE>();
 	public AudioSourceOutputDevice outputDevice;
 	
@@ -20,6 +21,8 @@ public class MemoryCard : MonoBehaviour {
 
 	private float prevSoundLevel = 0f;
 	private float prevHapticsLevel = 0f;
+	public int numClicks = 0;
+
 
     private int _id;
 	public int Id {
@@ -119,7 +122,9 @@ public class MemoryCard : MonoBehaviour {
 			GetComponent<AudioSource>().Play();
 			computerAudio.Play();
 
-			imTouched = false;
+            numClicks++;
+
+            imTouched = false;
 		}
 
     }
