@@ -1,44 +1,110 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
-using UnityEngine;
 using System.IO;
+using System.Linq;
+using UnityEngine;
 
-public class JSONSaving : MonoBehaviour
+public static class JSONSaving
 {
 
-    private string path = "";
-    private string persistentPath = "";
-
-    private void Start()
+    public static void SaveToJSON<T>(List<T> toSave, string filename)
     {
-        SetPaths();
+        Debug.Log(GetPath(filename));
+        string content = JsonHelper.ToJson<T>(toSave.ToArray(), true);
+        WriteFile(GetPath(filename), content);
     }
 
-    private void SetPaths()
+    public static void SaveToJSON<T>(T toSave, string filename)
     {
-        path = Application.dataPath + Path.AltDirectorySeparatorChar + "SaveData.json";
-        persistentPath = Application.persistentDataPath + Path.AltDirectorySeparatorChar + "SaveData.json";
+        string content = JsonUtility.ToJson(toSave);
+        WriteFile(GetPath(filename), content);
     }
 
-    public void SaveData(DataCollector playerData)
+    public static List<T> ReadListFromJSON<T>(string filename)
     {
-        SetPaths();
-        string savePath = path;
+        string content = ReadFile(GetPath(filename));
 
-        print ("Saving data at " + savePath);
-        string json = JsonUtility.ToJson(playerData, true);
-        print(json);
+        if (string.IsNullOrEmpty(content) || content == "{}")
+        {
+            return new List<T>();
+        }
 
-        using StreamWriter writer = new StreamWriter(savePath);
-        writer.Write(json); 
+        List<T> res = JsonHelper.FromJson<T>(content).ToList();
+
+        return res;
+
     }
 
-    public void LoadData()
+    public static T ReadFromJSON<T>(string filename)
     {
-        using StreamReader reader = new StreamReader(path);
-        string json = reader.ReadToEnd();
+        string content = ReadFile(GetPath(filename));
 
-        DataCollector dataLoaded = JsonUtility.FromJson<DataCollector>(json);
-        Debug.Log(dataLoaded.ToString());
+        if (string.IsNullOrEmpty(content) || content == "{}")
+        {
+            return default(T);
+        }
+
+        T res = JsonUtility.FromJson<T>(content);
+
+        return res;
+
+    }
+
+    private static string GetPath(string filename)
+    {
+        //return Application.persistentDataPath + "/" + filename;
+        return Application.dataPath + Path.AltDirectorySeparatorChar + filename;
+    }
+
+    private static void WriteFile(string path, string content)
+    {
+        FileStream fileStream = new FileStream(path, FileMode.Create);
+
+        using (StreamWriter writer = new StreamWriter(fileStream))
+        {
+            writer.Write(content);
+        }
+    }
+
+    private static string ReadFile(string path)
+    {
+        if (File.Exists(path))
+        {
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string content = reader.ReadToEnd();
+                return content;
+            }
+        }
+        return "";
+    }
+}
+
+public static class JsonHelper
+{
+    public static T[] FromJson<T>(string json)
+    {
+        Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(json);
+        return wrapper.Items;
+    }
+
+    public static string ToJson<T>(T[] array)
+    {
+        Wrapper<T> wrapper = new Wrapper<T>();
+        wrapper.Items = array;
+        return JsonUtility.ToJson(wrapper);
+    }
+
+    public static string ToJson<T>(T[] array, bool prettyPrint)
+    {
+        Wrapper<T> wrapper = new Wrapper<T>();
+        wrapper.Items = array;
+        return JsonUtility.ToJson(wrapper, prettyPrint);
+    }
+
+    [Serializable]
+    private class Wrapper<T>
+    {
+        public T[] Items;
     }
 }
