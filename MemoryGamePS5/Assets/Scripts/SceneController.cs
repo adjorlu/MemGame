@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System;
 using System.IO;
 using System.Globalization;
 using Unity.VisualScripting;
@@ -82,7 +83,7 @@ public class SceneController : MonoBehaviour
         for (int i = 0; i < newArray.Length; i++)
         {
             int tmp = newArray[i];
-            int r = Random.Range(i, newArray.Length);
+            int r = UnityEngine.Random.Range(i, newArray.Length);
             newArray[i] = newArray[r];
             newArray[r] = tmp;
         }
@@ -166,6 +167,10 @@ public class SceneController : MonoBehaviour
     {
         var allCards = FindObjectsOfType<MemoryCard>();
 
+        DateTime localDate = DateTime.Now;
+
+        print(localDate.ToString("yyyyMMddHHmmss"));
+
         foreach (var card in allCards)
         {
 
@@ -173,7 +178,7 @@ public class SceneController : MonoBehaviour
             
         }
 
-        JSONSaving.SaveToJSON<DataCollector>(dataCollector, "SaveData.json");
+        JSONSaving.SaveToJSON<DataCollector>(dataCollector, localDate.ToString("yyyyMMddHHmmss") + "_" + currentScene.ToString() + ".json");
 
     }
 

@@ -13,17 +13,16 @@ public class Button : MonoBehaviour
     public bool hovered = false;
     public bool pressed = false;
 
-
-    void OnCollisionStay2D(Collision2D targetObj)
+    private void OnTriggerStay2D(Collider2D targetObj)
     {
         if (targetObj.gameObject.tag == "selector")
         {
-            hovered= true;
+            hovered = true;
         }
 
         if (targetObj.gameObject.tag == "selector" && mouse.GetComponent<mouseController>().xPressed == true)
         {
-            pressed= true;
+            pressed = true;
         }
 
         if (targetObj.gameObject.tag == "selector" && mouse.GetComponent<mouseController>().xPressed == false)
@@ -32,7 +31,7 @@ public class Button : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D targetObj)
+    private void OnTriggerExit2D(Collider2D targetObj)
     {
         hovered = false;
         pressed = false;

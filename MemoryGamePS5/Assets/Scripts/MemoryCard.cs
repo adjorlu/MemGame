@@ -143,26 +143,24 @@ public class MemoryCard : MonoBehaviour {
 		cardBack.SetActive(false);
 	}
 
-	private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-		if (!PauseMenuController.GameIsPaused)
-		{
-			imHovered.SetActive(true);
-			imTouched = true;
-		}
-	}
+        if (!PauseMenuController.GameIsPaused)
+        {
+            imHovered.SetActive(true);
+            imTouched = true;
+        }
+    }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-		if (!PauseMenuController.GameIsPaused)
-		{
-			imHovered.SetActive(false);
-			imTouched = false;
+        if (!PauseMenuController.GameIsPaused)
+        {
+            imHovered.SetActive(false);
+            imTouched = false;
 
-			GetComponent<AudioSource>().Stop();
-			computerAudio.Stop();
-		}
-	}
-
-
+            GetComponent<AudioSource>().Stop();
+            computerAudio.Stop();
+        }
+    }
 }

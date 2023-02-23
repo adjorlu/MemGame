@@ -52,7 +52,7 @@ public static class JSONSaving
 
     private static string GetPath(string filename)
     {
-        //return Application.persistentDataPath + "/" + filename;
+        //return Application.persistentDataPath + "/" + filename;  // persistent path in AppData
         return Application.dataPath + Path.AltDirectorySeparatorChar + filename;
     }
 
