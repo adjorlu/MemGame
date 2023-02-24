@@ -11,7 +11,7 @@ public class MemoryCard : MonoBehaviour {
 	[SerializeField] SceneController controller;
 
 	private bool imTouched = false;
-
+	public bool alreadyMatched = false;
 
 	private List<FMOD_SystemW.OUTPUT_DEVICE> availableOutputs = new List<FMOD_SystemW.OUTPUT_DEVICE>();
 	public AudioSourceOutputDevice outputDevice;
@@ -105,16 +105,21 @@ public class MemoryCard : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        controller.CardRevealed(this);
 
-        GetComponent<AudioSource>().Play();
-		computerAudio.Play();
+        if (!PauseMenuController.GameIsPaused && !alreadyMatched)
+		{
+            controller.CardRevealed(this);
+
+            GetComponent<AudioSource>().Play();
+            computerAudio.Play();
+        }
+
     }
 
 
 	private void Pressed()
 	{
-		if (!PauseMenuController.GameIsPaused)
+		if (!PauseMenuController.GameIsPaused && !alreadyMatched)
 		{
 			controller.CardRevealed(this);
 			iAmPressed.SetActive(true);
@@ -130,12 +135,18 @@ public class MemoryCard : MonoBehaviour {
     }
 
 	public void Unreveal() {
-		cardBack.SetActive(true);
-        if (iAmPressed.activeSelf)
-        {
-            iAmPressed.SetActive(false);
-         
+
+        if (!alreadyMatched)
+		{
+            cardBack.SetActive(true);
+            if (iAmPressed.activeSelf)
+            {
+                iAmPressed.SetActive(false);
+
+            }
         }
+
+
     }
 
 	public void Reveal()
@@ -145,7 +156,7 @@ public class MemoryCard : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!PauseMenuController.GameIsPaused)
+        if (!PauseMenuController.GameIsPaused && !alreadyMatched)
         {
             imHovered.SetActive(true);
             imTouched = true;

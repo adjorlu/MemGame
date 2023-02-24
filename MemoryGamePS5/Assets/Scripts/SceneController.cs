@@ -128,6 +128,8 @@ public class SceneController : MonoBehaviour
             firstRevealed.Reveal();
             secondRevealed.Reveal();
 
+            firstRevealed.alreadyMatched = true;
+            secondRevealed.alreadyMatched = true;
 
             if (score == (gridCols * gridRows) / 2)
             {
