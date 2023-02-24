@@ -106,7 +106,7 @@ public class MemoryCard : MonoBehaviour {
     private void OnMouseDown()
     {
 
-        if (!PauseMenuController.GameIsPaused && !alreadyMatched)
+        if (!PauseMenuController.GameIsPaused || !alreadyMatched)
 		{
             controller.CardRevealed(this);
 
@@ -119,16 +119,20 @@ public class MemoryCard : MonoBehaviour {
 
 	private void Pressed()
 	{
-		if (!PauseMenuController.GameIsPaused && !alreadyMatched)
+
+		if (!PauseMenuController.GameIsPaused || !alreadyMatched)
 		{
 			controller.CardRevealed(this);
 			iAmPressed.SetActive(true);
 
-			GetComponent<AudioSource>().Play();
-			computerAudio.Play();
+			if(!alreadyMatched)
+			{
+                GetComponent<AudioSource>().Play();
+                computerAudio.Play();
+            }	
 
             numClicks++;
-
+            
             imTouched = false;
 		}
 
@@ -151,8 +155,9 @@ public class MemoryCard : MonoBehaviour {
 
 	public void Matched()
 	{
-		SpriteRenderer sprite = iAmPressed.GetComponent<SpriteRenderer>();
+        SpriteRenderer sprite = iAmPressed.GetComponent<SpriteRenderer>();
 		sprite.color = Color.green;
+
 	}
 
 	public void Reveal()
@@ -162,7 +167,7 @@ public class MemoryCard : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!PauseMenuController.GameIsPaused && !alreadyMatched)
+        if (!PauseMenuController.GameIsPaused || !alreadyMatched)
         {
             imHovered.SetActive(true);
             imTouched = true;

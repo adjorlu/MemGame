@@ -20,6 +20,7 @@ public class SceneController : MonoBehaviour
     [SerializeField] Sprite[] images;
     [SerializeField] AudioClip[] sounds;
     [SerializeField] TMP_Text scoreLabel;
+    [SerializeField] AudioClip scoreAudio;
 
     public AudioSource UIAudio;
 
@@ -76,6 +77,8 @@ public class SceneController : MonoBehaviour
             }
         }
 
+        UIAudio.clip = scoreAudio;
+
     }
 
     // everyday im Knuth shuffling 
@@ -129,15 +132,16 @@ public class SceneController : MonoBehaviour
             // show the instrument 
             firstRevealed.Reveal();
             secondRevealed.Reveal();
-            
-            // correct match audio feedback
-            UIAudio.Play();
 
+            // correct match audio feedback
             firstRevealed.alreadyMatched = true;
             secondRevealed.alreadyMatched = true;
 
             firstRevealed.Matched();
             secondRevealed.Matched();
+
+            new WaitForSeconds(1f);
+            UIAudio.Play();
 
             if (score == (gridCols * gridRows) / 2)
             {
@@ -184,7 +188,7 @@ public class SceneController : MonoBehaviour
         foreach (var card in allCards)
         {
 
-            dataCollector.Add(new DataCollector(sounds[card.Id].name.ToString(), card.numClicks, currentScene));
+            dataCollector.Add(new DataCollector(images[card.Id].name.ToString(), card.numClicks, currentScene));
             
         }
 
