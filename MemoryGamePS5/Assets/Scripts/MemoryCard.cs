@@ -149,6 +149,12 @@ public class MemoryCard : MonoBehaviour {
 
     }
 
+	public void Matched()
+	{
+		SpriteRenderer sprite = iAmPressed.GetComponent<SpriteRenderer>();
+		sprite.color = Color.green;
+	}
+
 	public void Reveal()
 	{
 		cardBack.SetActive(false);

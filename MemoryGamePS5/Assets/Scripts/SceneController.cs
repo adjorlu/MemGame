@@ -20,7 +20,6 @@ public class SceneController : MonoBehaviour
     [SerializeField] Sprite[] images;
     [SerializeField] AudioClip[] sounds;
     [SerializeField] TMP_Text scoreLabel;
-    //[SerializeField] AudioClip matchFound;
 
     public AudioSource UIAudio;
 
@@ -131,11 +130,14 @@ public class SceneController : MonoBehaviour
             firstRevealed.Reveal();
             secondRevealed.Reveal();
             
-            //UIAudio.clip = matchFound;
+            // correct match audio feedback
             UIAudio.Play();
 
             firstRevealed.alreadyMatched = true;
             secondRevealed.alreadyMatched = true;
+
+            firstRevealed.Matched();
+            secondRevealed.Matched();
 
             if (score == (gridCols * gridRows) / 2)
             {
