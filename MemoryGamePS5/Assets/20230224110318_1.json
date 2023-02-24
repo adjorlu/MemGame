@@ -1,0 +1,44 @@
+{
+    "Items": [
+        {
+            "name": "DrumsQuad",
+            "clicks": 1.0,
+            "level": 1.0
+        },
+        {
+            "name": "DrumsQuad",
+            "clicks": 1.0,
+            "level": 1.0
+        },
+        {
+            "name": "PianoQuad",
+            "clicks": 1.0,
+            "level": 1.0
+        },
+        {
+            "name": "XylophoneQuad",
+            "clicks": 1.0,
+            "level": 1.0
+        },
+        {
+            "name": "XylophoneQuad",
+            "clicks": 2.0,
+            "level": 1.0
+        },
+        {
+            "name": "SaxophoneQuad",
+            "clicks": 2.0,
+            "level": 1.0
+        },
+        {
+            "name": "SaxophoneQuad",
+            "clicks": 2.0,
+            "level": 1.0
+        },
+        {
+            "name": "PianoQuad",
+            "clicks": 2.0,
+            "level": 1.0
+        }
+    ]
+}

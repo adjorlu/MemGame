@@ -20,6 +20,9 @@ public class SceneController : MonoBehaviour
     [SerializeField] Sprite[] images;
     [SerializeField] AudioClip[] sounds;
     [SerializeField] TMP_Text scoreLabel;
+    //[SerializeField] AudioClip matchFound;
+
+    public AudioSource UIAudio;
 
     private MemoryCard firstRevealed;
     private MemoryCard secondRevealed;
@@ -127,6 +130,9 @@ public class SceneController : MonoBehaviour
             // show the instrument 
             firstRevealed.Reveal();
             secondRevealed.Reveal();
+            
+            //UIAudio.clip = matchFound;
+            UIAudio.Play();
 
             firstRevealed.alreadyMatched = true;
             secondRevealed.alreadyMatched = true;
