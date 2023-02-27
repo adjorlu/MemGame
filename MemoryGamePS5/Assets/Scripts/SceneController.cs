@@ -20,6 +20,7 @@ public class SceneController : MonoBehaviour
     [SerializeField] Sprite[] images;
     [SerializeField] AudioClip[] sounds;
     [SerializeField] TMP_Text scoreLabel;
+    [SerializeField] TMP_Text rewardLabel;
     [SerializeField] AudioClip scoreAudio;
 
     public AudioSource UIAudio;
@@ -40,6 +41,7 @@ public class SceneController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        rewardLabel.enabled = false;
         currentScene = SceneManager.GetActiveScene().buildIndex;
 
         Debug.Log("Scene number is: " + currentScene);
@@ -145,7 +147,9 @@ public class SceneController : MonoBehaviour
 
             if (score == (gridCols * gridRows) / 2)
             {
-                yield return new WaitForSeconds(2.0f);
+                rewardLabel.enabled = true;
+
+                yield return new WaitForSeconds(3.0f);
                 ChangeScene();
             }
         }

@@ -11,8 +11,12 @@ public class GetSelectedAudioDevice : MonoBehaviour
     void Start()
     {
         outputDriver = (int)PlayerPrefs.GetFloat("audioDeviceIndex");
-
-        outputDevice.SetOutput(outputDriver);
+        if (outputDevice.ready)
+        {
+            outputDevice.SetOutput(outputDriver);
+        }
+        else
+            print($"Device: {outputDevice.name} not ready!");
     }
 
 }
