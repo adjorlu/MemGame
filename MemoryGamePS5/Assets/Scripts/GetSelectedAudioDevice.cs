@@ -10,13 +10,20 @@ public class GetSelectedAudioDevice : MonoBehaviour
 
     void Start()
     {
+        SetOutputDriverID(outputDevice);
+    }
+
+
+    public void SetOutputDriverID(AudioSourceOutputDevice outputDevice)
+    {
         outputDriver = (int)PlayerPrefs.GetFloat("audioDeviceIndex");
         if (outputDevice.ready)
         {
             outputDevice.SetOutput(outputDriver);
         }
         else
+        {
             print($"Device: {outputDevice.name} not ready!");
+        }
     }
-
 }

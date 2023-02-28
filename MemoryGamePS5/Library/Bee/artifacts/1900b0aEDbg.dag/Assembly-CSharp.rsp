@@ -399,6 +399,7 @@
 "Assets/AudioStream/Demo/_Support/SmoothMouseLook.cs"
 "Assets/Scripts/Button.cs"
 "Assets/Scripts/DataCollector.cs"
+"Assets/Scripts/FindAndSetAllAudioDevices.cs"
 "Assets/Scripts/GetSelectedAudioDevice.cs"
 "Assets/Scripts/JSONInputHandler.cs"
 "Assets/Scripts/JSONSaving.cs"

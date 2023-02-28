@@ -41,7 +41,9 @@ public class SceneController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        // be sure that the label is disabled at the beginning of the level
         rewardLabel.enabled = false;
+
         currentScene = SceneManager.GetActiveScene().buildIndex;
 
         Debug.Log("Scene number is: " + currentScene);
@@ -79,6 +81,7 @@ public class SceneController : MonoBehaviour
             }
         }
 
+        // load the clip
         UIAudio.clip = scoreAudio;
 
     }

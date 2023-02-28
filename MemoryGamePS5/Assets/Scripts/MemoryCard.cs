@@ -106,12 +106,15 @@ public class MemoryCard : MonoBehaviour {
     private void OnMouseDown()
     {
 
-        if (!PauseMenuController.GameIsPaused || !alreadyMatched)
-		{
-            controller.CardRevealed(this);
+        if (!PauseMenuController.GameIsPaused)
+        {
+			if (!alreadyMatched)
+			{
+				controller.CardRevealed(this);
 
-            GetComponent<AudioSource>().Play();
-            computerAudio.Play();
+				GetComponent<AudioSource>().Play();
+				computerAudio.Play();
+			}
         }
 
     }
@@ -120,20 +123,21 @@ public class MemoryCard : MonoBehaviour {
 	private void Pressed()
 	{
 
-		if (!PauseMenuController.GameIsPaused || !alreadyMatched)
+
+		if (!PauseMenuController.GameIsPaused)
 		{
-			controller.CardRevealed(this);
-			iAmPressed.SetActive(true);
-
-			if(!alreadyMatched)
+			if (!alreadyMatched)
 			{
-                GetComponent<AudioSource>().Play();
-                computerAudio.Play();
-            }	
+				controller.CardRevealed(this);
+				iAmPressed.SetActive(true);
 
-            numClicks++;
-            
-            imTouched = false;
+				GetComponent<AudioSource>().Play();
+				computerAudio.Play();
+
+				numClicks++;
+
+				imTouched = false;
+			}
 		}
 
     }
@@ -167,22 +171,26 @@ public class MemoryCard : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!PauseMenuController.GameIsPaused || !alreadyMatched)
-        {
-            imHovered.SetActive(true);
-            imTouched = true;
-        }
+		if (!PauseMenuController.GameIsPaused)
+		{
+			if (!alreadyMatched)
+			{
+				imHovered.SetActive(true);
+				imTouched = true;
+			}
+		}
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!PauseMenuController.GameIsPaused)
-        {
-            imHovered.SetActive(false);
-            imTouched = false;
+		if (!PauseMenuController.GameIsPaused)
+		{
 
-            GetComponent<AudioSource>().Stop();
-            computerAudio.Stop();
-        }
+			imHovered.SetActive(false);
+			imTouched = false;
+
+			GetComponent<AudioSource>().Stop();
+			computerAudio.Stop();
+		}
     }
 }
