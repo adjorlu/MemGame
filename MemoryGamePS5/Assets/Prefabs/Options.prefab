@@ -1912,7 +1912,19 @@ MonoBehaviour:
       - m_Target: {fileID: 4067179635516267802}
         m_TargetAssemblyTypeName: SaveSelectedAudioDevice, Assembly-CSharp
         m_MethodName: SaveAudioDevice
-        m_Mode: 0
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5153746937740946157}
+        m_TargetAssemblyTypeName: FindAndSetAllAudioDevices, Assembly-CSharp
+        m_MethodName: UpdateAllAudioDevicesID
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1946,6 +1958,7 @@ GameObject:
   - component: {fileID: 4067179635528268116}
   - component: {fileID: 4067179635528268118}
   - component: {fileID: 4067179635528268119}
+  - component: {fileID: 5153746937740946157}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -2040,6 +2053,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outputDevice: {fileID: 4067179635528268118}
   selectAudioDeviceDropdown: {fileID: 4067179635516267801}
+--- !u!114 &5153746937740946157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4067179635528268106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50baaa2a3e1be4f4b9693edfce46b718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4067179635693846754
 GameObject:
   m_ObjectHideFlags: 0

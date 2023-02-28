@@ -389,6 +389,17 @@ MonoBehaviour:
       m_Calls: []
   ready: 0
   fmodVersion: 
+--- !u!114 &248254869 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4067179635516267802, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
+  m_PrefabInstance: {fileID: 1492084835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f14bdd771ec4a3a47a17176e16d90270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &442089455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1693,12 +1704,16 @@ PrefabInstance:
       value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
+      propertyPath: m_Options.m_Options.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -1707,30 +1722,30 @@ PrefabInstance:
     - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1647237409}
+      objectReference: {fileID: 248254869}
     - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1647237409}
+      objectReference: {fileID: 1492084838}
     - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetOutputDriverID
+      value: SaveAudioDevice
       objectReference: {fileID: 0}
     - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetOutputDriverID
+      value: UpdateAllAudioDevicesID
       objectReference: {fileID: 0}
     - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GetSelectedAudioDevice, Assembly-CSharp
+      value: SaveSelectedAudioDevice, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: GetSelectedAudioDevice, Assembly-CSharp
+      value: FindAndSetAllAudioDevices, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4067179635516267801, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1904,6 +1919,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4067179635528268106, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
   m_PrefabInstance: {fileID: 1492084835}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1492084838 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5153746937740946157, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
+  m_PrefabInstance: {fileID: 1492084835}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492084837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50baaa2a3e1be4f4b9693edfce46b718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1536978023
 GameObject:
   m_ObjectHideFlags: 0

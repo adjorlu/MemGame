@@ -5,14 +5,13 @@ using AudioStream;
 
 public class GetSelectedAudioDevice : MonoBehaviour
 {
-    int outputDriver;
+    private int outputDriver;
     public AudioSourceOutputDevice outputDevice;
 
     void Start()
     {
         SetOutputDriverID(outputDevice);
     }
-
 
     public void SetOutputDriverID(AudioSourceOutputDevice outputDevice)
     {

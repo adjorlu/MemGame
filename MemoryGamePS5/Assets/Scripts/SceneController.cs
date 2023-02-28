@@ -160,7 +160,7 @@ public class SceneController : MonoBehaviour
         // otherwise turn them back over after .5s pause
         else
         {
-            yield return new WaitForSeconds(.5f);
+            yield return new WaitForSeconds(.2f);
 
             if (!matchId.Contains(firstRevealed.Id))
             {

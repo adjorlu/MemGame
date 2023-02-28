@@ -6,7 +6,7 @@ public class SaveSelectedAudioDevice : MonoBehaviour
 {
     public void SaveAudioDevice(int idx)
     {
-        print($"Selected device: {idx}");
+        print($"Saved device: {idx}");
         PlayerPrefs.SetFloat("audioDeviceIndex", idx);
     }
 }
