@@ -1907,7 +1907,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4067179635955359721, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
 --- !u!224 &1492084836 stripped
 RectTransform:
@@ -2009,7 +2010,7 @@ GameObject:
   - component: {fileID: 1647237409}
   m_Layer: 0
   m_Name: AudioPC
-  m_TagString: Untagged
+  m_TagString: AudioPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2885,7 +2886,7 @@ GameObject:
   - component: {fileID: 1972949170}
   m_Layer: 0
   m_Name: AudioUI
-  m_TagString: Untagged
+  m_TagString: AudioUI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

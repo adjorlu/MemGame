@@ -10,11 +10,14 @@ public class GetSelectedAudioDevice : MonoBehaviour
 
     void Start()
     {
-        SetOutputDriverID(outputDevice);
+        StartCoroutine(SetOutputDriverID(outputDevice));
     }
 
-    public void SetOutputDriverID(AudioSourceOutputDevice outputDevice)
+
+    IEnumerator SetOutputDriverID(AudioSourceOutputDevice outputDevice)
     {
+        yield return new WaitUntil(() => outputDevice.ready);
+
         outputDriver = (int)PlayerPrefs.GetFloat("audioDeviceIndex");
         if (outputDevice.ready)
         {

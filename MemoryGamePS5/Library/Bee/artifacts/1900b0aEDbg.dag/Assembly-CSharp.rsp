@@ -403,7 +403,6 @@
 "Assets/Scripts/GetSelectedAudioDevice.cs"
 "Assets/Scripts/JSONInputHandler.cs"
 "Assets/Scripts/JSONSaving.cs"
-"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/MainMenuController.cs"
 "Assets/Scripts/MemoryCard.cs"
 "Assets/Scripts/MixerController.cs"

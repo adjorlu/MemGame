@@ -27,28 +27,33 @@ public class FindAndSetAllAudioDevices : MonoBehaviour
     //}
 
 
-    private GetSelectedAudioDevice getSelectedAudioDevice;
-
-    void Start()
-    {
-        getSelectedAudioDevice = GetComponent<GetSelectedAudioDevice>();
-    }
-
     public void UpdateAllAudioDevicesID()
     {
-        getSelectedAudioDevice = GetComponent<GetSelectedAudioDevice>();
 
-        // Find all the GameObjects with the name AudioPC
-        GameObject[] audioPCObjects = GameObject.FindObjectsOfType<GameObject>().Where(obj => obj.name == "AudioPC").ToArray();
+        // Find all the GameObjects with the tag AudioPC
+        GameObject[] audioPCObjects = GameObject.FindGameObjectsWithTag("AudioPC");
+        // Find the GameObject with the tag AudioUI
+        GameObject audioUIObject = GameObject.FindGameObjectWithTag("AudioUI");
 
-        // For each AudioPC change its outputdriver
+        // Set the new outputdriver for AudioUI from the PlayerPrefs
+        if (audioUIObject.TryGetComponent<AudioSourceOutputDevice>(out var audioSourceOutputDevice1))
+        {
+            audioSourceOutputDevice1.SetOutput((int)PlayerPrefs.GetFloat("audioDeviceIndex"));
+        }
+        else
+        {
+            Debug.LogError("AudioSourceOutputDevice component not found on the AudioPC object!");
+        }
+
+
+        // For each AudioPC change its outputdriver from the PlayerPrefs
         foreach (GameObject audioPCObject in audioPCObjects)
         {
-            //var audioSourceOutputDevice = audioPCObject.GetComponent<AudioSourceOutputDevice>();
 
             if (audioPCObject.TryGetComponent<AudioSourceOutputDevice>(out var audioSourceOutputDevice))
             {
-                getSelectedAudioDevice.SetOutputDriverID(audioSourceOutputDevice); // This gives a NullReference but I don't understand why. 
+                
+                audioSourceOutputDevice.SetOutput((int)PlayerPrefs.GetFloat("audioDeviceIndex"));
             }
             else
             {
