@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using AudioStream;
 using TMPro;
+using System.Linq;
 
 public class PopulateAudioDevices : MonoBehaviour
 {
@@ -26,7 +27,15 @@ public class PopulateAudioDevices : MonoBehaviour
         }
 
         // Update the dropdown with the saved audiodevice
-        selectAudioDeviceDropdown.value = ((int)PlayerPrefs.GetFloat("audioDeviceIndex"));
+        if((int)PlayerPrefs.GetFloat("audioDeviceIndex") <= outputNamesDevices.Count)
+        {
+            selectAudioDeviceDropdown.value = ((int)PlayerPrefs.GetFloat("audioDeviceIndex"));
+        }
+        else // Set to default if the saved is exceeding the list size
+        {
+            selectAudioDeviceDropdown.value = 0;
+        }
+        
     }
 
     public List<string> GetAudioDeviceNames()

@@ -11,20 +11,6 @@ using UnityEngine.UIElements.Experimental;
 
 public class FindAndSetAllAudioDevices : MonoBehaviour
 {
-    //private GetSelectedAudioDevice getSelectedAudioDevice;
-
-    //public void UpdateAllAudioDevicesID ()
-    //{
-    //    // Find all the GameObjects with the name AudioPC
-    //    GameObject[] audioPCObjects = GameObject.FindObjectsOfType<GameObject>().Where(obj => obj.name == "AudioPC").ToArray();
-
-    //    // For each AudioPC change its outputdriver
-    //    foreach (GameObject audioPCObject in audioPCObjects)
-    //    {
-    //        getSelectedAudioDevice.SetOutputDriverID(audioPCObject.GetComponent<AudioSourceOutputDevice>());
-    //    }
-
-    //}
 
 
     public void UpdateAllAudioDevicesID()

@@ -152,14 +152,14 @@ namespace AudioStreamDemoEditorSupport
             }
 
             // add new scenes
-            foreach (var scenePath in audioStreamDemoScenePathsToAdd)
-                newScenesInBuildSettings.Add(new UnityEditor.EditorBuildSettingsScene(scenePath, true));
+            //foreach (var scenePath in audioStreamDemoScenePathsToAdd)
+            //    newScenesInBuildSettings.Add(new UnityEditor.EditorBuildSettingsScene(scenePath, true));
 
-            if (updatedCount > 0 || audioStreamDemoScenePathsToAdd.Count > 0)
-            {
-                Debug.LogWarningFormat("Automatically enabled {0} and added {1} AudioStream demo scene/s to Build Settings scene list", updatedCount, audioStreamDemoScenePathsToAdd.Count);
-                Debug.LogWarningFormat("Please restart the scene to reload Build Settings if a demo scene won't load");
-            }
+            //if (updatedCount > 0 || audioStreamDemoScenePathsToAdd.Count > 0)
+            //{
+            //    Debug.LogWarningFormat("Automatically enabled {0} and added {1} AudioStream demo scene/s to Build Settings scene list", updatedCount, audioStreamDemoScenePathsToAdd.Count);
+            //    Debug.LogWarningFormat("Please restart the scene to reload Build Settings if a demo scene won't load");
+            //}
 
             // update editor build settings
             UnityEditor.EditorBuildSettings.scenes = newScenesInBuildSettings.ToArray();

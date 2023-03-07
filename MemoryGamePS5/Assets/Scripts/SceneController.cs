@@ -7,6 +7,7 @@ using System;
 using System.IO;
 using System.Globalization;
 using Unity.VisualScripting;
+using TMPro.EditorUtilities;
 
 public class SceneController : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class SceneController : MonoBehaviour
     [SerializeField] TMP_Text scoreLabel;
     [SerializeField] TMP_Text rewardLabel;
     [SerializeField] AudioClip scoreAudio;
-
+    [SerializeField] GameObject panelBackground;
     public AudioSource UIAudio;
 
     private MemoryCard firstRevealed;
@@ -43,6 +44,7 @@ public class SceneController : MonoBehaviour
     {
         // be sure that the label is disabled at the beginning of the level
         rewardLabel.enabled = false;
+        panelBackground.SetActive(false);
 
         currentScene = SceneManager.GetActiveScene().buildIndex;
 
@@ -148,8 +150,20 @@ public class SceneController : MonoBehaviour
             new WaitForSeconds(1f);
             UIAudio.Play();
 
+            // if level is completed
             if (score == (gridCols * gridRows) / 2)
             {
+                yield return new WaitForSeconds(0.5f);
+                panelBackground.SetActive(true);
+
+                // Stop sound and haptics from the cards
+                firstRevealed.computerAudio.Stop();                
+                firstRevealed.GetComponent<AudioSource>().Stop();
+
+                secondRevealed.computerAudio.Stop();
+                secondRevealed.GetComponent<AudioSource>().Stop();
+
+                yield return new WaitForSeconds(0.5f);
                 rewardLabel.enabled = true;
 
                 yield return new WaitForSeconds(3.0f);
