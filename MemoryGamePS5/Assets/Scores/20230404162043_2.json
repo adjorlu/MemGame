@@ -1,0 +1,54 @@
+{
+    "Items": [
+        {
+            "name": "CardTrumpet",
+            "clicks": 1.0,
+            "level": 2.0
+        },
+        {
+            "name": "CardDrum",
+            "clicks": 2.0,
+            "level": 2.0
+        },
+        {
+            "name": "CardViolin",
+            "clicks": 1.0,
+            "level": 2.0
+        },
+        {
+            "name": "CardXylophone",
+            "clicks": 1.0,
+            "level": 2.0
+        },
+        {
+            "name": "CardXylophone",
+            "clicks": 1.0,
+            "level": 2.0
+        },
+        {
+            "name": "CardViolin",
+            "clicks": 2.0,
+            "level": 2.0
+        },
+        {
+            "name": "CardTrumpet",
+            "clicks": 3.0,
+            "level": 2.0
+        },
+        {
+            "name": "CardPiano",
+            "clicks": 2.0,
+            "level": 2.0
+        },
+        {
+            "name": "CardDrum",
+            "clicks": 3.0,
+            "level": 2.0
+        },
+        {
+            "name": "CardPiano",
+            "clicks": 2.0,
+            "level": 2.0
+        }
+    ]
+}

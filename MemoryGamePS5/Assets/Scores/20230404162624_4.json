@@ -1,0 +1,54 @@
+{
+    "Items": [
+        {
+            "name": "CardPiano",
+            "clicks": 1.0,
+            "level": 4.0
+        },
+        {
+            "name": "CardTrombone",
+            "clicks": 1.0,
+            "level": 4.0
+        },
+        {
+            "name": "CardTrombone",
+            "clicks": 1.0,
+            "level": 4.0
+        },
+        {
+            "name": "CardCello",
+            "clicks": 3.0,
+            "level": 4.0
+        },
+        {
+            "name": "CardSaxsophone",
+            "clicks": 2.0,
+            "level": 4.0
+        },
+        {
+            "name": "CardSaxsophone",
+            "clicks": 1.0,
+            "level": 4.0
+        },
+        {
+            "name": "CardPiano",
+            "clicks": 3.0,
+            "level": 4.0
+        },
+        {
+            "name": "CardBass",
+            "clicks": 2.0,
+            "level": 4.0
+        },
+        {
+            "name": "CardBass",
+            "clicks": 2.0,
+            "level": 4.0
+        },
+        {
+            "name": "CardCello",
+            "clicks": 2.0,
+            "level": 4.0
+        }
+    ]
+}
