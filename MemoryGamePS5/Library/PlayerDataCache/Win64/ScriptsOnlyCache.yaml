@@ -1288,7 +1288,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: 81953000178037cd2af38ffe80abfb8b
+      Hash: dc37a5e7f0251a2d266000522a5883f7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SceneController

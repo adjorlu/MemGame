@@ -4,10 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System;
-using System.IO;
-using System.Globalization;
-using Unity.VisualScripting;
-using TMPro.EditorUtilities;
 
 public class SceneController : MonoBehaviour
 {

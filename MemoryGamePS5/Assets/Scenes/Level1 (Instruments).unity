@@ -759,7 +759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &490966745
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2061,14 +2061,14 @@ MonoBehaviour:
   originalCard: {fileID: 7843830}
   images:
   - {fileID: 21300000, guid: f8c80c7e7971b324388d465576420575, type: 3}
-  - {fileID: 21300000, guid: ba6fd349e3569fc4090e99043bba303b, type: 3}
+  - {fileID: 21300000, guid: d4ddb9fa49b297c47a0d9ebabe01e91c, type: 3}
   - {fileID: 21300000, guid: 02b920c7e5cd71d429aa06d9f7bfa400, type: 3}
   - {fileID: 21300000, guid: e349faa52b58ca5489546528e581a902, type: 3}
   sounds:
-  - {fileID: 8300000, guid: 47d7d9c579c0ecf49a1be5daed7dd45f, type: 3}
-  - {fileID: 8300000, guid: 831761b6b7c91fe4c88dcd88b5d8edaf, type: 3}
-  - {fileID: 8300000, guid: 7d1b99281218f614c9619c702939ef77, type: 3}
-  - {fileID: 8300000, guid: c2efca69a4bf6484b9aa8ec1094f6f82, type: 3}
+  - {fileID: 8300000, guid: a636c0fc2df7b154786003147b870d89, type: 3}
+  - {fileID: 8300000, guid: 3cff80a09bbf7a9499b25fc43874d388, type: 3}
+  - {fileID: 8300000, guid: b958a3ec556dfb54c9ec715d3ed55270, type: 3}
+  - {fileID: 8300000, guid: 9ac85a58f61f9e646a2c7f87eae5d6be, type: 3}
   scoreLabel: {fileID: 1835005658}
   rewardLabel: {fileID: 1718922284}
   scoreAudio: {fileID: 8300000, guid: 191c6b3b8c553f94e9459c52ca4d0d8c, type: 3}
