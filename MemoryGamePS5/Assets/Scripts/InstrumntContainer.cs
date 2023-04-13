@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class InstrumentContainer
+{
+    public string instrument { get; set; }
+    public List<string> melodies { get; set; }
+    public int group { get; set; }
+
+    public InstrumentContainer(string instrument, List<string> melodies, int group)
+    {
+        this.instrument = instrument;
+        this.melodies = melodies;
+        this.group = group;
+    }
+}
