@@ -11,7 +11,10 @@ public class SceneController : MonoBehaviour
     public int gridCols = 4;
     public float offsetX = 2f;
     public float offsetY = 2.5f;
-    public int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3 };
+    public int numCards = 8;
+
+    public bool similarCards = false;
+    public bool sameMelody = false;
 
     [SerializeField] MemoryCard originalCard;
     [SerializeField] Sprite[] images;
@@ -30,6 +33,8 @@ public class SceneController : MonoBehaviour
 
     private List<DataCollector> dataCollector = new List<DataCollector>();
 
+    private RandomizeInstruments randomizeInstruments;
+
     public bool canReveal
     {
         get { return secondRevealed == null; }
@@ -38,26 +43,28 @@ public class SceneController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        // be sure that the label is disabled at the beginning of the level
+        // Be sure that the label is disabled at the beginning of the level
         rewardLabel.enabled = false;
         panelBackground.SetActive(false);
+
+        // Create a shuffled array of cards
+        int[] cardsIdexes = GenerateCardVector(numCards);
 
         currentScene = SceneManager.GetActiveScene().buildIndex;
 
         Debug.Log("Scene number is: " + currentScene);
         Vector3 startPos = originalCard.transform.position;
 
-        // create shuffled list of cards
-        numbers = ShuffleArray(numbers);
 
-        // place cards in a grid
+
+        // Place cards in a grid
         for (int i = 0; i < gridCols; i++)
         {
             for (int j = 0; j < gridRows; j++)
             {
                 MemoryCard card;
 
-                // use the original for the first grid space
+                // Use the original for the first grid space
                 if (i == 0 && j == 0)
                 {
                     card = originalCard;
@@ -69,7 +76,7 @@ public class SceneController : MonoBehaviour
 
                 // next card in the list for each grid space
                 int index = j * gridCols + i;
-                int id = numbers[index];
+                int id = cardsIdexes[index];
                 card.SetCard(id, images[id]);
                 card.SetAudio(id, sounds[id]);
 
@@ -83,6 +90,47 @@ public class SceneController : MonoBehaviour
         UIAudio.clip = scoreAudio;
 
     }
+
+    private int[] GenerateCardVector(int nCards)
+    {
+        int cardIdx = 0;
+
+        // Empty vector with nCards
+        int[] cardsVector = new int[nCards];
+
+        // For each card
+        for (int card = 0; card < cardsVector.Length; card++)
+        {
+            // Assign an increasing index for each couple of cards
+            if (card % 2 == 0 && card > 1)
+            {
+                cardIdx++;
+
+            }
+
+            cardsVector[card] = cardIdx;
+        }
+
+        // Create shuffled list of cards
+        cardsVector = ShuffleArray(cardsVector);
+
+        return cardsVector;
+    }
+
+    //private Sprite[] LoadCardsImages()
+    //{
+
+    //    Sprite[] cardsImages;
+
+    //    return cardsImages;
+    //}
+
+    //private AudioClip[] LoadCardsAudioClips()
+    //{
+    //    AudioClip[] cardsAudioClips;
+
+    //    return cardsAudioClips;
+    //}
 
     // everyday im Knuth shuffling 
     private int[] ShuffleArray(int[] numbers)

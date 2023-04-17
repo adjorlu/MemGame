@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 
 
@@ -10,13 +11,30 @@ public class RandomizeInstruments : MonoBehaviour
     // Create a list of instruments. Each instrument contains a name, a set of melodies and a group
     public List<InstrumentContainer> instruments = new List<InstrumentContainer>();
 
+    // Dictionary that associates a similarity group to each instrument
+    Dictionary<string, int> instrumentSimilarity = new Dictionary<string, int>
+        {
+            { "Xylophone", 1 },
+            { "Piano", 1 },
+            { "Guitar", 1 },
+            { "Bass", 2 },
+            { "Cello", 3 },
+            { "Viola", 3 },
+            { "Violin", 3 },
+            { "Trumpet", 4 },
+            { "Trombone", 4 },
+            { "Flute", 5 },
+            { "Sax", 5 },
+            { "Clarinet", 5 },
+            { "Drums", 7 }
+        };
 
     void Start()
     {
+        string path = "";
         string tmpInstrument = "";
         List<string> tmpMelody = new List<string>();
         char[] wavChar = {'.', 'w', 'a', 'v'};
-        int idx = 0;
 
         // Load folder content
         string folderPath = "Assets/Sounds/Instruments";
@@ -35,42 +53,41 @@ public class RandomizeInstruments : MonoBehaviour
                 {
                     // Split instrument name and melody name
                     string[] content = file.Split("\\");
+                    path = content[0];
                     content = content[1].Split('_');
 
                     // If it's a new instrument
                     if (tmpInstrument != content[0])
                     {
-                       
-                        if(idx != 0)
-                        {
-                            // Save the data in a new InstrumentContainer class
-                            instruments.Add(new InstrumentContainer(tmpInstrument, tmpMelody, AssignSimilarityGroup(tmpInstrument)));
-                            tmpMelody.Clear();
-                        }
+                        
+                        // Clear tmpMelody if it's a new instrument
+                        tmpMelody = new List<string>(); ;
 
                         // Save instrument
                         tmpInstrument = content[0];
-                        // Save first melody
+                        // Save melody
                         tmpMelody.Add(content[1].TrimEnd(wavChar));
+
+                        // Save the data in a new InstrumentContainer class
+                        instruments.Add(new InstrumentContainer(path, tmpInstrument, tmpMelody, instrumentSimilarity[tmpInstrument]));
                     }
                     else // If it's not a new intrument
                     {
                         // Add an element to tmpMelody and save
                         tmpMelody.Add(content[1].TrimEnd(wavChar));
+                        // Replace the already stored list of melodies with the new one
+                        instruments[instruments.Count - 1].melodies = tmpMelody;
                     }
 
-                    
+
+
                 }
                 else  // Otherwise skip the file
                 { 
                     continue;
-                }     
-                
-                idx++;
+                }
 
             }
-
-            
 
         }
         else
@@ -78,32 +95,124 @@ public class RandomizeInstruments : MonoBehaviour
             Debug.LogError("Folder does not exist: " + folderPath);
         }
 
-
-        Debug.Log("");
+        SelectAndRandomizeCards(8, true, false);
     }
 
-
-    private int AssignSimilarityGroup(string instrumentName)
+    public void SelectAndRandomizeCards(int numberOfCards, bool similar, bool sameMelody)
     {
-        Dictionary<string, int> instrumentSimilarity = new Dictionary<string, int>
-        {
-            { "Piano", 1 },
-            { "Guitar", 1 },
-            { "Bass", 2 },
-            { "Cello", 3 },
-            { "Viola", 3 },
-            { "Violin", 3 },
-            { "Trumpet", 4 },
-            { "Trombone", 4 },
-            { "Flute", 5 },
-            { "Sax", 5 },
-            { "Clarinet", 5 },
-            { "Xylophone", 6 },
-            { "Drums", 7 }
-        };
+        int numberOfInstruments = numberOfCards / 2;
+        System.Random rnd = new System.Random();
+        int idxMelodies = 0;
+        List<int> melIdxs = new List<int>();
 
-        return instrumentSimilarity[instrumentName];
-    }    
+
+        // Create a list of instruments for each similarity group
+        var instrumentGroups = instrumentSimilarity.GroupBy(x => x.Value).Select(x => x.Select(y => y.Key).ToList()).ToList();
+
+        // Container for selected instrument
+        List<string> selectedInstruments = new List<string>();
+        // Container for selected melodies
+        List<string> selectedMelodies = new List<string>();
+
+        // Select instruments
+        if (similar) // Select similar instruments
+        {
+            // Select one instrument per group
+            foreach (var group in instrumentGroups)
+            {
+                var instrument = group[rnd.Next(group.Count)];
+                selectedInstruments.Add(instrument);
+            }
+
+
+            // Generate a random starting index
+            int startIndex = rnd.Next(selectedInstruments.Count);
+
+            // Extract the sequence of 4 instruments
+            selectedInstruments = selectedInstruments
+              .Skip(startIndex)
+              .Take(numberOfInstruments)
+              .Concat(selectedInstruments.Take(numberOfInstruments - selectedInstruments.Count + startIndex))
+              .ToList();
+
+        }
+        else // Select different instruments
+        {
+
+            // Shuffle the similarity groups
+            for (int i = instrumentGroups.Count - 1; i > 0; i--)
+            {
+                int j = rnd.Next(i + 1);
+                var temp = instrumentGroups[i];
+                instrumentGroups[i] = instrumentGroups[j];
+                instrumentGroups[j] = temp;
+            }
+
+
+            int idx = 0;
+
+            // Select numberOfCards instruments
+            foreach (var group in instrumentGroups)
+            {
+                if (idx == numberOfInstruments)
+                {
+                    break;
+                }
+
+                idx++;
+
+                var instrument = group[rnd.Next(group.Count)];
+                selectedInstruments.Add(instrument);
+            }
+
+        }
+
+
+        // Select melodies
+        if (sameMelody) // Pick up a random melody for all instruments
+        {
+            idxMelodies = rnd.Next(instruments[0].melodies.Count);
+
+            selectedMelodies.Add(instruments[0].melodies[idxMelodies]);
+        }
+        else
+        {
+            // For all the cards
+            while (melIdxs.Count < numberOfInstruments)
+            {
+                // Generate a random number
+                int randInt = rnd.Next(0, instruments[0].melodies.Count);
+
+                // Add the number to the list if it's not already contained
+                if (!melIdxs.Contains(randInt))
+                {
+                    melIdxs.Add(randInt);
+                }
+
+            }
+
+            // For every instrument
+            for(int i = 0; i < numberOfInstruments; i++)
+            {
+                // Find the corresponding index in the list of all instruments
+                int idxInstrument = instruments.FindIndex(x => x.instrument == selectedInstruments[i]);
+                selectedMelodies.Add(instruments[idxInstrument].melodies[melIdxs[i]]);            }
+
+            //foreach (var melody in melIdxs)
+            //{
+            //    selectedMelodies.Add(instruments[selectedInstruments[melody.]].melodies[melody].ToString());
+            //}
+
+        }
+
+
+
+
+        // Compose the filename
+        List<string> soundsArray = new List<string>();
+        
+
+    }
 
 
 }
