@@ -796,6 +796,18 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8214634871725679393, guid: 39667e74526b28a478519cbf02033301, type: 3}
   m_PrefabInstance: {fileID: 8214634873046351554}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1338531305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215101711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c518148a5f1c6d4782d6a947889b99e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1344224812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,7 +1723,7 @@ PrefabInstance:
     - target: {fileID: 8214634871725679398, guid: 39667e74526b28a478519cbf02033301, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1338531305}
     - target: {fileID: 8214634871725679398, guid: 39667e74526b28a478519cbf02033301, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1722,7 +1734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8214634871725679398, guid: 39667e74526b28a478519cbf02033301, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayPressed
+      value: ChangeScene
       objectReference: {fileID: 0}
     - target: {fileID: 8214634871725679398, guid: 39667e74526b28a478519cbf02033301, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -1730,7 +1742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8214634871725679398, guid: 39667e74526b28a478519cbf02033301, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ButtonPressed, Assembly-CSharp
+      value: PlayButtonNextScene, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8214634871725679398, guid: 39667e74526b28a478519cbf02033301, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName

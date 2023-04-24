@@ -14,9 +14,9 @@ public class JSONInputHandler : MonoBehaviour
         entries = JSONSaving.ReadListFromJSON<DataCollector>(filename);
     }
 
-    public void AddNameToList(string name, float clicks, int level)
+    public void AddNameToList(string name, float clicks, int level, string melodyName, bool similarInstruments, bool sameMelody)
     {
-        entries.Add(new DataCollector(name, clicks, level));
+        entries.Add(new DataCollector(name, clicks, level, melodyName, similarInstruments, sameMelody));
 
         JSONSaving.SaveToJSON<DataCollector>(entries, filename);
     }

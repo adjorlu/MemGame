@@ -1,0 +1,84 @@
+{
+    "Items": [
+        {
+            "name": "Drums",
+            "clicks": 2.0,
+            "level": 2.0,
+            "melodyName": "Groove6",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Flute",
+            "clicks": 2.0,
+            "level": 2.0,
+            "melodyName": "Melody1",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Bass",
+            "clicks": 1.0,
+            "level": 2.0,
+            "melodyName": "SonataNo16",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Trombone",
+            "clicks": 4.0,
+            "level": 2.0,
+            "melodyName": "Melody3",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Piano",
+            "clicks": 1.0,
+            "level": 2.0,
+            "melodyName": "EineKleine",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Flute",
+            "clicks": 3.0,
+            "level": 2.0,
+            "melodyName": "Melody1",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Drums",
+            "clicks": 3.0,
+            "level": 2.0,
+            "melodyName": "Groove6",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Bass",
+            "clicks": 2.0,
+            "level": 2.0,
+            "melodyName": "SonataNo16",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Piano",
+            "clicks": 2.0,
+            "level": 2.0,
+            "melodyName": "EineKleine",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Trombone",
+            "clicks": 2.0,
+            "level": 2.0,
+            "melodyName": "Melody3",
+            "instr": false,
+            "mel": false
+        }
+    ]
+}

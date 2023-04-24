@@ -4,18 +4,26 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System;
+using System.Linq;
+using System.IO;
 
 public class SceneController : MonoBehaviour
 {
-    public int gridRows = 2;
-    public int gridCols = 4;
-    public float offsetX = 2f;
-    public float offsetY = 2.5f;
-    public int[] numbers = { 0, 0, 1, 1, 2, 2, 3, 3 };
+
+    public int numCards = 8;
+
+    private float offsetX = 2f;
+    private float offsetY = 2.5f;
+    
+    private int gridRows = 2;
+    private int gridCols = 4;
+
+    public bool similarCards = false;
+    public bool sameMelody = false;
 
     [SerializeField] MemoryCard originalCard;
-    [SerializeField] Sprite[] images;
-    [SerializeField] AudioClip[] sounds;
+    //[SerializeField] Sprite[] images;
+    //[SerializeField] AudioClip[] sounds;
     [SerializeField] TMP_Text scoreLabel;
     [SerializeField] TMP_Text rewardLabel;
     [SerializeField] AudioClip scoreAudio;
@@ -28,7 +36,13 @@ public class SceneController : MonoBehaviour
     private int currentScene;
     private List<int> matchId = new List<int>();
 
+    // List for saving user interaction
     private List<DataCollector> dataCollector = new List<DataCollector>();
+
+    // List of sprites and clips to load per every card
+    private List<string> sprites = new List<string>();
+    private List<string> audioclips = new List<string>();
+
 
     public bool canReveal
     {
@@ -38,26 +52,37 @@ public class SceneController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        // be sure that the label is disabled at the beginning of the level
+        // Be sure that the label is disabled at the beginning of the level
         rewardLabel.enabled = false;
         panelBackground.SetActive(false);
+
+        // Create a shuffled array of cards
+        int[] cardsIdexes = GenerateCardVector(numCards);
 
         currentScene = SceneManager.GetActiveScene().buildIndex;
 
         Debug.Log("Scene number is: " + currentScene);
+
+        
+        //Get set of audioclips and sprits randomly generated following the rules
+        (audioclips, sprites)= GetComponent<RandomizeInstruments>().SelectAndRandomizeCards(numCards, similarCards, sameMelody);
+
+        // Adapt the columns to the number of cards
+        gridCols = numCards / gridRows;
+
+        // Displace the first card accordingly to the total number of cards
+        originalCard.transform.position = new Vector3(-(gridCols - 1), 1, 0);
+
         Vector3 startPos = originalCard.transform.position;
 
-        // create shuffled list of cards
-        numbers = ShuffleArray(numbers);
-
-        // place cards in a grid
+        // Place cards in a grid
         for (int i = 0; i < gridCols; i++)
         {
             for (int j = 0; j < gridRows; j++)
             {
                 MemoryCard card;
 
-                // use the original for the first grid space
+                // Use the original for the first grid space
                 if (i == 0 && j == 0)
                 {
                     card = originalCard;
@@ -69,9 +94,19 @@ public class SceneController : MonoBehaviour
 
                 // next card in the list for each grid space
                 int index = j * gridCols + i;
-                int id = numbers[index];
-                card.SetCard(id, images[id]);
-                card.SetAudio(id, sounds[id]);
+                int id = cardsIdexes[index];
+
+                //card.SetCard(id, images[id]);
+                //card.SetAudio(id, sounds[id]);
+
+                card._id = id;
+
+                // Load the sprite from the asset path and assign it to the SpriteRenderer
+                card.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(sprites[id]);
+
+                // Load the audio clip from the asset path and assign it to the AudioSource
+                card.GetComponent<AudioSource>().clip = Resources.Load<AudioClip>(audioclips[id]);
+                card.computerAudio.clip = Resources.Load<AudioClip>(audioclips[id]);
 
                 float posX = (offsetX * i) + startPos.x;
                 float posY = -(offsetY * j) + startPos.y;
@@ -79,12 +114,38 @@ public class SceneController : MonoBehaviour
             }
         }
 
-        // load the clip
+        // Load the feedback audioclip for correct match
         UIAudio.clip = scoreAudio;
 
     }
 
-    // everyday im Knuth shuffling 
+    private int[] GenerateCardVector(int nCards)
+    {
+        int cardIdx = 0;
+
+        // Empty vector with nCards
+        int[] cardsVector = new int[nCards];
+
+        // For each card
+        for (int card = 0; card < cardsVector.Length; card++)
+        {
+            // Assign an increasing index for each couple of cards
+            if (card % 2 == 0 && card > 1)
+            {
+                cardIdx++;
+
+            }
+
+            cardsVector[card] = cardIdx;
+        }
+
+        // Create shuffled list of cards
+        cardsVector = ShuffleArray(cardsVector);
+
+        return cardsVector;
+    }
+
+    // Everyday im Knuth shuffling 
     private int[] ShuffleArray(int[] numbers)
     {
         int[] newArray = numbers.Clone() as int[];
@@ -114,7 +175,7 @@ public class SceneController : MonoBehaviour
     private IEnumerator CheckMatch()
     {
 
-        // increment score if:
+        // Increment score if:
         // - the cards match
         // - the selected cards are not the same (not same position)
         // - the couple selected have not been selected before
@@ -123,20 +184,20 @@ public class SceneController : MonoBehaviour
             !matchId.Contains(firstRevealed.Id))
         {
 
-            // add the found match pair
+            // Add the found match pair
             matchId.Add(firstRevealed.Id);
 
-            // increment score
+            // Increment score
             score++;
             scoreLabel.text = $"SCORE: {score}";
 
             print($"SCORE: {score}");
 
-            // show the instrument 
+            // Show the instrument 
             firstRevealed.Reveal();
             secondRevealed.Reveal();
 
-            // correct match audio feedback
+            // Correct match audio feedback
             firstRevealed.alreadyMatched = true;
             secondRevealed.alreadyMatched = true;
 
@@ -146,7 +207,7 @@ public class SceneController : MonoBehaviour
             new WaitForSeconds(1f);
             UIAudio.Play();
 
-            // if level is completed
+            // If level is completed
             if (score == (gridCols * gridRows) / 2)
             {
                 yield return new WaitForSeconds(0.5f);
@@ -167,7 +228,7 @@ public class SceneController : MonoBehaviour
             }
         }
 
-        // otherwise turn them back over after .5s pause
+        // Otherwise turn them back over after .5s pause
         else
         {
             yield return new WaitForSeconds(.2f);
@@ -190,11 +251,12 @@ public class SceneController : MonoBehaviour
 
     private void ChangeScene()
     {
-        CollectInfo();
+        CollectCardInfo();
         SceneManager.LoadScene(currentScene + 1);
     }
 
-    private void CollectInfo()
+   
+    private void CollectCardInfo()  // Collect date, card name, clicks and compose JSON file
     {
         var allCards = FindObjectsOfType<MemoryCard>();
 
@@ -204,8 +266,10 @@ public class SceneController : MonoBehaviour
 
         foreach (var card in allCards)
         {
+            string[] pathInstrument = audioclips[card.Id].ToString().Split(Path.DirectorySeparatorChar); 
+            string[] nameInstrument = pathInstrument[pathInstrument.Length-1].Split('_');
 
-            dataCollector.Add(new DataCollector(images[card.Id].name.ToString(), card.numClicks, currentScene));
+            dataCollector.Add(new DataCollector(nameInstrument[0], card.numClicks, currentScene, nameInstrument[1], similarCards, sameMelody));
             
         }
 

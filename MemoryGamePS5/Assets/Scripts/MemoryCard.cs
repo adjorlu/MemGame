@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using AudioStream;
 
+
 public class MemoryCard : MonoBehaviour {
 	[SerializeField] GameObject cardBack;
 	[SerializeField] GameObject imHovered;
@@ -24,7 +25,7 @@ public class MemoryCard : MonoBehaviour {
 	public int numClicks = 0;
 
 
-    private int _id;
+    public int _id;
 	public int Id {
 		get {return _id;}
 	}
