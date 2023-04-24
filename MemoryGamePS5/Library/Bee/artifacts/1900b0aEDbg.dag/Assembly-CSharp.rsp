@@ -401,7 +401,7 @@
 "Assets/Scripts/DataCollector.cs"
 "Assets/Scripts/FindAndSetAllAudioDevices.cs"
 "Assets/Scripts/GetSelectedAudioDevice.cs"
-"Assets/Scripts/InstrumntContainer.cs"
+"Assets/Scripts/InstrumentContainer.cs"
 "Assets/Scripts/JSONInputHandler.cs"
 "Assets/Scripts/JSONSaving.cs"
 "Assets/Scripts/MainMenuController.cs"

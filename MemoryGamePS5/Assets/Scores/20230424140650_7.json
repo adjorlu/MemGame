@@ -1,0 +1,68 @@
+{
+    "Items": [
+        {
+            "name": "Trombone",
+            "clicks": 1.0,
+            "level": 7.0,
+            "melodyName": "Up",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Bass",
+            "clicks": 1.0,
+            "level": 7.0,
+            "melodyName": "Up",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Bass",
+            "clicks": 2.0,
+            "level": 7.0,
+            "melodyName": "Up",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Piano",
+            "clicks": 1.0,
+            "level": 7.0,
+            "melodyName": "Up",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Trombone",
+            "clicks": 3.0,
+            "level": 7.0,
+            "melodyName": "Up",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Piano",
+            "clicks": 2.0,
+            "level": 7.0,
+            "melodyName": "Up",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Cello",
+            "clicks": 1.0,
+            "level": 7.0,
+            "melodyName": "Up",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Cello",
+            "clicks": 1.0,
+            "level": 7.0,
+            "melodyName": "Up",
+            "instr": true,
+            "mel": true
+        }
+    ]
+}

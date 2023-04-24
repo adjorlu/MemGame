@@ -7,7 +7,6 @@ using UnityEngine;
 
 public class RandomizeInstruments : MonoBehaviour
 {
-
     // Create a list of instruments. Each instrument contains a name, a set of melodies and a group
     public List<InstrumentContainer> instruments = new List<InstrumentContainer>();
 
@@ -26,27 +25,50 @@ public class RandomizeInstruments : MonoBehaviour
             { "Flute", 5 },
             { "Sax", 5 },
             { "Clarinet", 5 },
-            { "Drums", 7 }
+            { "Drums", 6 }
         };
 
-    void Start()
+
+
+    public Tuple<List<string>, List<string>> SelectAndRandomizeCards(int numberOfCards, bool similar, bool sameMelody)
     {
+
+        int numberOfInstruments = numberOfCards / 2;
+
+        // Random seed
+        System.Random rnd = new System.Random();
+
+        // Single index melody for "same melody" condition
+        int idxMelodies = 0;
+
+        // List that contains melodies indexes
+        List<int> melIdxs = new List<int>();
+
+        // Compose the filenames for both sprites and audioclips
+        List<string> audioClipArray = new List<string>();
+        List<string> spritesArray = new List<string>();
+
+        // Container for selected instrument
+        List<string> selectedInstruments = new List<string>(numberOfInstruments);
+        // Container for selected melodies
+        List<string> selectedMelodies = new List<string>(numberOfInstruments);
+
         string path = "";
         string tmpInstrument = "";
         List<string> tmpMelody = new List<string>();
-        char[] wavChar = {'.', 'w', 'a', 'v'};
+        char[] wavChar = { '.', 'w', 'a', 'v' };
 
         // Load folder content
-        string folderPath = "Assets/Sounds/Instruments";
+        string folderPath = "Assets/Resources/Sounds/Instruments";
 
         // Check if the folder exists
         if (Directory.Exists(folderPath))
         {
             // Get all files and directories in the folder
             string[] files = Directory.GetFiles(folderPath);
-            
+
             // For each element in the folder
-            foreach(string file in files)
+            foreach (string file in files)
             {
                 // If it's a .wav file
                 if (!file.Contains(".meta") & file.Contains(".wav"))
@@ -59,7 +81,7 @@ public class RandomizeInstruments : MonoBehaviour
                     // If it's a new instrument
                     if (tmpInstrument != content[0])
                     {
-                        
+
                         // Clear tmpMelody if it's a new instrument
                         tmpMelody = new List<string>(); ;
 
@@ -83,7 +105,7 @@ public class RandomizeInstruments : MonoBehaviour
 
                 }
                 else  // Otherwise skip the file
-                { 
+                {
                     continue;
                 }
 
@@ -95,24 +117,14 @@ public class RandomizeInstruments : MonoBehaviour
             Debug.LogError("Folder does not exist: " + folderPath);
         }
 
-        SelectAndRandomizeCards(8, true, false);
-    }
 
-    public void SelectAndRandomizeCards(int numberOfCards, bool similar, bool sameMelody)
-    {
-        int numberOfInstruments = numberOfCards / 2;
-        System.Random rnd = new System.Random();
-        int idxMelodies = 0;
-        List<int> melIdxs = new List<int>();
+
+
 
 
         // Create a list of instruments for each similarity group
         var instrumentGroups = instrumentSimilarity.GroupBy(x => x.Value).Select(x => x.Select(y => y.Key).ToList()).ToList();
 
-        // Container for selected instrument
-        List<string> selectedInstruments = new List<string>();
-        // Container for selected melodies
-        List<string> selectedMelodies = new List<string>();
 
         // Select instruments
         if (similar) // Select similar instruments
@@ -121,7 +133,11 @@ public class RandomizeInstruments : MonoBehaviour
             foreach (var group in instrumentGroups)
             {
                 var instrument = group[rnd.Next(group.Count)];
-                selectedInstruments.Add(instrument);
+
+                if (instrument != "Drums")
+                {
+                    selectedInstruments.Add(instrument);
+                }
             }
 
 
@@ -173,15 +189,23 @@ public class RandomizeInstruments : MonoBehaviour
         {
             idxMelodies = rnd.Next(instruments[0].melodies.Count);
 
-            selectedMelodies.Add(instruments[0].melodies[idxMelodies]);
+            // For every instrument
+            for (int i = 0; i < numberOfInstruments; i++)
+            {
+                // Find the corresponding index in the list of all instruments
+                int idxInstrument = instruments.FindIndex(x => x.instrument == selectedInstruments[i]);
+                // Save the index in a list
+                selectedMelodies.Add(instruments[idxInstrument].melodies[idxMelodies]);
+            }
+            
         }
         else
         {
             // For all the cards
             while (melIdxs.Count < numberOfInstruments)
             {
-                // Generate a random number
-                int randInt = rnd.Next(0, instruments[0].melodies.Count);
+                // Generate a random number between 0 and maximum number of melodies
+                int randInt = rnd.Next(0, instruments[0].melodies.Count -1);
 
                 // Add the number to the list if it's not already contained
                 if (!melIdxs.Contains(randInt))
@@ -192,27 +216,35 @@ public class RandomizeInstruments : MonoBehaviour
             }
 
             // For every instrument
-            for(int i = 0; i < numberOfInstruments; i++)
+            for (int i = 0; i < numberOfInstruments; i++)
             {
                 // Find the corresponding index in the list of all instruments
                 int idxInstrument = instruments.FindIndex(x => x.instrument == selectedInstruments[i]);
-                selectedMelodies.Add(instruments[idxInstrument].melodies[melIdxs[i]]);            }
 
-            //foreach (var melody in melIdxs)
-            //{
-            //    selectedMelodies.Add(instruments[selectedInstruments[melody.]].melodies[melody].ToString());
-            //}
+                // Save the index in a list
+                selectedMelodies.Add(instruments[idxInstrument].melodies[melIdxs[i]]);            
+            }
 
         }
 
 
 
+        for (int entry = 0; entry < selectedMelodies.Count; entry++)
+        {
+            string soundPathFile = Path.Combine("Sounds", "Instruments", selectedInstruments[entry] + "_" + selectedMelodies[entry]);
+            //string soundPathFile = "Sounds/Instruments/" + selectedInstruments[entry] + "_" + selectedMelodies[entry];
+            audioClipArray.Add(soundPathFile);
 
-        // Compose the filename
-        List<string> soundsArray = new List<string>();
-        
+            string imagePathFile = Path.Combine("Sprites", "Cards", "Card" + selectedInstruments[entry]);
+            //string imagePathFile = "Images/Cards/" + "Card" + selectedInstruments[entry];
+            spritesArray.Add(imagePathFile);
 
+        }
+
+        // Print all selected audioclips and sprites
+        //audioClipArray.ForEach(Debug.Log);
+        //spritesArray.ForEach(Debug.Log);
+
+        return Tuple.Create(audioClipArray, spritesArray);
     }
-
-
 }
