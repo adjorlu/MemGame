@@ -7,6 +7,7 @@ public class MainMenuController : MonoBehaviour
 {
 
     private Button playButtonMainMenu;
+    private Button loadButtonMainMenu;
     private Button optionButtonMainMenu;
     private Button quitButtonMainMenu;
     private Button backButtonOptionMenu;
@@ -23,6 +24,7 @@ public class MainMenuController : MonoBehaviour
         if (mainMenu != null)
         {
             playButtonMainMenu = GameObject.Find("PlayButton").GetComponent<Button>();
+            loadButtonMainMenu = GameObject.Find("LoadButton").GetComponent<Button>();
             optionButtonMainMenu = GameObject.Find("OptionsButton").GetComponent<Button>();
             quitButtonMainMenu = GameObject.Find("QuitButton").GetComponent<Button>();
         }
@@ -35,6 +37,11 @@ public class MainMenuController : MonoBehaviour
         if (playButtonMainMenu.pressed)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+        if (loadButtonMainMenu.pressed) 
+        {
+            loadButtonMainMenu.GetComponent<LoadButton>().LoadGame();
         }
 
         if (optionButtonMainMenu.pressed)

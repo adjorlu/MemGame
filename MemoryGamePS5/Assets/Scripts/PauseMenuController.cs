@@ -14,7 +14,10 @@ public class PauseMenuController : MonoBehaviour
     private Button resumeButton;
     private Button optionsButton;
     private Button quitButton;
+    private Button exitButton;
+    private Button saveButton;
     private Button backButton;
+    private Canvas quitSaveMenu;
 
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject optionsMenu; 
@@ -35,6 +38,10 @@ public class PauseMenuController : MonoBehaviour
                 resumeButton = GameObject.Find("/Canvas/PauseMenu/Menu/ResumeButton").GetComponent<Button>();
                 optionsButton = GameObject.Find("/Canvas/PauseMenu/Menu/OptionsButton").GetComponent<Button>();
                 quitButton = GameObject.Find("/Canvas/PauseMenu/Menu/QuitButton").GetComponent<Button>();
+                exitButton = GameObject.Find("/Canvas/PauseMenu/QuitSaveMenu/ExitButton").GetComponent<Button>();
+                saveButton = GameObject.Find("/Canvas/PauseMenu/QuitSaveMenu/SaveButton").GetComponent<Button>();
+                quitSaveMenu = GameObject.Find("/Canvas/PauseMenu/QuitSaveMenu").GetComponent<Canvas>();
+  
             }
         }
 
@@ -64,7 +71,19 @@ public class PauseMenuController : MonoBehaviour
 
             if (quitButton.pressed)
             {
-                QuitGame();
+                menu.gameObject.SetActive(false);
+                optionsMenu.gameObject.SetActive(false);
+                quitSaveMenu.gameObject.SetActive(true);
+            }
+
+            if (saveButton.pressed)
+            {
+                saveButton.GetComponent<SaveButton>().SaveGame();
+            }
+
+            if (exitButton.pressed)
+            {
+                ExitGame();
             }
         }
 
@@ -91,7 +110,7 @@ public class PauseMenuController : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    public void QuitGame()
+    public void ExitGame()
     {
         Application.Quit();
         print("Quitting game...");

@@ -276,5 +276,4 @@ public class SceneController : MonoBehaviour
         JSONSaving.SaveToJSON<DataCollector>(dataCollector, localDate.ToString("yyyyMMddHHmmss") + "_" + currentScene.ToString() + ".json");
 
     }
-
 }

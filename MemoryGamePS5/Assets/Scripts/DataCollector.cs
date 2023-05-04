@@ -3,6 +3,8 @@ using System;
 [Serializable]
 public class DataCollector
 {
+
+    // Class used for saving interaction data of each level
     public string name;
     public float clicks;
     public float level;
