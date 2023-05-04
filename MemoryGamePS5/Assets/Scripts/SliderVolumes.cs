@@ -15,13 +15,11 @@ public class SliderVolumes : MonoBehaviour
 
     public void SetSoundLevel(float sliderValue)
     {
-        PlayerPrefs.SetFloat("soundLevel", Mathf.Log10(soundLevelSlider.value) * 20);
-        //PlayerPrefs.SetFloat("soundLevel", soundLevelSlider.value);
+        PlayerPrefs.SetFloat("soundLevel", soundLevelSlider.value);
     }
     public void SetHapticLevel(float sliderValue)
     {
-        PlayerPrefs.SetFloat("hapticLevel", Mathf.Log10(hapticLevelSlider.value) * 20);
-        //PlayerPrefs.SetFloat("hapticLevel", hapticLevelSlider.value);
+        PlayerPrefs.SetFloat("hapticLevel", hapticLevelSlider.value);
     }
 }
 

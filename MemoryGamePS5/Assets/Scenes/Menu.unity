@@ -1185,7 +1185,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e8cd266b848bc4c919e91f08b52ed7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: 0
 --- !u!1 &2116134095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4067179635528268106, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
@@ -1505,6 +1504,10 @@ PrefabInstance:
     - target: {fileID: 4067179634828467438, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4067179634828467439, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4067179634838136731, guid: 3cd7303929ed4ac43b9ca86fb4636d05, type: 3}
       propertyPath: m_AnchorMax.x
