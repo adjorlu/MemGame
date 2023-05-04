@@ -1,0 +1,68 @@
+{
+    "Items": [
+        {
+            "name": "Violin",
+            "clicks": 1.0,
+            "level": 5.0,
+            "melodyName": "Melody2",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Violin",
+            "clicks": 1.0,
+            "level": 5.0,
+            "melodyName": "Melody2",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Bass",
+            "clicks": 1.0,
+            "level": 5.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Trombone",
+            "clicks": 1.0,
+            "level": 5.0,
+            "melodyName": "Melody4",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Guitar",
+            "clicks": 1.0,
+            "level": 5.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Guitar",
+            "clicks": 1.0,
+            "level": 5.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Trombone",
+            "clicks": 2.0,
+            "level": 5.0,
+            "melodyName": "Melody4",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Bass",
+            "clicks": 2.0,
+            "level": 5.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": false
+        }
+    ]
+}

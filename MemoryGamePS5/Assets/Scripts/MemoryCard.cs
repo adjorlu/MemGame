@@ -43,7 +43,7 @@ public class MemoryCard : MonoBehaviour {
 
 	private void Update()
     {
-		if (imTouched == true && mouse.GetComponent<mouseController>().xPressed == true)
+		if (imTouched == true && mouse.GetComponent<MouseController>().xPressed == true)
         {
 			Pressed();
 		}

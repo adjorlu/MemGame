@@ -407,8 +407,7 @@
 "Assets/Scripts/LoadButton.cs"
 "Assets/Scripts/MainMenuController.cs"
 "Assets/Scripts/MemoryCard.cs"
-"Assets/Scripts/MixerController.cs"
-"Assets/Scripts/mouseController.cs"
+"Assets/Scripts/MouseController.cs"
 "Assets/Scripts/PauseMenuController.cs"
 "Assets/Scripts/PlayButtonNextScene.cs"
 "Assets/Scripts/PopulateAudioDevices.cs"
@@ -418,7 +417,6 @@
 "Assets/Scripts/SaveSelectedAudioDevice.cs"
 "Assets/Scripts/SceneController.cs"
 "Assets/Scripts/SliderVolumes.cs"
-"Assets/Scripts/UIButton.cs"
 -langversion:9.0
 
 /deterministic

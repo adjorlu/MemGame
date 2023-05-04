@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
-public class mouseController : MonoBehaviour
+public class MouseController : MonoBehaviour
 {
 
 
