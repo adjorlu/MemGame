@@ -14,12 +14,14 @@ public class MainMenuController : MonoBehaviour
 
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject optionsMenu;
+    [SerializeField] private GameObject loadMenu;
 
     private void Start()
     {
 
         mainMenu.SetActive(true);
         optionsMenu.SetActive(false);
+        loadMenu.SetActive(false);
 
         if (mainMenu != null)
         {
@@ -41,7 +43,8 @@ public class MainMenuController : MonoBehaviour
 
         if (loadButtonMainMenu.pressed) 
         {
-            loadButtonMainMenu.GetComponent<LoadButton>().LoadGame();
+            mainMenu.gameObject.SetActive(false);
+            loadMenu.gameObject.SetActive(true);
         }
 
         if (optionButtonMainMenu.pressed)
@@ -66,6 +69,7 @@ public class MainMenuController : MonoBehaviour
             {
                 mainMenu.gameObject.SetActive(true);
                 optionsMenu.gameObject.SetActive(false);
+                loadMenu.gameObject.SetActive(false);
             }
         }
     }

@@ -98,7 +98,7 @@ PrefabInstance:
     - target: {fileID: 8214634871725679398, guid: 39667e74526b28a478519cbf02033301, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: -2778638990128818365}
+      objectReference: {fileID: 0}
     - target: {fileID: 8214634871725679398, guid: 39667e74526b28a478519cbf02033301, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadGame
@@ -107,23 +107,9 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: LoadButton, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8214634872845267419, guid: 39667e74526b28a478519cbf02033301, type: 3}
+      propertyPath: m_text
+      value: LOAD
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39667e74526b28a478519cbf02033301, type: 3}
---- !u!1 &4051615556479943173 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8214634871725679392, guid: 39667e74526b28a478519cbf02033301, type: 3}
-  m_PrefabInstance: {fileID: 5348591928232501541}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &-2778638990128818365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4051615556479943173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88e8cd266b848bc4c919e91f08b52ed7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentScene: 0
