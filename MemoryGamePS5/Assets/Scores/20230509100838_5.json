@@ -1,0 +1,68 @@
+{
+    "Items": [
+        {
+            "name": "Sax",
+            "clicks": 1.0,
+            "level": 5.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Guitar",
+            "clicks": 1.0,
+            "level": 5.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Bass",
+            "clicks": 2.0,
+            "level": 5.0,
+            "melodyName": "Melody4",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Trumpet",
+            "clicks": 2.0,
+            "level": 5.0,
+            "melodyName": "Melody3",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Sax",
+            "clicks": 4.0,
+            "level": 5.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Trumpet",
+            "clicks": 2.0,
+            "level": 5.0,
+            "melodyName": "Melody3",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Bass",
+            "clicks": 2.0,
+            "level": 5.0,
+            "melodyName": "Melody4",
+            "instr": true,
+            "mel": false
+        },
+        {
+            "name": "Guitar",
+            "clicks": 2.0,
+            "level": 5.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": false
+        }
+    ]
+}

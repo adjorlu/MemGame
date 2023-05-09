@@ -15,7 +15,7 @@ public class PauseMenuController : MonoBehaviour
     private Button optionsButton;
     private Button quitButton;
     private Button exitButton;
-    private Button saveButton;
+    private Button goToMainMenuButton;
     private Button backButton;
     private Canvas quitSaveMenu;
 
@@ -33,14 +33,14 @@ public class PauseMenuController : MonoBehaviour
         {
             Pause();
 
-            if (resumeButton == null && optionsButton == null && quitButton == null)
+            if (resumeButton == null && optionsButton == null && quitButton == null && exitButton == null && goToMainMenuButton == null && quitSaveMenu == null)
             {
                 resumeButton = GameObject.Find("/Canvas/PauseMenu/Menu/ResumeButton").GetComponent<Button>();
                 optionsButton = GameObject.Find("/Canvas/PauseMenu/Menu/OptionsButton").GetComponent<Button>();
                 quitButton = GameObject.Find("/Canvas/PauseMenu/Menu/QuitButton").GetComponent<Button>();
-                exitButton = GameObject.Find("/Canvas/PauseMenu/QuitSaveMenu/ExitButton").GetComponent<Button>();
-                saveButton = GameObject.Find("/Canvas/PauseMenu/QuitSaveMenu/SaveButton").GetComponent<Button>();
-                quitSaveMenu = GameObject.Find("/Canvas/PauseMenu/QuitSaveMenu").GetComponent<Canvas>();
+                exitButton = GameObject.Find("/Canvas/PauseMenu/QuitMenu/ExitButton").GetComponent<Button>();
+                goToMainMenuButton = GameObject.Find("/Canvas/PauseMenu/QuitMenu/GoToMainMenuButton").GetComponent<Button>();
+                quitSaveMenu = GameObject.Find("/Canvas/PauseMenu/QuitMenu").GetComponent<Canvas>();
   
             }
         }
@@ -76,9 +76,10 @@ public class PauseMenuController : MonoBehaviour
                 quitSaveMenu.gameObject.SetActive(true);
             }
 
-            if (saveButton.pressed)
+            if (goToMainMenuButton.pressed)
             {
-                saveButton.GetComponent<SaveButton>().SaveGame();
+                SceneManager.LoadScene("Menu");
+                Resume();
             }
 
             if (exitButton.pressed)

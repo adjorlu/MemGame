@@ -11,10 +11,13 @@ public class MainMenuController : MonoBehaviour
     private Button optionButtonMainMenu;
     private Button quitButtonMainMenu;
     private Button backButtonOptionMenu;
+    private Button backButtonLoadMenu;
 
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject optionsMenu;
     [SerializeField] private GameObject loadMenu;
+
+    private SaveDataContainer sceneFromSaving;
 
     private void Start()
     {
@@ -38,13 +41,29 @@ public class MainMenuController : MonoBehaviour
     {
         if (playButtonMainMenu.pressed)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            // Load the last scene saved by the user
+            if (System.IO.File.Exists(JSONSaving.GetPath("SaveGame.json")))
+            {
+                sceneFromSaving = JSONSaving.ReadFromJSON<SaveDataContainer>("SaveGame.json");
+
+                SceneManager.LoadScene(sceneFromSaving.level);
+            }
+            else // Start from the first scene
+            {
+                SceneManager.LoadScene("Level1.1");
+            }
         }
 
         if (loadButtonMainMenu.pressed) 
         {
             mainMenu.gameObject.SetActive(false);
+
+            StartCoroutine(WaitABit());
+
             loadMenu.gameObject.SetActive(true);
+
+            backButtonLoadMenu = GameObject.Find("/Canvas/LoadMenu/BackButton").GetComponent<Button>();
+
         }
 
         if (optionButtonMainMenu.pressed)
@@ -71,6 +90,22 @@ public class MainMenuController : MonoBehaviour
                 optionsMenu.gameObject.SetActive(false);
                 loadMenu.gameObject.SetActive(false);
             }
+        }       
+        
+        if (backButtonLoadMenu != null)
+        {
+            if (backButtonLoadMenu.pressed)
+            {
+                mainMenu.gameObject.SetActive(true);
+                optionsMenu.gameObject.SetActive(false);
+                loadMenu.gameObject.SetActive(false);
+            }
         }
+    }
+
+
+    private IEnumerator WaitABit()
+    {
+        yield return new WaitForSeconds(0.1f); // delay for 0.1 seconds
     }
 }

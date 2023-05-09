@@ -4,11 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class SaveButton : MonoBehaviour
 {
-    private SaveDataContainer sceneToSave; 
+    //private SaveDataContainer sceneToSave; 
 
-    public void SaveGame() // Save level 
+    public static void SaveGame() // Save level 
     {
         Debug.Log("Save Pressed");
+
+        SaveDataContainer sceneToSave;
 
         sceneToSave = new SaveDataContainer(SceneManager.GetActiveScene().buildIndex);
 

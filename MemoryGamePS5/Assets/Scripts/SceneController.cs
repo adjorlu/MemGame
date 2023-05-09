@@ -43,13 +43,9 @@ public class SceneController : MonoBehaviour
     private List<string> sprites = new List<string>();
     private List<string> audioclips = new List<string>();
 
+    private SaveDataContainer sceneFromSaving;
 
-    public bool canReveal
-    {
-        get { return secondRevealed == null; }
-    }
 
-    // Use this for initialization
     void Start()
     {
         // Be sure that the label is disabled at the beginning of the level
@@ -63,7 +59,19 @@ public class SceneController : MonoBehaviour
 
         Debug.Log("Scene number is: " + currentScene);
 
-        
+        if (System.IO.File.Exists(JSONSaving.GetPath("SaveGame.json")))
+        {
+            // Get the saved level
+            sceneFromSaving = JSONSaving.ReadFromJSON<SaveDataContainer>("SaveGame.json");
+
+            // Save the scene so it appears in the loading page
+            if (currentScene > sceneFromSaving.level) // Save only if the level has never been done before
+            {
+                SaveButton.SaveGame();
+            }
+        }
+        else { SaveButton.SaveGame(); }
+
         //Get set of audioclips and sprits randomly generated following the rules
         (audioclips, sprites)= GetComponent<RandomizeInstruments>().SelectAndRandomizeCards(numCards, similarCards, sameMelody);
 
@@ -253,6 +261,7 @@ public class SceneController : MonoBehaviour
     {
         CollectCardInfo();
         SceneManager.LoadScene(currentScene + 1);
+
     }
 
    

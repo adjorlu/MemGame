@@ -1,0 +1,84 @@
+{
+    "Items": [
+        {
+            "name": "Sax",
+            "clicks": 1.0,
+            "level": 2.0,
+            "melodyName": "Melody4",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Drums",
+            "clicks": 1.0,
+            "level": 2.0,
+            "melodyName": "Groove1",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Piano",
+            "clicks": 2.0,
+            "level": 2.0,
+            "melodyName": "SonataNo16",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Piano",
+            "clicks": 1.0,
+            "level": 2.0,
+            "melodyName": "SonataNo16",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Cello",
+            "clicks": 1.0,
+            "level": 2.0,
+            "melodyName": "Melody2",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Sax",
+            "clicks": 2.0,
+            "level": 2.0,
+            "melodyName": "Melody4",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Cello",
+            "clicks": 2.0,
+            "level": 2.0,
+            "melodyName": "Melody2",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Trombone",
+            "clicks": 1.0,
+            "level": 2.0,
+            "melodyName": "Melody3",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Trombone",
+            "clicks": 1.0,
+            "level": 2.0,
+            "melodyName": "Melody3",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Drums",
+            "clicks": 2.0,
+            "level": 2.0,
+            "melodyName": "Groove1",
+            "instr": false,
+            "mel": false
+        }
+    ]
+}
