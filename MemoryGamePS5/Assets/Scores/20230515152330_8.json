@@ -1,0 +1,84 @@
+{
+    "Items": [
+        {
+            "name": "Piano",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Flute",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Viola",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Flute",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Trombone",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Bass",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Trombone",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Viola",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Bass",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Piano",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "Melody1",
+            "instr": true,
+            "mel": true
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "Items": [
+        {
+            "name": "Flute",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Bass",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Trombone",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Cello",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Xylophone",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Trombone",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Flute",
+            "clicks": 3.0,
+            "level": 8.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Bass",
+            "clicks": 3.0,
+            "level": 8.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Xylophone",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Cello",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "SonataNo16",
+            "instr": true,
+            "mel": true
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "Items": [
+        {
+            "name": "Viola",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Bass",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Viola",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Sax",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Bass",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Trombone",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Xylophone",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Sax",
+            "clicks": 3.0,
+            "level": 8.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Xylophone",
+            "clicks": 1.0,
+            "level": 8.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": true
+        },
+        {
+            "name": "Trombone",
+            "clicks": 2.0,
+            "level": 8.0,
+            "melodyName": "EineKleine",
+            "instr": true,
+            "mel": true
+        }
+    ]
+}

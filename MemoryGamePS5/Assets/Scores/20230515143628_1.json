@@ -1,0 +1,68 @@
+{
+    "Items": [
+        {
+            "name": "Cello",
+            "clicks": 1.0,
+            "level": 1.0,
+            "melodyName": "Melody2",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Piano",
+            "clicks": 1.0,
+            "level": 1.0,
+            "melodyName": "EineKleine",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Piano",
+            "clicks": 2.0,
+            "level": 1.0,
+            "melodyName": "EineKleine",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Drums",
+            "clicks": 1.0,
+            "level": 1.0,
+            "melodyName": "Groove5",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Trumpet",
+            "clicks": 1.0,
+            "level": 1.0,
+            "melodyName": "Down",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Drums",
+            "clicks": 2.0,
+            "level": 1.0,
+            "melodyName": "Groove5",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Trumpet",
+            "clicks": 2.0,
+            "level": 1.0,
+            "melodyName": "Down",
+            "instr": false,
+            "mel": false
+        },
+        {
+            "name": "Cello",
+            "clicks": 2.0,
+            "level": 1.0,
+            "melodyName": "Melody2",
+            "instr": false,
+            "mel": false
+        }
+    ]
+}

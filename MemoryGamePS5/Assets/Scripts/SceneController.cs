@@ -6,6 +6,7 @@ using TMPro;
 using System;
 using System.Linq;
 using System.IO;
+using Unity.VisualScripting;
 
 public class SceneController : MonoBehaviour
 {
@@ -14,20 +15,22 @@ public class SceneController : MonoBehaviour
 
     private float offsetX = 2f;
     private float offsetY = 2.5f;
-    
     private int gridRows = 2;
     private int gridCols = 4;
+
+    private float firstCardX = 0.0f;
+    private float firstCardY = 1.5f;
 
     public bool similarCards = false;
     public bool sameMelody = false;
 
     [SerializeField] MemoryCard originalCard;
-    //[SerializeField] Sprite[] images;
-    //[SerializeField] AudioClip[] sounds;
-    [SerializeField] TMP_Text scoreLabel;
     [SerializeField] TMP_Text rewardLabel;
     [SerializeField] AudioClip scoreAudio;
+    [SerializeField] AudioClip rewardAudio;
     [SerializeField] GameObject panelBackground;
+    private TMP_Text scoreLabel;
+    private TMP_Text levelLabel;
     public AudioSource UIAudio;
 
     private MemoryCard firstRevealed;
@@ -49,13 +52,19 @@ public class SceneController : MonoBehaviour
     void Start()
     {
         // Be sure that the label is disabled at the beginning of the level
-        rewardLabel.enabled = false;
+        rewardLabel.gameObject.SetActive(false);
         panelBackground.SetActive(false);
+
+
+        scoreLabel = GameObject.Find("ScoreLabel").GetComponent<TMP_Text>();
+        levelLabel = GameObject.Find("LevelLabel").GetComponent<TMP_Text>();
 
         // Create a shuffled array of cards
         int[] cardsIdexes = GenerateCardVector(numCards);
 
         currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        levelLabel.text = $"LEVEL: {currentScene}";
 
         Debug.Log("Scene number is: " + currentScene);
 
@@ -78,8 +87,11 @@ public class SceneController : MonoBehaviour
         // Adapt the columns to the number of cards
         gridCols = numCards / gridRows;
 
+        // Adapt x postion to number of columns
+        firstCardX = -(gridCols - 1);
+
         // Displace the first card accordingly to the total number of cards
-        originalCard.transform.position = new Vector3(-(gridCols - 1), 1, 0);
+        originalCard.transform.position = new Vector3(firstCardX, firstCardY, 0);
 
         Vector3 startPos = originalCard.transform.position;
 
@@ -228,8 +240,11 @@ public class SceneController : MonoBehaviour
                 secondRevealed.computerAudio.Stop();
                 secondRevealed.GetComponent<AudioSource>().Stop();
 
+                UIAudio.clip = rewardAudio;
+
                 yield return new WaitForSeconds(0.5f);
-                rewardLabel.enabled = true;
+                UIAudio.Play();
+                rewardLabel.gameObject.SetActive(true);
 
                 yield return new WaitForSeconds(3.0f);
                 ChangeScene();
@@ -259,8 +274,16 @@ public class SceneController : MonoBehaviour
 
     private void ChangeScene()
     {
+
         CollectCardInfo();
-        SceneManager.LoadScene(currentScene + 1);
+        if (currentScene < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(currentScene + 1);
+        }
+        else //Load the menu if the game is ended
+        {
+            SceneManager.LoadScene(0);
+        }
 
     }
 
