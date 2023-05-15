@@ -8,6 +8,7 @@ TagManager:
   - AudioPC
   - AudioUI
   - LevelButton
+  - DeleteButton
   layers:
   - Default
   - TransparentFX

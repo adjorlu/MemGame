@@ -19,6 +19,7 @@ public class MainMenuController : MonoBehaviour
 
     private SaveDataContainer sceneFromSaving;
 
+
     private void Start()
     {
 
@@ -62,7 +63,7 @@ public class MainMenuController : MonoBehaviour
 
             loadMenu.gameObject.SetActive(true);
 
-            backButtonLoadMenu = GameObject.Find("/Canvas/LoadMenu/BackButton").GetComponent<Button>();
+            backButtonLoadMenu = GameObject.Find("/Canvas/LoadMenu/LevelsMenu/BackButton").GetComponent<Button>();
 
         }
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using TMPro;
 using TMPro.EditorUtilities;
 using UnityEngine;
@@ -7,14 +8,30 @@ using UnityEngine.SceneManagement;
 
 public class LoadMenu : MonoBehaviour
 {
+    [SerializeField] private GameObject deleteMenu;
+    [SerializeField] private GameObject levelsMenu;
+
 
     private SaveDataContainer sceneFromSaving;
+
+    private Button deleteButton;
+    private Button backButtonLoadMenu;
+
+    private Button yesButton;
+    private Button noButton;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        deleteButton = GameObject.FindGameObjectWithTag("DeleteButton").GetComponent<Button>();
         GameObject[] buttons = GameObject.FindGameObjectsWithTag("LevelButton");
+
+        deleteMenu.SetActive(false);
+        yesButton = GameObject.Find("/Canvas/LoadMenu/DeleteMenu/Yes").GetComponent<Button>();
+        noButton = GameObject.Find("/Canvas/LoadMenu/DeleteMenu/No").GetComponent<Button>();
+
+
+        backButtonLoadMenu = GameObject.Find("/Canvas/LoadMenu/LevelsMenu/BackButton").GetComponent<Button>();
 
         int cnt = 1;
 
@@ -60,5 +77,37 @@ public class LoadMenu : MonoBehaviour
             }
         }
 
+    }
+
+    void Update()
+    {
+        if (deleteButton.pressed)
+        {
+            levelsMenu.SetActive(false);
+            deleteMenu.gameObject.SetActive(true);
+        }
+
+        if (yesButton.pressed)
+        {
+            DeleteAllScenes();
+            deleteMenu.gameObject.SetActive(false);
+            levelsMenu.SetActive(true);
+            Start();
+
+        }
+
+        if (noButton.pressed)
+        {
+            deleteMenu.gameObject.SetActive(false);
+            levelsMenu.SetActive(true);
+        }
+    }
+
+    void DeleteAllScenes()
+    {
+        SaveDataContainer startFromFirst;
+        startFromFirst = new SaveDataContainer(1);
+
+        JSONSaving.SaveToJSON<SaveDataContainer>(startFromFirst, "SaveGame.json");
     }
 }
