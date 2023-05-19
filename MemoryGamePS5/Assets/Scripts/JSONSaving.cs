@@ -52,8 +52,8 @@ public static class JSONSaving
 
     public static string GetPath(string filename)
     {
-        //return Application.persistentDataPath + "/" + filename;  // persistent path in AppData
-        return Application.dataPath + Path.AltDirectorySeparatorChar + "Scores" + Path.AltDirectorySeparatorChar + filename;
+        return Application.persistentDataPath + "/" + filename;  // persistent path in AppData
+        //return Application.dataPath + Path.AltDirectorySeparatorChar + "Scores" + Path.AltDirectorySeparatorChar + filename;
     }
 
     private static void WriteFile(string path, string content)

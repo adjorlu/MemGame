@@ -274,9 +274,9 @@ public class SceneController : MonoBehaviour
 
     private void ChangeScene()
     {
-
+        Debug.Log($"Total scenes: {SceneManager.sceneCountInBuildSettings}");
         CollectCardInfo();
-        if (currentScene < SceneManager.sceneCountInBuildSettings)
+        if (currentScene < (SceneManager.sceneCountInBuildSettings - 1))
         {
             SceneManager.LoadScene(currentScene + 1);
         }
