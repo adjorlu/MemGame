@@ -1,478 +1,659 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1684509467143546, "dur": 656425, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684509467143596, "dur": 1952, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684509467145551, "dur": 643570, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684509467789126, "dur": 10837, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684509467800824, "dur": 40, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684591944237531, "dur": 2696077, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684591944237825, "dur": 16901, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684591944254732, "dur": 33299, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684591944288060, "dur": 1770816, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684591946058880, "dur": 865267, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684591946924158, "dur": 9445, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684591946934312, "dur": 29, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1684591945838058, "dur": 196470, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1684591945839467, "dur": 69085, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1684591946014288, "dur": 5490, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1684591946019783, "dur": 14729, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1684591946020628, "dur": 13083, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1684591946040212, "dur": 1696, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1684591946038677, "dur": 3281, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684591946934521, "dur": 372, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1684509467175279, "dur":2161, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467177460, "dur":201, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1684509467177735, "dur":30, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1684509467177766, "dur":877, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1684509467178730, "dur":749, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467179479, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754530, "dur":87, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754617, "dur":34, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754651, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754656, "dur":25, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754681, "dur":157, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754838, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754849, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754852, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754857, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754859, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754863, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754865, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754870, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754872, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754876, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754878, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754883, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754903, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467754936, "dur":1959, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1684509467178628, "dur":860, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467179490, "dur":4687, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184186, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184190, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184292, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184293, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184367, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184431, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184484, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184567, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184681, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184782, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184857, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184921, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467184992, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185064, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185110, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185162, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185212, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185270, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185315, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185377, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185426, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185481, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185526, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185571, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185617, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185669, "dur":190, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467185860, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186083, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186146, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186207, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186248, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186293, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186342, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Xaml.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186392, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186447, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Windows.Forms.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186498, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186559, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Web.Services.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186604, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186641, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Web.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186706, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186747, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Web.ApplicationServices.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186792, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186834, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186882, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186921, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467186963, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187000, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.ServiceModel.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187042, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187081, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.ServiceModel.Activation.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187121, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187159, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187198, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187236, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Runtime.Serialization.Formatters.Soap.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187281, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187331, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187387, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187432, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Runtime.DurableInstancing.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187492, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187537, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187597, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187640, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187683, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187729, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Messaging.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187793, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187842, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187891, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187932, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467187975, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188017, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.IdentityModel.Selectors.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188065, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188113, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.IdentityModel.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188187, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188250, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188295, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188362, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188411, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188457, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Drawing.Design.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188508, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188549, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188608, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188659, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.DirectoryServices.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188709, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188749, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Design.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188791, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188842, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188886, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188930, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467188975, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189021, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189069, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189112, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Configuration.Install.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189164, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189206, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189252, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189296, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.ComponentModel.DataAnnotations.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189343, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189400, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189450, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189493, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/OggVorbisEncoder.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189542, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189583, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Novell.Directory.Ldap.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189640, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189686, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189732, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189777, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/NetMQ.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189820, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189859, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189899, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189942, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Mono.WebBrowser.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467189997, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467190063, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467190124, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467190169, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Mono.Posix.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467190213, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467190259, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Mono.Messaging.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467190303, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467190343, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Mono.Data.Sqlite.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467190406, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467190450, "dur":38666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/FMODUnityResonance.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467229117, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467229195, "dur":114381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/FMODUnity.dll" }}
-,{ "pid":12345, "tid":1, "ts":1684509467343577, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467343661, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level6" }}
-,{ "pid":12345, "tid":1, "ts":1684509467343723, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467343729, "dur":1130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level6" }}
-,{ "pid":12345, "tid":1, "ts":1684509467344908, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level3" }}
-,{ "pid":12345, "tid":1, "ts":1684509467344956, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467344962, "dur":841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level3" }}
-,{ "pid":12345, "tid":1, "ts":1684509467345847, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level0.resS" }}
-,{ "pid":12345, "tid":1, "ts":1684509467345895, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467345901, "dur":945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level0.resS" }}
-,{ "pid":12345, "tid":1, "ts":1684509467346895, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":1, "ts":1684509467346946, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1684509467346952, "dur":896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":1, "ts":1684509467347898, "dur":406630, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467178701, "dur":793, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467179494, "dur":4731, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467184225, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1684509467184324, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467184417, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":2, "ts":1684509467184504, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467184564, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5.exe" }}
-,{ "pid":12345, "tid":2, "ts":1684509467184620, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467184688, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467184805, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467184877, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467184942, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185037, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185085, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185136, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185192, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185252, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185306, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185360, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185424, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185482, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185537, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185590, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185648, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185699, "dur":174, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467185873, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467186015, "dur":99644, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467285659, "dur":113, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467285775, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Accessibility.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467285838, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467285885, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Plugins/x86_64/fmodstudio.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467285965, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286046, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Plugins/x86_64/fmod.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286108, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286158, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Plugins/x86_64/AudioPluginAudioStreamOutputDevice.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286219, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286268, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Plugins/x86_64/resonanceaudio.dll" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286318, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286386, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/StreamingAssets/AudioStream/_audiostream_demo_assets_prepared" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286450, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286498, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/StreamingAssets/AudioStream/LICENSE.txt" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286548, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286594, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/StreamingAssets/AudioStream/Leonard-Orfeo_Trio.wav" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286643, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286699, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/StreamingAssets/AudioStream/electronic-senses-shibuya.mp3" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286765, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286813, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/StreamingAssets/AudioStream/429957__jack-master__fat-drum-loop-80-bpm-2.wav" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286867, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286912, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/StreamingAssets/AudioStream/429956__jack-master__fat-drum-loop-80-bpm-1.wav" }}
-,{ "pid":12345, "tid":2, "ts":1684509467286963, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467287020, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/StreamingAssets/AudioStream/24ch_polywav_16bit_48k.wav" }}
-,{ "pid":12345, "tid":2, "ts":1684509467287067, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467287113, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":2, "ts":1684509467287181, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467287890, "dur":9940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":2, "ts":1684509467298483, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets8.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467298725, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467298740, "dur":1008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets8.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467299797, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets7.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467299850, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467299857, "dur":804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets7.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467300714, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets6.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467300765, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467300772, "dur":886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets6.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467301707, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets5.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467301761, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467301768, "dur":1142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets5.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467302964, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467303015, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467303020, "dur":798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets3.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467303862, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467303908, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467303913, "dur":709, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467304664, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467304711, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467304716, "dur":1906, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467306672, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":2, "ts":1684509467306808, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467306857, "dur":2897, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":2, "ts":1684509467309755, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467309881, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/resources.resource" }}
-,{ "pid":12345, "tid":2, "ts":1684509467309981, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467310014, "dur":32152, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/resources.resource" }}
-,{ "pid":12345, "tid":2, "ts":1684509467342218, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level8" }}
-,{ "pid":12345, "tid":2, "ts":1684509467342274, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467342282, "dur":1007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level8" }}
-,{ "pid":12345, "tid":2, "ts":1684509467343350, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level7" }}
-,{ "pid":12345, "tid":2, "ts":1684509467343405, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467343412, "dur":868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level7" }}
-,{ "pid":12345, "tid":2, "ts":1684509467344330, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level4" }}
-,{ "pid":12345, "tid":2, "ts":1684509467344381, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467344407, "dur":794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level4" }}
-,{ "pid":12345, "tid":2, "ts":1684509467345252, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level1" }}
-,{ "pid":12345, "tid":2, "ts":1684509467345304, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467345309, "dur":767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level1" }}
-,{ "pid":12345, "tid":2, "ts":1684509467346122, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467346179, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1684509467346183, "dur":976, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":2, "ts":1684509467347213, "dur":407322, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467178716, "dur":786, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467179502, "dur":4678, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467184186, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":3, "ts":1684509467184303, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467184387, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":3, "ts":1684509467184454, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467184518, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467184580, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467184690, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467184823, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467184887, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467184948, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185015, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185074, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185120, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185175, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185229, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185289, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185341, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185404, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185456, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185508, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185561, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185612, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185661, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185708, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185873, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185935, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467185980, "dur":48986, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467234966, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467235075, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Concentus.Oggfile.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467235132, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467235177, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Concentus.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467235220, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467235265, "dur":106091, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/AudioStreamSupport.dll" }}
-,{ "pid":12345, "tid":3, "ts":1684509467341357, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467341499, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1684509467341578, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467341587, "dur":2073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/resources.assets" }}
-,{ "pid":12345, "tid":3, "ts":1684509467343723, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level5" }}
-,{ "pid":12345, "tid":3, "ts":1684509467343773, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467343780, "dur":1163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level5" }}
-,{ "pid":12345, "tid":3, "ts":1684509467344995, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level2" }}
-,{ "pid":12345, "tid":3, "ts":1684509467345045, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467345050, "dur":827, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level2" }}
-,{ "pid":12345, "tid":3, "ts":1684509467345928, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1684509467345983, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467345988, "dur":864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1684509467346895, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/boot.config" }}
-,{ "pid":12345, "tid":3, "ts":1684509467347021, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1684509467347071, "dur":407485, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467178756, "dur":755, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467179512, "dur":4712, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467184224, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1684509467184316, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467184407, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1684509467184499, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467184565, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":4, "ts":1684509467184685, "dur":160, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467184846, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467184909, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467184981, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185044, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185098, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185149, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185198, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185259, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185311, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185372, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185426, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185485, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185538, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185592, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185649, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185702, "dur":201, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185903, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467185963, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467186018, "dur":88811, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467274830, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467274939, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/AsyncIO.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467274993, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467275036, "dur":479312, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":4, "ts":1684509467754349, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1684509467754492, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":4, "ts":1684509467754493, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467178835, "dur":682, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467179517, "dur":4661, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467184186, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1684509467184288, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467184367, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":5, "ts":1684509467184441, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467184486, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":5, "ts":1684509467184568, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467184628, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":5, "ts":1684509467184789, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467184853, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1684509467184924, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185005, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185069, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185120, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185175, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185229, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185288, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185340, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185402, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185456, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185509, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185562, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185614, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185664, "dur":190, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185854, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467185909, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1684509467186020, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467186078, "dur":80989, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":5, "ts":1684509467267068, "dur":107, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467267178, "dur":198483, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/AudioStream.dll" }}
-,{ "pid":12345, "tid":5, "ts":1684509467465662, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1684509467465780, "dur":288766, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467178900, "dur":622, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467179522, "dur":4701, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467184224, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1684509467184323, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467184417, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1684509467184483, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467184545, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":6, "ts":1684509467184617, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467184688, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467184808, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467184876, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467184940, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185020, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185085, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185136, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185194, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185252, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185307, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185359, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185425, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185483, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185538, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185590, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185648, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185698, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185867, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185919, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467185974, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467186024, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467186082, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467186143, "dur":116362, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Unity.InputSystem.dll" }}
-,{ "pid":12345, "tid":6, "ts":1684509467302506, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467302581, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets4.assets" }}
-,{ "pid":12345, "tid":6, "ts":1684509467302656, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467302664, "dur":954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets4.assets" }}
-,{ "pid":12345, "tid":6, "ts":1684509467303663, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":6, "ts":1684509467303710, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467303715, "dur":762, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":6, "ts":1684509467304522, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1684509467304573, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467304579, "dur":12363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1684509467317001, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1684509467317065, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1684509467317074, "dur":54673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":6, "ts":1684509467371798, "dur":382757, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467178932, "dur":596, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467179528, "dur":4691, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467184223, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1684509467184326, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467184410, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":7, "ts":1684509467184475, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467184539, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":7, "ts":1684509467184604, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467184692, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1684509467184811, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467184880, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1684509467184940, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467185042, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1684509467185100, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467185151, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1684509467185273, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467185327, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1684509467185386, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467185433, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1684509467185484, "dur":379, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467185864, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1684509467185922, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467185970, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1684509467186021, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467186078, "dur":242020, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":7, "ts":1684509467428099, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1684509467428250, "dur":326279, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1684509467178996, "dur":537, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1684509467179533, "dur":4646, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1684509467184186, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":8, "ts":1684509467184311, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1684509467184387, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":8, "ts":1684509467184455, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1684509467184518, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":8, "ts":1684509467184580, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1684509467184691, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1684509467184820, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1684509467184882, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1684509467184942, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1684509467185044, "dur":166169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/franc/Desktop/MemoryGame/MemoryGamePS5_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":8, "ts":1684509467351214, "dur":114, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1684509467351331, "dur":403216, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1684509467758847, "dur":1801, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1684509467800953, "dur": 927, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1684509467800798, "dur": 1109, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1684591946109972, "dur":1566, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946111550, "dur":95, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1684591946111683, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1684591946111703, "dur":407, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1684591946112142, "dur":741, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946112883, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899678, "dur":213, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899891, "dur":17, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899908, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899912, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899925, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899929, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899939, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899941, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899947, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899949, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899955, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899957, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899963, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899965, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899969, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899971, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899975, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946899980, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946900006, "dur":2680, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1684591946112548, "dur":365, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946112913, "dur":4966, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946117886, "dur":239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1684591946118129, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946119032, "dur":2987, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1684591946122170, "dur":212, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1684591946122386, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946122393, "dur":1528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1684591946123976, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1684591946124128, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946124207, "dur":1738, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1684591946126012, "dur":340, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1684591946126355, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946126363, "dur":1739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1684591946128164, "dur":193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1684591946128360, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946128366, "dur":1948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1684591946130380, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946130558, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946130608, "dur":5084, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946135757, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946135828, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946135834, "dur":6426, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946142326, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946142395, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946142401, "dur":2400, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946144858, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946144920, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946144927, "dur":2683, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946147672, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946147736, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946147742, "dur":4814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946152616, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946152672, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946152728, "dur":5518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946158295, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946158378, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946158382, "dur":3201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946161651, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946161756, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946161762, "dur":3527, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946165340, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946165397, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946165403, "dur":2363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946167868, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946167968, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946167974, "dur":3002, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946171037, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946171098, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946171102, "dur":8476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946179644, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946179704, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946179711, "dur":2659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946182418, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946182497, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946182504, "dur":1898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946184455, "dur":142276, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946326736, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946326744, "dur":2140, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946328931, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Web.Services.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946328990, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946328996, "dur":1388, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Web.Services.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946330438, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Web.ApplicationServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946330496, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946330502, "dur":1084, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Web.ApplicationServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946331644, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946331695, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946331703, "dur":1027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946332779, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.ServiceModel.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946332832, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946332838, "dur":1905, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.ServiceModel.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946334796, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Runtime.DurableInstancing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946334858, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946334863, "dur":1252, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Runtime.DurableInstancing.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946336177, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946336239, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946336245, "dur":3571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946339870, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946339925, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946339929, "dur":2337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946342323, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.DirectoryServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946342383, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946342388, "dur":1980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.DirectoryServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946344424, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946344473, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946344479, "dur":1732, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946346258, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Configuration.Install.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946346309, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946346317, "dur":1130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Configuration.Install.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946347497, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946347548, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946347552, "dur":1306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946348914, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Novell.Directory.Ldap.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946348972, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946348976, "dur":1579, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Novell.Directory.Ldap.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946350609, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Mono.WebBrowser.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946350661, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946350665, "dur":4133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Mono.WebBrowser.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946354856, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Mono.Posix.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946354909, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946354915, "dur":1331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Mono.Posix.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946356302, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Mono.Data.Sqlite.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946356361, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946356365, "dur":1244, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Mono.Data.Sqlite.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946357751, "dur":44932, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/FMODUnityResonance.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946402690, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946402698, "dur":2436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/FMODUnityResonance.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946405195, "dur":78, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Accessibility.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946405276, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946405282, "dur":1811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Accessibility.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946407151, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Plugins/x86_64/fmodstudio.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946407202, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946407262, "dur":50275, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Plugins/x86_64/fmodstudio.dll" }}
+,{ "pid":12345, "tid":1, "ts":1684591946457606, "dur":2061, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/429957__jack-master__fat-drum-loop-80-bpm-2.wav" }}
+,{ "pid":12345, "tid":1, "ts":1684591946459675, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946459686, "dur":10403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/429957__jack-master__fat-drum-loop-80-bpm-2.wav" }}
+,{ "pid":12345, "tid":1, "ts":1684591946470144, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1684591946470193, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946470199, "dur":1489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1684591946471761, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":1, "ts":1684591946471832, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946471839, "dur":7243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":1, "ts":1684591946479129, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":1, "ts":1684591946479176, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946479182, "dur":2631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":1, "ts":1684591946481865, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1684591946482044, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946482049, "dur":5093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1684591946487199, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1684591946487253, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1684591946487259, "dur":55058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":1, "ts":1684591946542367, "dur":357290, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684591946112486, "dur":413, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684591946112900, "dur":5047, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684591946117948, "dur":226, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1684591946118177, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684591946128951, "dur":1642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1684591946130672, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684591946130793, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684591946130797, "dur":26682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684591946157552, "dur":190351, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684591946347906, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684591946347911, "dur":42819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684591946390775, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/AsyncIO.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684591946390823, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684591946390829, "dur":9682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/AsyncIO.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684591946400559, "dur":497907, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684591946898470, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1684591946898476, "dur":1090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1684591946899616, "dur":6, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":2, "ts":1684591946899623, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946112473, "dur":420, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946112896, "dur":4976, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946117886, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1684591946117890, "dur":226, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946118124, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1684591946118129, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946127802, "dur":1699, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1684591946129503, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1684591946129666, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946129670, "dur":4015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1684591946133735, "dur":194, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1684591946133932, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946133985, "dur":21491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1684591946155550, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946155622, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946155632, "dur":3839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946159526, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946159597, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946159602, "dur":4112, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946163790, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946163866, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946163873, "dur":2040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946165975, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946166035, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946166039, "dur":2351, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946168442, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946168499, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946168504, "dur":2250, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946170805, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946170894, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946170969, "dur":2105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946173125, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946173289, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946173293, "dur":2273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946175619, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946175669, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946175674, "dur":2366, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946178087, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946178147, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946178151, "dur":1696, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946179899, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946179952, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946179956, "dur":2125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946182132, "dur":159408, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946341544, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946341549, "dur":40979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946382580, "dur":283902, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/AudioStream.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946666487, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1684591946666493, "dur":1142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/AudioStream.dll" }}
+,{ "pid":12345, "tid":3, "ts":1684591946667685, "dur":231958, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946112538, "dur":369, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946112907, "dur":4971, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946117886, "dur":352, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1684591946118241, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946130039, "dur":3556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1684591946133655, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5.exe" }}
+,{ "pid":12345, "tid":4, "ts":1684591946133768, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946133771, "dur":1607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5.exe" }}
+,{ "pid":12345, "tid":4, "ts":1684591946135431, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946135486, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946135491, "dur":1127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946136673, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946136728, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946136734, "dur":5990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946142778, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946142911, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946142941, "dur":2597, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946145624, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946145693, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946145699, "dur":2213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946147965, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946148033, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946148037, "dur":9958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946158070, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946158127, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946158135, "dur":15677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946173865, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946173928, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946173933, "dur":3908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946177899, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946177960, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946177964, "dur":3967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946181985, "dur":228100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946410090, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946410098, "dur":1232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946411383, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Plugins/x86_64/fmod.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946411433, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946411466, "dur":47110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Plugins/x86_64/fmod.dll" }}
+,{ "pid":12345, "tid":4, "ts":1684591946459233, "dur":2469, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/429956__jack-master__fat-drum-loop-80-bpm-1.wav" }}
+,{ "pid":12345, "tid":4, "ts":1684591946461709, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946461719, "dur":11995, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/429956__jack-master__fat-drum-loop-80-bpm-1.wav" }}
+,{ "pid":12345, "tid":4, "ts":1684591946473771, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":4, "ts":1684591946473825, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946473831, "dur":5708, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":4, "ts":1684591946479592, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1684591946479644, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946479648, "dur":3686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1684591946483393, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/resources.resource" }}
+,{ "pid":12345, "tid":4, "ts":1684591946483497, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946483504, "dur":32134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/resources.resource" }}
+,{ "pid":12345, "tid":4, "ts":1684591946515700, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/level3" }}
+,{ "pid":12345, "tid":4, "ts":1684591946515759, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946515765, "dur":4064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/level3" }}
+,{ "pid":12345, "tid":4, "ts":1684591946519916, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1684591946519971, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946519975, "dur":2448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1684591946522482, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":4, "ts":1684591946522556, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1684591946522561, "dur":5592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":4, "ts":1684591946528209, "dur":371460, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946112614, "dur":305, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946112919, "dur":4957, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946117886, "dur":282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1684591946118171, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946128411, "dur":2287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1684591946130754, "dur":241, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946130997, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946131000, "dur":33591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946164652, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946164708, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946164714, "dur":2398, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946167170, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946167240, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946167245, "dur":3000, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946170304, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946170357, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946170361, "dur":2740, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946173151, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946173296, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946173301, "dur":1930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946175288, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946175342, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946175348, "dur":2080, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946177484, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946177542, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946177548, "dur":3116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946180714, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946180769, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946180773, "dur":3071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946183895, "dur":279156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946463057, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946463069, "dur":14289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1684591946477408, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":5, "ts":1684591946477458, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946477464, "dur":3836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":5, "ts":1684591946481345, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1684591946481400, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946481404, "dur":10284, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1684591946491753, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/level8" }}
+,{ "pid":12345, "tid":5, "ts":1684591946491804, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946491810, "dur":24113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/level8" }}
+,{ "pid":12345, "tid":5, "ts":1684591946515975, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/level2" }}
+,{ "pid":12345, "tid":5, "ts":1684591946516027, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946516033, "dur":6790, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/level2" }}
+,{ "pid":12345, "tid":5, "ts":1684591946522870, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1684591946523056, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1684591946523059, "dur":4498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/boot.config" }}
+,{ "pid":12345, "tid":5, "ts":1684591946527606, "dur":372068, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946112695, "dur":234, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946112929, "dur":4952, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946117886, "dur":378, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1684591946118266, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946130536, "dur":3926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1684591946134529, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946134591, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946134632, "dur":1359, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946136040, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946136094, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946136099, "dur":7215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946143372, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946143427, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946143433, "dur":2571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946146072, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946146141, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946146147, "dur":2251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946148449, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946148523, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946148529, "dur":4035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946152621, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946152681, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946152685, "dur":6309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946159053, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946159113, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946159121, "dur":4550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946163756, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946163886, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946163893, "dur":1945, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946165890, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946165957, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946165962, "dur":8625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946174647, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946174705, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946174710, "dur":2230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946177005, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946177082, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946177089, "dur":3137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946180283, "dur":667, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946180953, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946180957, "dur":135422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946316433, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946316482, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946316488, "dur":1031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946317562, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946317609, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946317615, "dur":5779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946323449, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Xaml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946323501, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946323507, "dur":1247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Xaml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946324815, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Windows.Forms.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946324874, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946324880, "dur":4438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Windows.Forms.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946329371, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Web.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946329431, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946329461, "dur":3274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Web.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946332790, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.ServiceModel.Activation.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946332848, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946332853, "dur":1446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.ServiceModel.Activation.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946334364, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Runtime.Serialization.Formatters.Soap.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946334431, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946334438, "dur":1800, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Runtime.Serialization.Formatters.Soap.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946336298, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Messaging.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946336348, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946336352, "dur":1338, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Messaging.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946337746, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946337803, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946337831, "dur":1695, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946339599, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.IdentityModel.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946339689, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946339694, "dur":1372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.IdentityModel.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946341120, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Drawing.Design.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946341171, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946341176, "dur":1139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Drawing.Design.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946342361, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Design.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946342409, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946342412, "dur":2489, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Design.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946344974, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946345026, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946345030, "dur":2142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946347225, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946347279, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946347287, "dur":1431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946348783, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/OggVorbisEncoder.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946348843, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946348850, "dur":1572, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/OggVorbisEncoder.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946350469, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946350527, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946350531, "dur":12571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946363157, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Concentus.Oggfile.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946363214, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946363221, "dur":3930, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Concentus.Oggfile.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946367198, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Concentus.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946367248, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946367255, "dur":3698, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Concentus.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946371063, "dur":85482, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/AudioStreamSupport.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946456550, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946456559, "dur":8030, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/AudioStreamSupport.dll" }}
+,{ "pid":12345, "tid":6, "ts":1684591946464640, "dur":4510, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/24ch_polywav_16bit_48k.wav" }}
+,{ "pid":12345, "tid":6, "ts":1684591946469157, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1684591946469168, "dur":83106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/24ch_polywav_16bit_48k.wav" }}
+,{ "pid":12345, "tid":6, "ts":1684591946552323, "dur":347322, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946112705, "dur":219, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946112924, "dur":4950, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946117886, "dur":231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1684591946118123, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946118719, "dur":3055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1684591946121890, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1684591946122116, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946122177, "dur":1662, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1684591946123950, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1684591946124171, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946124181, "dur":1744, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1684591946125985, "dur":412, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1684591946126399, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946126404, "dur":1499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1684591946127979, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1684591946128156, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946128162, "dur":1737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1684591946129964, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1684591946130100, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946130104, "dur":4326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1684591946134516, "dur":597, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1684591946135118, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946135173, "dur":7094, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":7, "ts":1684591946142365, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946142431, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946142436, "dur":6004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946148490, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946148554, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946148557, "dur":4260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946152880, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946152937, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946152941, "dur":7098, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946160099, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946160166, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946160171, "dur":2199, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946162427, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946162486, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946162505, "dur":3292, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946165862, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946165915, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946165926, "dur":1990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946167968, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946168018, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946168023, "dur":2483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946170563, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946170617, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946170622, "dur":2437, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946173115, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946173179, "dur":105, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946173291, "dur":4168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946177513, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946177570, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946177575, "dur":2145, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946179778, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946179848, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946179852, "dur":2501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946182402, "dur":246637, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946429045, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946429053, "dur":1456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946430563, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Plugins/x86_64/AudioPluginAudioStreamOutputDevice.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946430639, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946430646, "dur":2315, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Plugins/x86_64/AudioPluginAudioStreamOutputDevice.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946433018, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Plugins/x86_64/resonanceaudio.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946433080, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946433087, "dur":1441, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Plugins/x86_64/resonanceaudio.dll" }}
+,{ "pid":12345, "tid":7, "ts":1684591946434583, "dur":552, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/_audiostream_demo_assets_prepared" }}
+,{ "pid":12345, "tid":7, "ts":1684591946435141, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946435249, "dur":3007, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/_audiostream_demo_assets_prepared" }}
+,{ "pid":12345, "tid":7, "ts":1684591946438307, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/LICENSE.txt" }}
+,{ "pid":12345, "tid":7, "ts":1684591946438393, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946438400, "dur":1223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/LICENSE.txt" }}
+,{ "pid":12345, "tid":7, "ts":1684591946439680, "dur":320, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/Leonard-Orfeo_Trio.wav" }}
+,{ "pid":12345, "tid":7, "ts":1684591946440004, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946440010, "dur":39352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/Leonard-Orfeo_Trio.wav" }}
+,{ "pid":12345, "tid":7, "ts":1684591946479442, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":7, "ts":1684591946479510, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946479514, "dur":1328, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":7, "ts":1684591946480891, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1684591946480948, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946480954, "dur":11088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1684591946492092, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/level7" }}
+,{ "pid":12345, "tid":7, "ts":1684591946492146, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946492150, "dur":16111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/level7" }}
+,{ "pid":12345, "tid":7, "ts":1684591946508330, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/level5" }}
+,{ "pid":12345, "tid":7, "ts":1684591946508388, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946508395, "dur":7854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/level5" }}
+,{ "pid":12345, "tid":7, "ts":1684591946516305, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/level1" }}
+,{ "pid":12345, "tid":7, "ts":1684591946516372, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946516376, "dur":5841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/level1" }}
+,{ "pid":12345, "tid":7, "ts":1684591946522314, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1684591946522378, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1684591946522384, "dur":4961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1684591946527397, "dur":372247, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946112746, "dur":189, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946112935, "dur":4945, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946117886, "dur":330, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1684591946118218, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946129536, "dur":3359, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1684591946133079, "dur":195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":8, "ts":1684591946133279, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946133285, "dur":19723, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":8, "ts":1684591946153066, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946153118, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946153123, "dur":6081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946159262, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946159315, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946159319, "dur":4405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946163857, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946163915, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946163920, "dur":2213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946166188, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946166241, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946166245, "dur":3941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946170244, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946170304, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946170311, "dur":2822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946173287, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946173354, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946173358, "dur":4073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946177485, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946177543, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946177548, "dur":2870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946180471, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946180535, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946180540, "dur":2787, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946183376, "dur":146857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946330238, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946330245, "dur":1336, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946331645, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946331714, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946331726, "dur":1041, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946332818, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946332871, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946332875, "dur":1514, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946334446, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946334526, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946334530, "dur":1592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946336176, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946336240, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946336245, "dur":1440, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946337746, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946337810, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946337818, "dur":1645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946339556, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.IdentityModel.Selectors.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946339630, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946339637, "dur":1314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.IdentityModel.Selectors.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946341010, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946341071, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946341079, "dur":1184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946342322, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946342383, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946342388, "dur":3032, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946345465, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946345512, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946345518, "dur":1770, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946347336, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/System.ComponentModel.DataAnnotations.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946347390, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946347394, "dur":1484, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/System.ComponentModel.DataAnnotations.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946348932, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946348982, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946348986, "dur":1293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946350332, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/NetMQ.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946350385, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946350395, "dur":1422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/NetMQ.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946351864, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946351912, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946351919, "dur":4229, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946356201, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/Mono.Messaging.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946356254, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946356259, "dur":1473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/Mono.Messaging.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946357789, "dur":81947, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/Managed/FMODUnity.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946439739, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946439747, "dur":1456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/Managed/FMODUnity.dll" }}
+,{ "pid":12345, "tid":8, "ts":1684591946441259, "dur":2659, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/electronic-senses-shibuya.mp3" }}
+,{ "pid":12345, "tid":8, "ts":1684591946443925, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946443934, "dur":30659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/StreamingAssets/AudioStream/electronic-senses-shibuya.mp3" }}
+,{ "pid":12345, "tid":8, "ts":1684591946474646, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":8, "ts":1684591946474700, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946474706, "dur":3929, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":8, "ts":1684591946478684, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":8, "ts":1684591946478730, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946478736, "dur":3450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":8, "ts":1684591946482297, "dur":2405, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1684591946484709, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946484718, "dur":2588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1684591946487357, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/resources.assets" }}
+,{ "pid":12345, "tid":8, "ts":1684591946487408, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946487412, "dur":8245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/resources.assets" }}
+,{ "pid":12345, "tid":8, "ts":1684591946495715, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/level6" }}
+,{ "pid":12345, "tid":8, "ts":1684591946495765, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946495771, "dur":18458, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/level6" }}
+,{ "pid":12345, "tid":8, "ts":1684591946514279, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/level4" }}
+,{ "pid":12345, "tid":8, "ts":1684591946514324, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946514330, "dur":5478, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/level4" }}
+,{ "pid":12345, "tid":8, "ts":1684591946519869, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Built/MemoryGamePS5_Data/level0.resS" }}
+,{ "pid":12345, "tid":8, "ts":1684591946519928, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1684591946519937, "dur":8037, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Built/MemoryGamePS5_Data/level0.resS" }}
+,{ "pid":12345, "tid":8, "ts":1684591946528101, "dur":371569, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1684591946905118, "dur":2919, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1684591946934984, "dur": 1266, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1684591946934289, "dur": 2052, "ph": "X", "name": "Write chrome-trace events", "args": {} },

@@ -25,7 +25,7 @@ public class RandomizeInstruments : MonoBehaviour
             { "Flute", 5 },
             { "Sax", 5 },
             { "Clarinet", 5 },
-            { "Drums", 6 }
+            { "Drum", 6 }
         };
 
 
