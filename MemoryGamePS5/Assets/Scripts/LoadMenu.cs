@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +10,7 @@ public class LoadMenu : MonoBehaviour
 
 
     private SaveDataContainer sceneFromSaving;
+    private RandomVibrotactileFeedback newLevelContainer;
 
     private Button deleteButton;
     private Button backButtonLoadMenu;
@@ -102,8 +104,15 @@ public class LoadMenu : MonoBehaviour
     void DeleteAllScenes()
     {
         SaveDataContainer startFromFirst;
+
+        newLevelContainer = new RandomVibrotactileFeedback();
+
+        bool[] emptyArray = new bool[16];
+
         startFromFirst = new SaveDataContainer(1);
 
         JSONSaving.SaveToJSON<SaveDataContainer>(startFromFirst, "SaveGame.json");
+
+        newLevelContainer.RandomizeVibrotactileFeedbackLevels(); // Generate and save a new order of random vibrotactile feedback per level
     }
 }

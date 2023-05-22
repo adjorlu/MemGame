@@ -408,11 +408,13 @@
 "Assets/Scripts/PlayButtonNextScene.cs"
 "Assets/Scripts/PopulateAudioDevices.cs"
 "Assets/Scripts/RandomizeInstruments.cs"
+"Assets/Scripts/RandomVibrotactileFeedback.cs"
 "Assets/Scripts/SaveButton.cs"
 "Assets/Scripts/SaveDataContainer.cs"
 "Assets/Scripts/SaveSelectedAudioDevice.cs"
 "Assets/Scripts/SceneController.cs"
 "Assets/Scripts/SliderVolumes.cs"
+"Assets/Scripts/VibrotactileContainer.cs"
 -langversion:9.0
 
 /deterministic

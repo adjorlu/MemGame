@@ -11,9 +11,11 @@ public class DataCollector
     public string melodyName;
     public bool instr;
     public bool mel;
+    public bool vibrMute;
+    public string creationTime;
 
     // Constructor
-    public DataCollector(string name, float clicks, int level, string melodyName, bool similarInstruments, bool sameMelody)
+    public DataCollector(string name, float clicks, int level, string melodyName, bool similarInstruments, bool sameMelody, bool vibrotactileFeedback, string creationTime)
     {
         this.name = name;
         this.clicks = clicks;
@@ -21,6 +23,9 @@ public class DataCollector
         this.melodyName = melodyName;
         this.instr = similarInstruments;
         this.mel = sameMelody;
+        this.vibrMute = vibrotactileFeedback;
+        this.creationTime = creationTime;
+        this.creationTime = creationTime;
     }
 
 }

@@ -47,7 +47,9 @@ public class SceneController : MonoBehaviour
     private List<string> audioclips = new List<string>();
 
     private SaveDataContainer sceneFromSaving;
+    private VibrotactileContainer vibrotactileFeedbackOnOff;
 
+    private DateTime beginningTime;
 
     void Start()
     {
@@ -80,6 +82,12 @@ public class SceneController : MonoBehaviour
             }
         }
         else { SaveButton.SaveGame(); }
+
+        if (System.IO.File.Exists(JSONSaving.GetPath("LevelRandomVibrotactile.json")))
+        {
+            // Get the list with on/off vibrotactile feedback info
+            vibrotactileFeedbackOnOff = JSONSaving.ReadFromJSON<VibrotactileContainer>("LevelRandomVibrotactile.json");
+        }
 
         //Get set of audioclips and sprits randomly generated following the rules
         (audioclips, sprites)= GetComponent<RandomizeInstruments>().SelectAndRandomizeCards(numCards, similarCards, sameMelody);
@@ -116,9 +124,6 @@ public class SceneController : MonoBehaviour
                 int index = j * gridCols + i;
                 int id = cardsIdexes[index];
 
-                //card.SetCard(id, images[id]);
-                //card.SetAudio(id, sounds[id]);
-
                 card._id = id;
 
                 // Load the sprite from the asset path and assign it to the SpriteRenderer
@@ -128,6 +133,17 @@ public class SceneController : MonoBehaviour
                 card.GetComponent<AudioSource>().clip = Resources.Load<AudioClip>(audioclips[id]);
                 card.computerAudio.clip = Resources.Load<AudioClip>(audioclips[id]);
 
+
+                // Enable/disable vibrotactile feedback accordingly to the level
+                if (vibrotactileFeedbackOnOff.randomVibrotactileLevels[currentScene-1] == true)
+                {
+                    card.GetComponent<AudioSource>().mute = true;
+                }
+                else
+                {
+                    card.GetComponent<AudioSource>().mute = false;
+                }
+
                 float posX = (offsetX * i) + startPos.x;
                 float posY = -(offsetY * j) + startPos.y;
                 card.transform.position = new Vector3(posX, posY, startPos.z);
@@ -136,6 +152,8 @@ public class SceneController : MonoBehaviour
 
         // Load the feedback audioclip for correct match
         UIAudio.clip = scoreAudio;
+
+        beginningTime = DateTime.Now;
 
     }
 
@@ -276,6 +294,7 @@ public class SceneController : MonoBehaviour
     {
         Debug.Log($"Total scenes: {SceneManager.sceneCountInBuildSettings}");
         CollectCardInfo();
+
         if (currentScene < (SceneManager.sceneCountInBuildSettings - 1))
         {
             SceneManager.LoadScene(currentScene + 1);
@@ -301,7 +320,7 @@ public class SceneController : MonoBehaviour
             string[] pathInstrument = audioclips[card.Id].ToString().Split(Path.DirectorySeparatorChar); 
             string[] nameInstrument = pathInstrument[pathInstrument.Length-1].Split('_');
 
-            dataCollector.Add(new DataCollector(nameInstrument[0], card.numClicks, currentScene, nameInstrument[1], similarCards, sameMelody));
+            dataCollector.Add(new DataCollector(nameInstrument[0], card.numClicks, currentScene, nameInstrument[1], similarCards, sameMelody, vibrotactileFeedbackOnOff.randomVibrotactileLevels[currentScene - 1], beginningTime.ToString()));
             
         }
 

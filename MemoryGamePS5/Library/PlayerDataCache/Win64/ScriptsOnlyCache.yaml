@@ -3147,4 +3147,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level3.2.unity
   - Assets/Scenes/Level4.1.unity
   - Assets/Scenes/Level4.2.unity
-  playerPath: C:/Users/franc/Documents/UnityProjects/MemGame/MemoryGamePS5/Built/MemoryGamePS5.exe
+  playerPath: E:/MemoryGamePS5.exe
