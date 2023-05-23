@@ -92,7 +92,7 @@ public class RandomizeInstruments : MonoBehaviour
                 {
                     var instrument = group[rnd.Next(group.Count)];
 
-                    if (instrument != "Drums")
+                    if (instrument != "Drum") // For similar skip drum
                     {
                         selectedInstruments.Add(instrument);
                     }
