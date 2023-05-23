@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -87,6 +88,8 @@ public class RandomizeInstruments : MonoBehaviour
             // Select instruments
             if (similar) // Select similar instruments
             {
+                /* OLD ALGORITHM
+                 * THIS PICKS UP ONLY ONE INSTRUMENT PER SIMILARITY GROUP
                 // Select one instrument per group
                 foreach (var group in instrumentGroups)
                 {
@@ -108,6 +111,21 @@ public class RandomizeInstruments : MonoBehaviour
                   .Take(numberOfInstruments)
                   .Concat(selectedInstruments.Take(numberOfInstruments - selectedInstruments.Count + startIndex))
                   .ToList();
+                */
+
+                // Step 1: Skip drums from the list
+                List<string> allInstruments = instrumentSimilarity.Keys.ToList();
+                allInstruments.RemoveAll(instrument => instrument.Equals("Drum", StringComparison.OrdinalIgnoreCase));
+
+                // Step 2: Select a random instrument from the list
+                System.Random random = new System.Random();
+                int randomInstrumentIndex = random.Next(0, allInstruments.Count);
+
+                // Step 3: Select the next n instruments after the randomly selected one
+                for (int i = 0; i < numberOfInstruments; i++)
+                {
+                    selectedInstruments.Add(allInstruments[(randomInstrumentIndex + i) % allInstruments.Count]);
+                }
 
             }
             else // Select different instruments
